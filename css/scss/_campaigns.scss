@@ -1,0 +1,113 @@
+/* start campaigns styles */ 
+
+#campaigns {
+    //margin-top: -93px;
+    
+    .page_width {
+		padding-top: 0;
+    }
+}
+
+.campaigns_slider {
+    .slick-list {
+        padding: 10px 10px 30px;
+        margin: 0 -20px;
+    }
+
+    .item {
+        position: relative;
+        box-sizing: border-box;
+        background: #6c7483 no-repeat center / cover;
+        height: 170px;
+        padding: 20px 50px 0px;
+        margin: 0 10px;
+        box-shadow: -10px 10px 20px rgba(19, 73, 131, 0.2);
+        font-size: 14px;
+        line-height: 20px;
+        color: #fff;
+        opacity: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include transition(all);
+
+        .text {
+            width: 645px;
+            padding-top: 5px;
+        }
+        h2 {
+            color: #fff;
+            min-height: 50px;
+            line-height: 34px;
+            //overflow: hidden;
+            margin-bottom: 13px;
+            @include transition(all);
+
+            time {
+                font-size: 24px;
+                text-transform: none;
+
+            }
+        }
+        p {
+            margin-bottom: 0;
+        }
+
+        .discount {
+            text-align: left;
+            width: 38%;
+            font-weight: bold;
+            font-size: 120px;
+            line-height: 100px;
+            padding-top: 20px;
+            opacity: 0.8;
+        }
+        .button {
+            height: 40px;
+            line-height: 38px;
+            min-width: 170px;
+            font-size: 16px;
+            margin-right: 30px;
+            box-shadow: 5px 4px 10px #666666;
+            border: 0;
+
+            &::after {
+                display: none;
+            }
+        }
+
+        &.slick-active {
+            opacity: 1;
+        }
+    }
+
+    .slick-arrow {
+        margin-top: -43px;
+    }
+}
+    
+
+
+@media screen and (min-width: 1400px) {
+    
+}
+@media screen and (max-width: 1400px) {
+	
+}
+
+@media screen and (max-width: 1030px) {
+	
+}
+
+@media screen and (max-width: 800px) {
+	
+}
+@media screen and (max-width: 800px) {
+    
+}
+
+@media screen and (max-width: 600px) {
+    
+}
+
+/* end campaigns styles */

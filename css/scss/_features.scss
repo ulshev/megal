@@ -1,0 +1,124 @@
+/* start features styles */ 
+
+#features {
+    margin-top: -93px;
+    
+    .page_width {
+		padding-bottom: 37px;
+    }
+}
+
+.features_slider {
+    .slick-list {
+        padding: 10px 10px 30px;
+        margin: 0 -20px;
+    }
+
+    .item {
+        position: relative;
+        box-sizing: border-box;
+        background-color: rgba(255, 255, 255, 1);
+        height: 340px;
+        padding: 23px 40px 40px;
+        margin: 0 10px;
+        box-shadow: -10px 10px 20px rgba(19, 73, 131, 0.2);
+        font-size: 14px;
+        line-height: 20px;
+        opacity: 0;
+        @include transition(all);
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: calc(100% - 172px);
+            left: 172px;
+            top: 69px;
+            height: 15px;
+            background-color: $color_a;
+            @include transition(all);
+        }
+
+        .icon {
+            position: relative;
+            width: 106px;
+            height: 106px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(239, 244, 250);
+            border-radius: 50%;
+            overflow: hidden;
+            margin-bottom: 13px;
+            @include transition(all);
+
+            img {
+                max-width: 80%;
+                max-height: 80%;
+                object-fit: contain;
+                @include transition(all);
+            }
+        }
+        .text {
+            overflow: hidden;
+            max-height: 169px;
+        }
+        .h4 {
+            color: $color_text;
+            min-height: 50px;
+            //overflow: hidden;
+            margin-bottom: 14px;
+            @include transition(all);
+        }
+        p {
+            margin-bottom: 0;
+        }
+
+        &.slick-active {
+            opacity: 1;
+        }
+
+        &:hover {
+            box-shadow: 0px 0px 0px rgba(19, 73, 131, 0.0);
+            background-color: $color_a;
+            color: #fff;
+            &::before {
+                background-color: #fff;
+            }
+            .h4 {
+                color: #fff;
+            }
+            .icon {
+                background-color: rgba(239, 244, 250, 0.2);
+            }
+            img {
+                filter: brightness(0.5) contrast(300%) invert(1);
+            }
+        }
+    }
+}
+    
+
+
+@media screen and (min-width: 1400px) {
+    
+}
+@media screen and (max-width: 1400px) {
+	
+}
+
+@media screen and (max-width: 1030px) {
+	
+}
+
+@media screen and (max-width: 800px) {
+	
+}
+@media screen and (max-width: 800px) {
+    
+}
+
+@media screen and (max-width: 600px) {
+    
+}
+
+/* end features styles */

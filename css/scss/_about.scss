@@ -1,0 +1,156 @@
+/* start about styles */ 
+
+#about_section {
+    //margin-top: -93px;
+    
+    .page_width {
+        padding-top: 67px;
+        padding-bottom: 60px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .container {
+        width: calc(33.33% - 14px);
+        box-sizing: border-box;
+        margin: 0 10px 20px;
+        background-color: #fff;
+
+        &:first-child {
+            margin-left: 0;
+        }
+        &:last-child {
+            margin-right: 0px;
+        }
+
+        .image {
+            height: 210px;
+            background-color: #CFDBE7;
+            margin-bottom: 40px;
+
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+        .text, .buttons, &.press_center h3, .head {
+            padding: 0 55px;
+        }
+        .text {
+            font-size: 15px;
+            line-height: 21px;
+            box-sizing: border-box;
+            height: 172px;
+            margin-bottom: 15px;
+            overflow: hidden;
+            p {
+                padding-right: 12%;
+            }
+        }
+
+        h3 {
+            margin-bottom: 13px;
+        }
+        .button {
+            height: 40px;
+            line-height: 38px;
+            padding-left: 15px;
+            padding-right: 15px;
+
+            &::after {
+                margin-left: 15px;
+            }
+        }
+
+        &.press_center {
+            article {
+                position: relative;
+                padding-bottom: 17px;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    bottom: 14px;
+                    left: 55px;
+                    width: 0;
+                    height: 2px;
+                    background-color: $color_a;
+                    @include transition(all);
+                }
+                &:hover {
+                    &::after {
+                        width: 84px;
+                    }
+                }
+            }
+            h3 {
+                margin-top: -5px;
+                margin-bottom: 12px;
+            }
+            .text {
+                height: auto;
+                font-size: 14px;
+                line-height: 20px;
+
+                p {
+                    padding-right: 0;
+                    margin-bottom: 4px;
+                    height: 40px;
+                    overflow: hidden;
+                }
+            }
+
+            .head {
+                padding-top: 8px;
+                padding-bottom: 5px;
+                margin-bottom: 5px;
+                text-align: right;
+                font-size: 14px;
+                line-height: 20px;
+                background: #CFDBE7;
+
+                .event {
+                    float: left;
+                    font-weight: 600;
+                }
+
+                time {
+                    font-size: 12px;
+                }
+            }
+            a {
+                font-weight: 600;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+
+    
+
+
+@media screen and (min-width: 1400px) {
+    
+}
+@media screen and (max-width: 1400px) {
+	
+}
+
+@media screen and (max-width: 1030px) {
+	
+}
+
+@media screen and (max-width: 800px) {
+	
+}
+@media screen and (max-width: 800px) {
+    
+}
+
+@media screen and (max-width: 600px) {
+    
+}
+
+/* end about styles */
