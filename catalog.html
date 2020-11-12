@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ru-RU">
+    <head>
+        <!--meta charset="cp-1251"-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="robots" content="noindex">
+        <title>Мегал</title>
+        <link rel="stylesheet" type="text/css" href="css/slick.css">
+        <link rel="stylesheet" type="text/css"  media="all" href="css/jquery.fancybox.css">
+        <link rel="stylesheet" type="text/css"  media="all" href="css/font.css">
+        
+        <link rel="stylesheet" type="text/css"  media="all" href="css/ModalWindow.css"><!-- !!! стили не подключать -->
+        
+        <link rel="stylesheet" type="text/css"  media="all" href="template_styles.css">
+        
+        <script type="text/Javascript" src="js/jquery-3.4.1.min.js"></script>
+        <script type="text/Javascript" src="js/jquery-ui-1.12.1.js"></script>
+        <script type="text/javascript" src="js/slick.min.js"></script>
+        <script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+    
+        <script type="text/javascript" src="js/script.js"></script> 
+        
+    </head>
+<body>
+    <div class="wrapper">
+        <!-- шапка -->
+        
+        <header id="header">
+            <div class="page_width">
+                <div id="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="Мегал">
+                    </a>
+                </div>
+    
+                <div id="basket">
+                    <a href="basket.html">
+                        <img src="images/icon_basket.svg" alt="Корзина">
+                        <span class="num">28</span>
+                    </a>
+                </div>
+    
+                <div class="search">
+                    <div class="search_button"></div>
+                    <form>
+                        <input type="text" value="" placeholder="Поиск по сайту">
+                        <input type="image" src="images/icon_loupe.svg">
+                    </form>
+                </div>
+    
+                <div class="mob menu_btn"></div>
+                <div class="header_main">
+                    <div class="language">
+                        <a href="#" class="lang_item">en</a>
+                        <a href="#" class="lang_item active">ru</a>
+                        <a href="#" class="lang_item">am</a>
+                    </div>
+                    <a class="button btn_call" href="#">Напишите нам</a>
+                    <nav class="top_menu">
+                        <ul class="menu">
+                            <li>
+                                <span class="back">&larr;</span>
+                                <a href="for_clients.html"><img class="icon" src="images/icon_clients.svg"> Клиентам</a>
+                                <ul>
+                                    <li><a href="#">Преимущества работы с MEGAL</a></li>
+                                    <li><a href="#">Акции</a></li>
+                                    <li><a href="#">Оплата и доставка</a></li>
+                                    <li class="active"><a href="#">Проверка подлинности</a></li>
+                                    <li><a href="#">Гарантии</a></li>
+                                    <li><a href="#">Рекомендации и благодарственные письма</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span class="back">&larr;</span>
+                                <a href="for_dealers.html"><img class="icon" src="images/icon_dealers.svg"> Дилерам</a>
+                                
+                            </li>
+                            <li>
+                                <span class="back">&larr;</span>
+                                <a href="for_providers.html"><img class="icon" src="images/icon_providers.svg"> Поставщикам</a>
+                                
+                            </li>
+                            <li>
+                                <span class="back">&larr;</span>
+                                <a href="press_center.html"><img class="icon" src="images/icon_press_center.svg"> Пресс-центр</a>
+                                <ul>
+                                    <li><a href="news.html">Новости</a></li>
+                                    <li class="active"><a href="events.html">События и мероприятия</a></li>
+                                    <li><a href="page_faq.html">F.A.Q</a></li>
+                                    <li><a href="useful_materials.html">Полезные материалы</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+    
+                    <nav class="bottom_menu">
+                        <ul class="menu">
+                            <li class="item">
+                                <span class="back">&larr;</span>
+                                <a href="about.html">О компании</a>
+                                <ul>
+                                    <li><a href="mission_and_strategy.html">Миссия и стратегия</a></li>
+                                    <li><a href="history.html">История компании</a></li>
+                                    <li class="active"><a href="quality_management_system.html">Система менеджмента качества</a></li>
+                                    <li><a href="certificates.html">Сертификаты</a></li>
+                                    <li><a href="for download.html">Материалы для скачивания</a></li>
+                                </ul>
+                            </li>
+                            <li class="catalog">
+                                <span class="back">&larr;</span>
+                                <a href="catalog.html">Продукция</a>
+                                <ul>
+                                    <li>
+                                        <a href="catalog.html">Продукция Мегал</a>
+                                        <ul>
+                                            <li>
+                                                <a href="catalog_section.html">
+                                                    <img class="icon" src="images/icon_catalog1.svg" alt="Строительные вышки-туры">
+                                                    <span class="section_name">Строительные вышки-туры</span>
+                                                </a>
+                                                <ul>
+                                                    <li><a href="catalog_section.html">Вышки модульные алюминиевые</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="catalog_section.html">
+                                                    <img class="icon" src="images/icon_catalog2.svg" alt="Подмости">
+                                                    <span class="section_name">Подмости</span>
+                                                </a>
+                                                <ul>
+                                                    <li><a href="catalog_section.html">Подмости</a></li>
+                                                    <li><a href="catalog_section.html">Монтажные подставки</a></li>
+                                                    <li><a href="catalog_section.html">Переходные мостики</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="catalog_section.html">
+                                                    <img class="icon" src="images/icon_catalog3.svg" alt="Трапы">
+                                                    <span class="section_name">Трапы</span>
+                                                </a>
+                                                <ul>
+                                                    <li><a href="catalog_section.html">Трапы-сходни</a></li>
+                                                    <li><a href="catalog_section.html">Яхтенные трапы-сходни</a></li>
+                                                    <li><a href="catalog_section.html">Водолазные трапы</a></li>
+                                                    <li><a href="catalog_section.html">Забортные трапы и лебедки</a></li>
+                                                    <li><a href="catalog_section.html">Полутрапы</a></li>
+                                                    <li><a href="catalog_section.html">Багры, сетки, будки</a></li>
+                                                    <li><a href="catalog_section.html">Кран-балки переносные</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="catalog_section.html">
+                                                    <img class="icon" src="images/icon_catalog4.svg" alt="Лестницы-платформы">
+                                                    <span class="section_name">Лестницы-платформы</span>
+                                                </a>
+                                                <ul>
+                                                    <li><a href="catalog_section.html">Передвижные вышки-стремянки</a></li>
+                                                    <li><a href="catalog_section.html">Лестницы-платформы ТЛП</a></li>
+                                                    <li><a href="catalog_section.html">Лестницы платформы фиксированной высоты</a></li>
+                                                    <li><a href="catalog_section.html">Лестницы с площадкой</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="catalog_section.html">
+                                                    <img class="icon" src="images/icon_catalog5.svg" alt="Люльки и площадки">
+                                                    <span class="section_name">Люльки и площадки</span>
+                                                </a>
+                                                <ul>
+                                                    <li><a href="catalog_section.html">Люльки для подъема людей</a></li>
+                                                    <li><a href="catalog_section.html">Люльки для автомобильных подъемников</a></li>
+                                                    <li><a href="catalog_section.html">Площадки подвесные по ГОСТ 26887</a></li>
+                                                    <li><a href="catalog_section.html">Площадки подвесные ППА</a></li>
+                                                    <li><a href="catalog_section.html">Площадки для полувагонов</a></li>
+                                                    <li><a href="catalog_section.html">Площадки на кран-балки</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="catalog_section.html">
+                                                    <img class="icon" src="images/icon_catalog6.svg" alt="Нестандартные решения">
+                                                    <span class="section_name">Нестандартные решения</span>
+                                                </a>
+                                                <ul>
+                                                    <li><a href="catalog_section.html">Специализированные конструкции (нестандартные решения)</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="catalog_section.html">
+                                                    <img class="icon" src="images/icon_catalog7.svg" alt="Алюминиевые лестницы">
+                                                    <span class="section_name">Алюминиевые лестницы</span>
+                                                </a>
+                                                <ul>
+                                                    <li><a href="catalog_section.html">Лестницы для полувагонов</a></li>
+                                                    <li><a href="catalog_section.html">Лестницы навесные с крюками и кронштейнами</a></li>
+                                                    <li><a href="catalog_section.html">Лестницы приставные</a></li>
+                                                    <li><a href="catalog_section.html">Лестницы для стеллажей</a></li>
+                                                    <li><a href="catalog_section.html">Лестницы для цистерн и обслуживания транспорта</a></li>
+                                                    <li><a href="catalog_section.html">Лестницы колодезные</a></li>
+                                                    <li><a href="catalog_section.html">Секционные лестницы, стремянки</a></li>
+                                                    <li><a href="catalog_section.html">Садовые стремянки и скобы на крышу</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="catalog_section.html">
+                                                    <img class="icon" src="images/icon_catalog8.svg" alt="Вышки-стремянки">
+                                                    <span class="section_name">Вышки-стремянки</span>
+                                                </a>
+                                                <ul>
+                                                    <li><a href="catalog_section.html">Вышки-стремянки для нефтяной промышленности ВСА-Н</a></li>
+                                                    <li><a href="catalog_section.html">Вышки-стремянки для обслуживания авиационной техники ВСА-А, ПАА</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="directions.html">Направления производства</a>
+                                        <ul>
+                                            <li><a href="catalog_section.html">Оборудование для производств</a></li>
+                                            <li><a href="catalog_section.html">Строительное оборудование</a></li>
+                                            <li><a href="catalog_section.html">Садовое оборудование</a></li>
+                                            <li><a href="catalog_section.html">Оборудование для склада</a></li>
+                                            <li><a href="catalog_section.html">Оборудование для флота</a></li>
+                                            <li><a href="catalog_section.html">Оборудование для нефтегазовой отрасли</a></li>
+                                            <li><a href="catalog_section.html">Оборудование для авиационной отрасли</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            
+                            <li class="item">
+                                <span class="back">&larr;</span>
+                                <a href="services.html">Услуги</a>
+                                <ul>
+                                    <li><a href="services_in.html">Проектирование на заказ</a></li>
+                                    <li><a href="services_in.html">Изготовление нестандартных изделий</a></li>
+                                    <li><a href="services_in.html">Сборка изделий на вашем объекте</a></li>
+                                    <li><a href="services_in.html">Шеф-монтажные работы</a></li>
+                                </ul>
+                            </li>		
+                            <li class="item">
+                                <span class="back">&larr;</span>
+                                <a href="manufacture.html">Производство</a>
+                                <ul>
+                                    <li><a href="#">Конструкторский департамент</a></li>
+                                    <li><a href="#">Контроль качества</a></li>
+                                    <li><a href="#">Безопасность производства</a></li>
+                                </ul>
+                            </li>
+                            <li class="item">
+                                <span class="back">&larr;</span>
+                                <a href="зrojects.html">Проекты</a>
+                            </li>
+                            <li class="item">
+                                <span class="back">&larr;</span>
+                                <a href="сareer.html">Карьера в компании</a>
+                                <ul>
+                                    <li><a href="vacancies.html">Вакансии</a></li>
+                                </ul>
+                            </li>
+                            <li class="item">
+                                <span class="back">&larr;</span>
+                                <a href="contacts.html">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                
+                    <div class="header_contacts">
+                        <div class="contacts">
+                            <div class="col">
+                                <span class="town">Санкт-Петербург</span>
+                                <a class="email" href="mailto:ekos@ekosspb.ru">info@megal-spb.ru</a>
+                                <a class="tel" href="tel:88124485404">8 (812) 448-54-04</a>
+                                <a class="tel" href="tel:88007005419">8 (800) 700-54-19</a>
+                            </div>
+                            <div class="col">
+                                <span class="town">Москва</span>
+                                <a class="email" href="mailto:ekos@ekosspb.ru">info@lestniza.ru</a>
+                                <a class="tel" href="tel:84952254519">8 (495) 225-45-19</a>
+                                <a class="tel" href="tel:88007005419">8 (800) 700-54-19</a>
+                            </div>
+                        </div>
+                        <div class="social mob">
+                            <noindex><a rel="nofollow" title="ВКонтакте" href="#"><img src="images/icon_vk.svg" alt="VK"></a></noindex>
+                            <noindex><a rel="nofollow" title="Facebook" href="#"><img src="images/icon_fb.svg" alt="FB"></a></noindex>
+                            <noindex><a rel="nofollow" title="YouTube" href="#"><img src="images/icon_yt.svg" alt="YT"></a></noindex>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- end шапка -->
+
+
+        <!--название-->
+            <div class="title">
+                <div class="page_width">
+                    <div class="breadcrumbs">
+                        <ul>
+                            <li><a href="index.html">Главная</a></li>
+                            <li class="active">Продукция</li>
+                        </ul>
+                    </div>
+
+                    <h1>Продукция</h1>
+                </div>
+            </div>
+        <!--end название-->
+
+
+        <!-- Баннеры -->
+        <div class="main_section" id="campaigns">
+            <div class="page_width">
+                <div class="campaigns_slider">
+                    <div class="item" style="background-image: url(images/bg_campaigns.jpg);">
+                        <div class="text">
+                            <h2>Распродажа складских позиций <time>до 31.07.2020</time></h2>
+                            <p>Скидки до -30% на Телескопическую лестницу-платформу</p>
+                        </div>
+                        <div class="discount">-30%</div>
+                        <a class="button btn_invert" href="#">Заказать</a>
+                    </div>
+                    <div class="item" style="background-image: url(images/bg_campaigns.jpg);">
+                        <div class="text">
+                            <h2>Распродажа складских позиций <time>до 31.07.2020</time></h2>
+                            <p>Скидки до -30% на Телескопическую лестницу-платформу</p>
+                        </div>
+                        <div class="discount">-30%</div>
+                        <a class="button btn_invert" href="#">Заказать</a>
+                    </div>
+                    <div class="item" style="background-image: url(images/bg_campaigns.jpg);">
+                        <div class="text">
+                            <h2>Распродажа складских позиций <time>до 31.07.2020</time></h2>
+                            <p>Скидки до -30% на Телескопическую лестницу-платформу</p>
+                        </div>
+                        <div class="discount">-30%</div>
+                        <a class="button btn_invert" href="#">Заказать</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end баннеры -->
+
+        <!-- Продукция -->
+        <div class="main_section" id="production">
+            <div class="page_width">
+                <a href="catalog.html" class="button all_link">Смотреть всю продукцию</a>
+                <div class="production_catalog">
+                    <div class="item">
+                        <div class="img"><a href="catalog_section.html"><img src="images/catalog_section1.png"></a></div>
+                        <div class="info">
+                            <h5><a href="catalog_section.html">Вышки модульные алюминиевые</a></h5>
+                            <a class="button" href="catalog_section.html">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img"><a href="catalog_section.html"><img src="images/catalog_product_1.png"></a></div>
+                        <div class="info">
+                            <h5><a href="catalog_section.html">Передвижные вышки-стремянки</a></h5>
+                            <a class="button" href="catalog_section.html">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img"><a href="catalog_section.html"><img src="images/catalog_product_2.png"></a></div>
+                        <div class="info">
+                            <h5><a href="catalog_section.html">Лестницы-платформы (ТЛП)</a></h5>
+                            <a class="button" href="catalog_section.html">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img"><a href="catalog_section.html"><img src="images/catalog_product_3.png"></a></div>
+                        <div class="info">
+                            <h5><a href="catalog_section.html">Лестницы платформы фиксированной высоты</a></h5>
+                            <a class="button" href="catalog_section.html">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img"><a href="catalog_section.html"><img src="images/catalog_product_4.png"></a></div>
+                        <div class="info">
+                            <h5><a href="catalog_section.html">Лестницы с площадкой</a></h5>
+                            <a class="button" href="catalog_section.html">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img"><a href="catalog_section.html"><img src="images/catalog_product_5.png"></a></div>
+                        <div class="info">
+                            <h5><a href="catalog_section.html">Лестницы для полувагонов</a></h5>
+                            <a class="button" href="catalog_section.html">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img"><a href="catalog_section.html"><img src="images/catalog_product_6.png"></a></div>
+                        <div class="info">
+                            <h5><a href="catalog_section.html">Лестницы навесные с крюками и кронштейнами</a></h5>
+                            <a class="button" href="catalog_section.html">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img"><a href="catalog_section.html"><img src="images/catalog_product_7_8.png"></a></div>
+                        <div class="info">
+                            <h5><a href="catalog_section.html">Лестницы приставные</a></h5>
+                            <a class="button" href="catalog_section.html">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img"><a href="catalog_section.html"><img src="images/catalog_product_7_8.png"></a></div>
+                        <div class="info">
+                            <h5><a href="catalog_section.html">Лестницы для стеллажей</a></h5>
+                            <a class="button" href="catalog_section.html">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img"><a href="catalog_section.html"><img src="images/catalog_product_9.png"></a></div>
+                        <div class="info">
+                            <h5><a href="catalog_section.html">Лестницы для цистерн и обслуживания транспорта</a></h5>
+                            <a class="button" href="catalog_section.html">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img"><a href="catalog_section.html"><img src="images/catalog_product_10.png"></a></div>
+                        <div class="info">
+                            <h5><a href="catalog_section.html">Лестницы колодезные</a></h5>
+                            <a class="button" href="catalog_section.html">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img"><a href="catalog_section.html"><img src="images/catalog_product_11.png"></a></div>
+                        <div class="info">
+                            <h5><a href="catalog_section.html">Секционные лестницы, стремянки</a></h5>
+                            <a class="button" href="catalog_section.html">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img"><a href="catalog_section.html"><img src="images/catalog_product_12.png"></a></div>
+                        <div class="info">
+                            <h5><a href="catalog_section.html">Садовые стремянки и скобы на крышу</a></h5>
+                            <a class="button" href="catalog_section.html">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img"><a href="catalog_section.html"><img src="images/catalog_product_13.png"></a></div>
+                        <div class="info">
+                            <h5><a href="catalog_section.html">Подмости</a></h5>
+                            <a class="button" href="catalog_section.html">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img"><a href="catalog_section.html"><img src="images/catalog_product_14.png"></a></div>
+                        <div class="info">
+                            <h5><a href="catalog_section.html">Монтажные подставки</a></h5>
+                            <a class="button" href="catalog_section.html">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img"><a href="catalog_section.html"><img src="images/catalog_product_15.png"></a></div>
+                        <div class="info">
+                            <h5><a href="catalog_section.html">Переходные мостики</a></h5>
+                            <a class="button" href="catalog_section.html">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img"><a href="catalog_section.html"><img src="images/catalog_product_16.png"></a></div>
+                        <div class="info">
+                            <h5><a href="catalog_section.html">Люльки для подъема людей</a></h5>
+                            <a class="button" href="catalog_section.html">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img"><a href="catalog_section.html"><img src="images/catalog_product_17.png"></a></div>
+                        <div class="info">
+                            <h5><a href="catalog_section.html">Люльки для автомобильных подъемников</a></h5>
+                            <a class="button" href="catalog_section.html">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img"><a href="catalog_section.html"><img src="images/catalog_product_18.png"></a></div>
+                        <div class="info">
+                            <h5><a href="catalog_section.html">Площадки подвесные по ГОСТ 26887</a></h5>
+                            <a class="button" href="catalog_section.html">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img"><a href="catalog_section.html"><img src="images/catalog_product_19.png"></a></div>
+                        <div class="info">
+                            <h5><a href="catalog_section.html">Площадки подвесные ППА</a></h5>
+                            <a class="button" href="catalog_section.html">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img"><a href="catalog_section.html"><img src="images/catalog_product_20.png"></a></div>
+                        <div class="info">
+                            <h5><a href="catalog_section.html">Площадки для полувагонов</a></h5>
+                            <a class="button" href="catalog_section.html">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img"><a href="catalog_section.html"><img src="images/catalog_product_21.png"></a></div>
+                        <div class="info">
+                            <h5><a href="catalog_section.html">Площадки на кран-балки</a></h5>
+                            <a class="button" href="catalog_section.html">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img"><a href="catalog_section.html"><img src="images/catalog_product_22.png"></a></div>
+                        <div class="info">
+                            <h5><a href="catalog_section.html">Трапы-сходни</a></h5>
+                            <a class="button" href="catalog_section.html">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img"><a href="catalog_section.html"><img src="images/catalog_product_23.png"></a></div>
+                        <div class="info">
+                            <h5><a href="catalog_section.html">Яхтенные трапы-сходни</a></h5>
+                            <a class="button" href="catalog_section.html">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img"><a href="catalog_section.html"><img src="images/catalog_product_24.png"></a></div>
+                        <div class="info">
+                            <h5><a href="catalog_section.html">Водолазные трапы</a></h5>
+                            <a class="button" href="catalog_section.html">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img"><a href="catalog_section.html"><img src="images/catalog_product_25.png"></a></div>
+                        <div class="info">
+                            <h5><a href="catalog_section.html">Забортные трапы и лебедки</a></h5>
+                            <a class="button" href="catalog_section.html">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img"><a href="catalog_section.html"><img src="images/catalog_product_26.png"></a></div>
+                        <div class="info">
+                            <h5><a href="catalog_section.html">Полутрапы</a></h5>
+                            <a class="button" href="catalog_section.html">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img"><a href="catalog_section.html"><img src="images/catalog_product_27.png"></a></div>
+                        <div class="info">
+                            <h5><a href="catalog_section.html">Багры, сетки, будки</a></h5>
+                            <a class="button" href="catalog_section.html">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img"><a href="catalog_section.html"><img src="images/catalog_product_28.png"></a></div>
+                        <div class="info">
+                            <h5><a href="catalog_section.html">Кран-балки переносные</a></h5>
+                            <a class="button" href="catalog_section.html">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img"><a href="catalog_section.html"><img src="images/catalog_product_29.png"></a></div>
+                        <div class="info">
+                            <h5><a href="catalog_section.html">Вышки-стремянки для нефтяной промышленности ВСА-Н</a></h5>
+                            <a class="button" href="catalog_section.html">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img"><a href="catalog_section.html"><img src="images/catalog_product_30.png"></a></div>
+                        <div class="info">
+                            <h5><a href="catalog_section.html">Вышки-стремянки для обслуживания авиационной техники ВСА-А, ПАА</a></h5>
+                            <a class="button" href="catalog_section.html">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img"><a href="catalog_section.html"><img src="images/catalog_product_31.png"></a></div>
+                        <div class="info">
+                            <h5><a href="catalog_section.html">Специализированные конструкции (нестандартные решения) </a></h5>
+                            <a class="button" href="catalog_section.html">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end Продукция -->
+        
+        <!--Формы-->
+        <div class="form">
+            <img src="images/form.jpg" alt="" style="width: 100%;">
+        </div>
+        <!--End Формы-->
+
+        <!--Сео-Текст-->
+        <div class="Seo_text_main">
+            <div class="page_width">
+                <div class="seo_text">
+                    <div class="image">
+                        <img src="images/seo_img.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h2>Сео-текст</h2>
+                        <p>
+                            Компания «Мегал» производит переходные мостики из алюминия с продуманной конструкцией — разборность элементов упрощает хранение и транспортировку. Мы изготавливаем мостики из специализированных профилей, выполненных по заказу для нашего завода. За счет этого мостики получаются прочными и долговечными.
+                        </p>
+
+                        <p>
+                            Как и вся наша продукция, металлические переходные мостики изготавливаются по ГОСТ 26887-86, 24258-88. Мы соблюдаем строгие требования в отношении нагрузки, безопасности, эксплуатационных параметров.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End Сео-Текст-->
+    
+        <!-- подвал -->
+        <div id="pre_foo"></div>
+        <footer id="footer">
+            <div class="page_width">
+                <div class="foo_menu">
+                    <div class="container">
+                        <div class="h4">Направления производства</div>
+                        <ul>
+                            <li><a href="catalog_section.html">Оборудование для производств</a></li>
+                            <li><a href="catalog_section.html">Строительное оборудование</a></li>
+                            <li><a href="catalog_section.html">Садовое оборудование</a></li>
+                            <li><a href="catalog_section.html">Оборудование для склада</a></li>
+                            <li><a href="catalog_section.html">Оборудование для флота</a></li>
+                            <li><a href="catalog_section.html">Оборудование для нефтегазовой отрасли</a></li>
+                            <li><a href="catalog_section.html">Оборудование для авиационной отрасли</a></li>
+                        </ul>
+                    </div>
+                    <div class="container">
+                        <div class="h4">Продукция завода</div>
+                        <ul>
+                            <li><a href="catalog_section.html">Вышки модульные алюминиевые</a></li>
+                            <li><a href="catalog_section.html">Передвижные вышки-стремянки</a></li>
+                            <li><a href="catalog_section.html">Лестницы-платформы ТЛП</a></li>
+                            <li><a href="catalog_section.html">Лестницы платформы фиксированной высоты</a></li>
+                            <li><a href="catalog_section.html">Лестницы с площадкой</a></li>
+                            <li><a href="catalog_section.html">Люльки для подъема людей</a></li>
+                            <li><a href="catalog_section.html">Люльки для автомобильных подъемников</a></li>
+                            <li><a href="catalog_section.html">Площадки подвесные по ГОСТ 26887</a></li>
+                            <li><a href="catalog_section.html">Площадки подвесные ППА</a></li>
+                            <li><a href="catalog_section.html">Площадки для полувагонов</a></li>
+                            <li><a href="catalog_section.html">Площадки на кран-балки</a></li>
+                            <li><a href="catalog_section.html">Лестницы для полувагонов</a></li>
+                            <li><a href="catalog_section.html">Лестницы навесные с крюками и кронштейнами</a></li>
+                            <li><a href="catalog_section.html">Лестницы приставные</a></li>
+                            <li><a href="catalog_section.html">Лестницы для стеллажей</a></li>
+                            <li><a href="catalog_section.html">Лестницы для цистерн и обслуживания транспорта</a></li>
+                            <li><a href="catalog_section.html">Лестницы колодезные</a></li>
+                            <li><a href="catalog_section.html">Секционные лестницы, стремянки</a></li>
+                            <li><a href="catalog_section.html">Садовые стремянки и скобы на крышу</a></li>
+                            <li><a href="catalog_section.html">Подмости</a></li>
+                            <li><a href="catalog_section.html">Монтажные подставки</a></li>
+                            <li><a href="catalog_section.html">Переходные мостики</a></li>
+                            <li><a href="catalog_section.html">Трапы-сходни</a></li>
+                            <li><a href="catalog_section.html">Яхтенные трапы-сходни</a></li>
+                            <li><a href="catalog_section.html">Водолазные трапы</a></li>
+                            <li><a href="catalog_section.html">Забортные трапы и лебедки</a></li>
+                            <li><a href="catalog_section.html">Полутрапы</a></li>
+                            <li><a href="catalog_section.html">Багры, сетки, будки</a></li>
+                            <li><a href="catalog_section.html">Кран-балки переносные</a></li>
+                            <li><a href="catalog_section.html">Специализированные конструкции (нестандартные решения)</a></li>
+                            <li><a href="catalog_section.html">Вышки-стремянки для нефтяной промышленности ВСА-Н</a></li>
+                            <li><a href="catalog_section.html">Вышки-стремянки для обслуживания авиационной техники ВСА-А, ПАА</a></li>
+                        </ul>
+                    </div>
+                    <div class="container">
+                        <div class="h4">Компания</div>
+                        <ul>
+                            <li><a href="#">О компании</a></li>
+                            <li><a href="#">Каталог</a></li>
+                            <li><a href="#">Производство</a></li>
+                            <li><a href="#">Проекты</a></li>
+                            <li><a href="#">Услуги</a></li>
+                            <li><a href="#">F.A.Q</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="container">
+                        <div class="h4">Сотрудничество</div>
+                        <ul>
+                            <li><a href="#">Клиентам</a></li>
+                            <li><a href="#">Дилерам</a></li>
+                            <li><a href="#">Поставщикам</a></li>
+                            <li><a href="#">Пресс-Центр</a></li>
+                            <li><a href="#">Работа в компании</a></li>
+                        </ul>
+                    </div>
+                    <div class="container">
+                        <div class="h4">Ответственность</div>
+                        <ul>
+                            <li><a href="#">Сертификаты</a></li>
+                            <li><a href="#">Гарантии</a></li>
+                            <li><a href="#">Рекомендации</a></li>
+                            <li><a href="#">Преимущества работы с нами</a></li>
+                            <li><a href="#">Материалы для скачивания</a></li>
+                            <li><a href="#">Проверка подлинности</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="foo_main">
+                        <div id="foo_logo">
+                            <a href="index.html">
+                                <img src="images/logo_foo.svg" alt="">
+                            </a>
+                        </div>
+
+                        <div class="h4"><a href="contacts.html">Контакты</a></div>
+                        <div class="text">
+                            <div class="h6">Санкт-Петербург <span class="small">главный офис</span></div>
+                            <p><a class="tel" href="tel:88124485404">8 (812) 448-54-04</a></p>
+                            <p><a class="tel" href="tel:88007005419">8 (800) 700-54-19</a></p>
+                            <p><a class="email" href="mailto:info@megal-spb.ru">info@megal-spb.ru</a></p>
+                            <p>192019, г. Санкт-Петербург, ул. Профессора Качалова, дом&nbsp;11, лит.&nbsp;Э, пом.№3, оф.&nbsp;300&nbsp;Б</p>
+                            <a class="small go_map" href="#">Смотреть на карте</a>
+                        </div>
+                        <div class="text">
+                            <div class="h6">Москва</div>
+                            <p>представительство ООО «Арлион»</p>
+                            <p><a class="tel" href="tel:84952254519"> 8 (495) 225-45-19</a></p>
+                            <p><a class="email" href="mailto:info@lestniz">info@lestniz</a></p>
+                            <p>142715, Московская область, Ленинский район, д.&nbsp;Апаринки, с.1, офис&nbsp;12</p>
+                            <a class="small go_map" href="#">Смотреть на карте</a>
+                        </div>
+                </div>
+
+                <div class="foo_bottom">
+                    <div id="dev"><a href="#"><img src="images/logo_dw.svg" alt="DIGITAL WEB"></a></div>
+                    <div id="copy">Все права защищены 2020</div>
+                </div>
+            </div>
+        </footer>
+	<!-- end подвал -->
+</body>
+</html>

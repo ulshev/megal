@@ -1,3 +1,116 @@
-@media screen and (max-width: 800px) {
-   
+/*start catalog*/
+.title{
+    margin-top: 30px;
+    margin-bottom: 3%;
+    ul{
+        li{
+            display: inline-block;
+
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 16px;
+
+            color: $color_a;
+
+            &.active{
+                opacity: 60%;
+            }
+
+            a:after{
+                    content: "→";
+                    display: inline-block;
+
+                    font-size: 20px;
+
+                    margin-left: 18px;
+                    margin-right: 13px;
+                    color: #13498383;
+                }
+            }
+        }
+    }
 }
+.Seo_text_main{
+    margin-top: 105px;
+    margin-bottom: 120px;
+    .seo_text{
+        display: flex;
+
+        .image{
+            overflow: hidden;
+            width: 50%;
+            height: auto;
+
+            img{
+                object-fit: cover;
+
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+        .content{
+            width: 48%;
+
+            padding:32px 90px 42px;
+        }
+    }
+}
+
+@media screen and (max-width:1100px){
+    .Seo_text_main{
+        .seo_text{
+            .image{
+                width: 50%;
+            }
+    
+            .content{
+                width: 50%;
+    
+                padding: 30px 50px 40px;
+            }
+        }
+    }
+}
+@media screen and (max-width:950px){
+    .Seo_text_main{
+        .seo_text{
+            .image{
+                width: 50%;
+            }
+    
+            .content{
+                width: 50%;
+    
+                padding: 30px 30px 40px;
+            }
+        }
+    }
+}
+@media screen and (max-width:760px){
+    .Seo_text_main{
+        margin-top: 65px;
+        margin-bottom: 60px;
+        .seo_text{
+            .image{
+                display: none;
+            }
+    
+            .content{
+                width: 100%;
+    
+                padding: 0;
+            }
+        }
+    }
+}
+@media screen and (max-width:360px){
+    .title{
+        .breadcrumbs{
+            margin-bottom: 10px;
+        }
+    }
+}
+/*end catalog*/
