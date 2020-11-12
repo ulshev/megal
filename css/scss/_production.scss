@@ -63,7 +63,7 @@
                 max-width: 100%;
                 max-height: 100%;
                 object-fit: contain;
-                opacity: 0.5;
+                //opacity: 0.5;
                 @include transition(all);
             }
         }
@@ -97,51 +97,69 @@
             }
         }
 
+    }
+}
+    
+    
+    
 
-        &:hover, &.active {
-            box-shadow: -10px 10px 20px rgba(19, 73, 131, 0.2);
-            z-index: 1;
-            .img {
-                height: 270px;
-                margin-bottom: 20px;
-            }
 
-            .button {
-                opacity: 1;
+@media screen and (min-width: 1030px) {
+    .production_catalog {
+        .item {
+            &:hover {
+                box-shadow: -10px 10px 20px rgba(19, 73, 131, 0.2);
+                z-index: 1;
+                .img {
+                    height: 270px;
+                    margin-bottom: 20px;
+                }
+
+                .button {
+                    opacity: 1;
+                }
             }
         }
     }
 }
-    
-    
-    
-
-
-@media screen and (min-width: 1400px) {
-    .production_catalog {
-        padding-top: 7px;
-        margin: 0 -10px 40px;
-        display: flex;
-        flex-wrap: wrap;
+@media screen and (max-width: 1300px) {
+	.production_catalog {
+        .item {
+            width: calc(33.33% - 20px);
+        }
     }
-}
-@media screen and (max-width: 1400px) {
-	
 }
 
 @media screen and (max-width: 1030px) {
-	
+    #production .page_width {
+        padding-bottom: 1px;
+    }
+	.production_catalog {
+        margin-bottom: 30px;
+        .item {
+            width: calc(50% - 20px);
+        }
+    }
 }
 
 @media screen and (max-width: 800px) {
 	
-}
-@media screen and (max-width: 800px) {
-    
 }
 
 @media screen and (max-width: 600px) {
-    
+    .production_catalog {
+        .item {
+            width: calc(100% - 20px);
+            height: 310px;
+            .img {
+                height: 270px;
+                margin-bottom: -5px;
+            }
+            h5 {
+                height: auto;
+            }
+        }
+    }
 }
 
 /* end production styles */

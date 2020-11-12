@@ -33,7 +33,7 @@
             object-fit: contain;
         }
 
-        &:hover, &.slick-current {
+        &:hover/*, &.slick-current*/ {
             -webkit-filter: grayscale(0);
             filter: grayscale(0);
         }
@@ -41,20 +41,26 @@
 }
 
 
-// @media screen and (min-width: 1031px) {
+@media screen and (min-width: 1030px) {
     
-// }
+}
 
-// @media screen and (max-width: 1600px) {
+@media screen and (max-width: 1600px) {
     
-// }
+}
 
-// @media screen and (max-width: 1300px) {
+@media screen and (max-width: 1300px) {
     
-// }
-// @media screen and (max-width: 1030px) {
-    
-// }
+}
+@media screen and (max-width: 1030px) {
+    #partners {
+        border-bottom: 0;
+        .page_width {
+            padding-top: 0px;
+            padding-bottom: 24px;
+        }
+    }
+}
 // @media screen and (max-width: 800px) {
     
 // }

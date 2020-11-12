@@ -17,7 +17,7 @@
     .item {
         position: relative;
         box-sizing: border-box;
-        background: #6c7483 no-repeat center / cover;
+        background: #6c7483 no-repeat left center / cover;
         height: 170px;
         padding: 20px 50px 0px;
         margin: 0 10px;
@@ -91,23 +91,86 @@
 @media screen and (min-width: 1400px) {
     
 }
-@media screen and (max-width: 1400px) {
-	
+@media screen and (max-width: 1300px) {
+	.campaigns_slider {
+        .item {
+
+            .button {
+                margin-right: 0;
+            }
+
+        }
+    }
 }
 
+@media screen and (max-width: 1200px) {
+	.campaigns_slider {
+        .slick-list {
+            margin: 0 -75px;
+        }
+        .item { 
+            opacity: 1;
+        }
+    }
+}
 @media screen and (max-width: 1030px) {
-	
+	.campaigns_slider {
+        .item { 
+           flex-wrap: wrap;
+           height: auto;
+           padding-bottom: 45px;
+           .text {
+                width: 500px;
+                padding-bottom: 20px;
+            }
+            .discount {
+                width: 280px;
+            }
+        }
+    }
 }
 
-@media screen and (max-width: 800px) {
-	
+@media screen and (max-width: 900px) {
+	.campaigns_slider {
+        .item { 
+           .text {
+                width: 400px;
+            }
+            .discount {
+                //width: 230px;
+                font-size: 100px;
+            }
+        }
+    }
 }
 @media screen and (max-width: 800px) {
-    
+    .campaigns_slider {
+        .item { 
+           .text {
+                width: 100%;
+            }
+            .discount {
+                display: none;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 600px) {
-    
+    .campaigns_slider {
+        .slick-list {
+            margin: 0 -60px;
+        }
+        .item {
+            background-position: 40% center;
+            .button {
+                min-width: auto;
+            }
+            p {
+                font-size: 16px;
+            }
+        }
+    }
 }
 
 /* end campaigns styles */

@@ -121,18 +121,39 @@
 }
 
 @media screen and (max-width: 1030px) {
-	
+	#projects {
+        .page_width {
+            padding-top: 20px;
+            padding-bottom: 68px;
+        }
+    }
 }
 
 @media screen and (max-width: 800px) {
-	
+	.projects .item {
+        font-size: 14px;
+        height: 425px;
+        .image {
+            height: 330px;
+        }
+    }
 }
-@media screen and (max-width: 800px) {
-    
-}
-
 @media screen and (max-width: 600px) {
-    
+    #projects {
+        .page_width {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .projects .item {
+        height: 350px;
+        .image {
+            height: 250px;
+        }
+    }
 }
 
 /* end projects styles */

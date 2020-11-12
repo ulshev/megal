@@ -14,6 +14,7 @@ footer {
 	clear: both;
 	font-size: 14px;
 	line-height: 20px;
+	font-weight: 400;
 	background-color: $color_a;
 	color: #fff;
 
@@ -50,6 +51,15 @@ footer {
 		margin-bottom: 38px;
 		width: 17%;
 
+		&::after {
+			content: '';
+			position: absolute;
+			left: -50%;
+			bottom: 0;
+			width: 200%;
+			display: none;
+			border-bottom: 1px solid #CFDBE7;
+		}
 	}
 	.foo_menu .container {
 		&:nth-child(1),&:nth-child(2) {
@@ -61,12 +71,7 @@ footer {
 			}
 
 			&::after {
-				content: '';
-				position: absolute;
-				left: -50%;
-				bottom: 0;
-				width: 200%;
-				border-bottom: 1px solid #CFDBE7;
+				display: block;
 			}
 		}
 		&:nth-child(2) {
@@ -87,6 +92,14 @@ footer {
 		float: right;
 		width: 51.5%;
 		margin-top: -19px;
+		a {
+			display: inline-block;
+			overflow: hidden;
+		}
+
+		img {
+			margin: -1px;
+		}
 	}
 
 	.text {
@@ -115,16 +128,111 @@ footer {
 	}
 }
 
-@media screen and (max-width: 1300px) {
-    
+@media screen and (min-width: 1030px) {
+    footer .foo_menu .container:nth-child(1) ul li:nth-child(5) {
+		margin-bottom: 30px;
+	}
 }
 
-@media screen and (max-width: 1100px) {
-    
+@media screen and (max-width: 1300px) {
+    footer .container {
+		width: 18%;
+	}
+	footer .foo_main {
+		width: 44%;
+	}
+	footer .text {
+		width: 44%;
+		margin-right: 5%;
+	}
+	footer #foo_logo {
+		width: 53%;
+	}
 }
 
 @media screen and (max-width: 1030px) {
-    
+    footer {
+		.page_width { 
+			padding-top: 0px;
+		}
+
+		.foo_menu .container {
+			width: 100%;
+			margin-bottom: 0 !important;
+			
+			&::after {
+				display: block;
+			}
+
+			.h4 {
+				padding: 40px 0;
+				margin-bottom: 0;
+
+				&::after {
+					content: '';
+					position: absolute;
+					right: 0;
+					top: 50%;
+					margin-top: -9px;
+					width: 9px;
+					height: 9px;
+					border-left: 2px solid #fff;
+					border-bottom: 2px solid #fff;
+					transform: rotate(-45deg);
+					@include transition(all);
+				}
+			}
+
+			ul {
+				display: none;
+				column-count: 2;
+				column-gap: 22px;
+			}
+
+			&:nth-child(1),&:nth-child(2) {
+				ul {
+					column-count: 2;
+					column-gap: 22px;
+				}
+			}
+
+			&.show {
+				.h4::after {
+					transform: rotate(-225deg);
+				}
+			}
+		}
+
+		.foo_main {
+			padding-top: 40px;
+			float: none;
+			clear: both;
+			width: auto;
+		}
+		#foo_logo {
+			float: right;
+			width: auto;
+			margin-top: 0px;
+		}
+
+		.foo_bottom {
+			text-align: right;
+		}
+
+		.text {
+			width: 39.5%;
+			margin-right: 20%;
+			margin-bottom: 60px;
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+
+		a.go_map {
+			text-decoration: underline;
+		}
+	}
 }
 
 @media screen and (max-width: 800px) {
@@ -132,7 +240,57 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
-    
+    footer {
+		.page_width { 
+			padding-bottom: 30px;
+		}
+		.foo_menu .container {
+
+			.h4 {
+				padding: 25px 0;
+			}
+
+			ul {
+				column-count: auto;
+				column-gap: 0;
+				padding-bottom: 20px;
+			}
+
+			&:nth-child(1),&:nth-child(2) {
+				ul {
+					column-count: auto;
+					column-gap: 0;
+				}
+			}
+		}
+
+		.foo_main {
+			padding-top: 25px;
+		}
+		#foo_logo {
+			margin-top: -10px;
+		}
+
+		.foo_bottom {
+			text-align: center;
+			padding-bottom: 40px;
+
+			#dev {
+				float: none;
+				position: relative;
+				display: inline-block;
+				margin-top: -40px;
+				margin-bottom: -40px;
+				top: 60px;
+			}
+		}
+
+		.text {
+			width: 100%;
+			margin-right: 0;
+			margin-bottom: 25px;
+		}
+	}
 
 }
 // @media screen and (max-width: 500px) {

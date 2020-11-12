@@ -80,6 +80,20 @@ $(document).ready(function() {
 		// 		//e.preventDefault();
 		// 	}
 		// });
+
+		$('.foo_menu .container > .h4').on('click', function(e){
+		    if( !$(this).parent().hasClass('show') ) {
+				$(".foo_menu .container").removeClass('show'); 
+				$(".foo_menu .container").children('ul').slideUp(500);
+				$(this).parent().addClass('show');  
+				$(this).parent().children('ul').slideDown(500);
+				e.preventDefault();
+			}
+			else{
+				$(this).parent().removeClass('show');  
+				$(this).parent().children('ul').slideUp(500);
+			}
+		});
 	};
 
 
@@ -131,7 +145,7 @@ $(document).ready(function() {
 				}
 			},
 			{
-				breakpoint: 1001,
+				breakpoint: 1030,
 				settings: {
 				  slidesToShow: 2,
 				}
