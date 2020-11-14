@@ -96,7 +96,25 @@ $(document).ready(function() {
 		});
 	};
 
-
+	// Проверка заполнености полей формы
+	$('.rf').each(function(){
+		var form = $(this)
+		//form.find('.rfield').addClass('empty_field');
+	
+		function checkInput(){
+		  form.find('.rfield').each(function(){
+			if($(this).val() != ''){
+				$(this).addClass('filled_field');
+			} else {
+				$(this).removeClass('filled_field');
+			}
+		  });
+		}
+		setInterval(function(){
+		  checkInput();
+		},500);
+	});
+	
 	
 
 	

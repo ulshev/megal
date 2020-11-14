@@ -702,49 +702,54 @@
 	
 
     <!-- Форма -->
-	<div class="main_section form_block" id="main_form" style="text-align: center;">
-		<img src="images/main_form.jpg" alt="" style="max-width: 100%;">
-	    <div class="page_width" style="display: none;">
+	<div class="main_section" id="main_form">
+		<div class="image">
+			<img src="images/bg_main_form.jpg" alt="">
+		</div>
+		
+		<div class="page_width">
+			<div class="form_block">
 			<h2>Остались вопросы?</h2>
             <p>Вы можете оставить свои контактные данные, и наш менеджер свяжется с вами для ответа на все вопросы</p>
-            <form enctype="multipart/form-data" action="" method="post" class="gUniForm">
-				<div class="uFormLine input_text">
-					<input id="name" class="name" name="name" type="text" value="">
+            <form enctype="multipart/form-data" action="" method="post" class="rf">
+				<div class="input_text">
+					<input id="name" class="rfield name" name="name" type="text" value="">
 					<label for="name">Имя</label>
 					<div class="uError"></div>
 				</div>
-				<div class="uFormLine input_text">
-					<input id="email" class="email" name="email" type="text" value=""> 
+				<div class="input_text">
+					<input id="email" class="rfield email" name="email" type="text" value=""> 
 					<label for="email">Email*</label>
 					<div class="uError"></div>
 				</div>
-				<div class="uFormLine input_text">
-					<input id="phone" class="phone" name="phone" type="text" value="">
+				<div class="input_text">
+					<input id="phone" class="rfield phone" name="phone" type="text" value="">
 					<label for="phone">Телефон</label>
 					<div class="uError"></div>
 				</div>
-				<div class="uFormLine textarea">
-					<textarea id="message" class="message" name="message"></textarea>
+				<div class="textarea">
+					<textarea id="message" class="rfield message" name="message"></textarea>
 					<label for="message">Вопрос</label>
 					<div class="uError"></div>
 				</div>
-				<div class="uFormLine input_personal_info">
-					<input type="checkbox" id="personal_info1" name="personalInfo" data-required="Y" value="Y">
-					<label for="personal_info1">Даю согласие на обработку персональных данных, в соответствии с условиями <a href="/personal-info/" target="_blank" rel="nofollow noopener">политики конфиденциальности и пользовательского соглашения</a></label>
+				<div class="input_personal_info">
+					<input type="checkbox" id="personal_info_main" name="personalInfo" data-required="Y" value="Y">
+					<label for="personal_info_main">Даю согласие на обработку персональных данных, в соответствии с условиями <a href="/personal-info/" target="_blank" rel="nofollow noopener">политики конфиденциальности и пользовательского соглашения</a></label>
 				</div>
-				<div class="uFormLine input_file">
-					<div class="uError"></div>
+				<div class="input_file">
 					<input id="file" type="file" value="">
-					<label class="button btn_white file" for="file">Прикрепить файл</label>
+					<label class="button btn_invert file" for="file">Прикрепить файл</label>
+					<div class="uError"></div>
 				</div>
 				<div class="uformTools">
 					<div class="uFormButton">
-						<button type="submit" name="web_form_submit" class="uFormSubmit button button-red" value="Отправить">Отправить</button>
+						<button type="submit" name="web_form_submit" class="button" value="Отправить">Отправить данные</button>
 					</div>
 				</div>
-				<div class="uFormGlobalErrors"></div>
+				<div class="errors"></div>
 				 
 			</form>
+			</div>
 	    </div>	
 	</div>
 	<!-- end Форма -->
