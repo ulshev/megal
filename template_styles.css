@@ -3479,11 +3479,12 @@ footer #dev {
 .text_and_image {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   margin-bottom: 100px;
 }
 .text_and_image .image {
   overflow: hidden;
-  width: 50%;
+  width: 45%;
   height: auto;
 }
 .text_and_image .image img {
@@ -3503,8 +3504,9 @@ footer #dev {
 }
 .text_and_image .text {
   box-sizing: border-box;
-  width: 48%;
-  padding: 32px 90px 42px;
+  width: calc(50% - 100px);
+  /*padding:32px 90px 42px 90px;*/
+  padding: 32px 0;
   order: 1;
 }
 .text_and_image .midway_button {
@@ -3526,10 +3528,6 @@ footer #dev {
     display: block;
     width: 100%;
   }
-  .text_and_image .text {
-    width: 50%;
-    padding: 30px 50px 40px;
-  }
   .text_and_image .text_2_v {
     width: 100%;
     order: 2;
@@ -3540,32 +3538,39 @@ footer #dev {
   }
 }
 @media screen and (max-width: 950px) {
-  .text_and_image .text {
-    width: 50%;
-    padding: 30px 30px 40px;
+  .text_and_image {
+    margin-bottom: 30px;
   }
-  .text_and_image .text_2_v {
-    width: 100%;
-  }
-}
-@media screen and (max-width: 760px) {
-  #small_form + .content {
-    margin-top: 65px;
-    margin-bottom: 60px;
-  }
-
   .text_and_image .image {
-    display: none;
-  }
-  .text_and_image .contain {
-    display: block;
     width: 100%;
   }
   .text_and_image .text {
     width: 100%;
-    padding: 0;
+    order: 2;
   }
 }
+/*@media screen and (max-width:760px){
+    #small_form + .content{
+        margin-top: 65px;
+        margin-bottom: 60px;
+    }
+    .text_and_image{
+        .image{
+            display: none;
+        }
+
+        .contain{
+            display: block;
+            width: 100%;
+        }
+
+        .text{
+            width: 100%;
+
+            padding: 0;
+        }
+    }
+}*/
 @media screen and (max-width: 360px) {
   .title .breadcrumbs {
     margin-bottom: 10px;
@@ -3832,7 +3837,7 @@ footer #dev {
 /*end Mission and strategy*/
 /*Start certificates*/
 .guarantee_min {
-  background-color: aqua;
+  background-color: #EEF5F9;
   padding: 60px 0 80px;
   margin-bottom: 80px;
 }
@@ -3887,7 +3892,7 @@ footer #dev {
   margin-top: 20px;
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1526px) {
   .big_block .item {
     height: 300px;
   }
@@ -3900,4 +3905,87 @@ footer #dev {
     text-align: center;
   }
 }
+@media screen and (max-width: 1230px) {
+  .lit_block .item p {
+    width: 60%;
+  }
+
+  .big_block .item img {
+    margin: 0 10px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .lit_block .item {
+    width: 80%;
+    margin-left: auto;
+    margin-bottom: 20px;
+  }
+  .lit_block .item p {
+    width: 60%;
+  }
+
+  .big_block .item {
+    width: 60%;
+    height: 260px;
+    margin: 10px auto;
+  }
+}
+@media screen and (max-width: 760px) {
+  .lit_block .item {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .lit_block .item p {
+    width: 70%;
+  }
+
+  .big_block .item {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 518px) {
+  .lit_block .item {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .lit_block .item p {
+    width: 70%;
+  }
+
+  .big_block .item {
+    width: 100%;
+    padding: 30px 15px 0;
+  }
+}
+@media screen and (max-width: 450px) {
+  .lit_block .item {
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .lit_block .item .image {
+    margin: 0 auto 20px;
+  }
+  .lit_block .item p {
+    width: 100%;
+  }
+
+  .big_block .item {
+    height: 300px;
+    padding: 30px 15px 0;
+  }
+}
+@media screen and (max-width: 321px) {
+  .big_block .item {
+    height: 320px;
+  }
+}
+/*.wrapper {
+    background-image: url(images/site.jpg);
+    background-repeat: no-repeat;
+    background-position: top 1000px center;
+}*/
 /*End certificates*/

@@ -41,11 +41,12 @@
 .text_and_image{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     margin-bottom: 100px;
 
     .image{
         overflow: hidden;
-        width: 50%;
+        width: 45%;
         height: auto;
 
         img{
@@ -71,8 +72,9 @@
 
     .text{
         box-sizing: border-box;
-        width: 48%;
-        padding:32px 90px 42px;
+        width: calc(50% - 100px);
+        /*padding:32px 90px 42px 90px;*/
+        padding: 32px 0 ;
         order: 1;
     }
     .midway_button{
@@ -95,12 +97,6 @@
             width: 100%;
         }
 
-        .text{
-            width: 50%;
-
-            padding: 30px 50px 40px;
-        }
-
         .text_2_v{
             width: 100%;
             order: 2;
@@ -115,19 +111,17 @@
 }
 @media screen and (max-width:950px){
     .text_and_image{
-
-        .text{
-            width: 50%;
-
-            padding: 30px 30px 40px;
-        }
-
-        .text_2_v{
+        margin-bottom: 30px;
+        .image{
             width: 100%;
+        }
+        .text{
+            width: 100%;
+            order: 2;
         }
     }
 }
-@media screen and (max-width:760px){
+/*@media screen and (max-width:760px){
     #small_form + .content{
         margin-top: 65px;
         margin-bottom: 60px;
@@ -148,7 +142,7 @@
             padding: 0;
         }
     }
-}
+}*/
 @media screen and (max-width:360px){
     .title{
         .breadcrumbs{
@@ -473,7 +467,7 @@
 /*Start certificates*/
 
 .guarantee_min{
-    background-color: aqua;
+    background-color: $color_bg;
     padding: 60px 0 80px;
     margin-bottom: 80px;
 }
@@ -538,7 +532,7 @@
 }
 
 
-@media screen and (max-width:1440px){
+@media screen and (max-width:1526px){
     .big_block .item{
         height: 300px;
     }
@@ -554,4 +548,87 @@
         }
     }
 }
+@media screen and (max-width:1230px){
+    .lit_block .item{
+        p{
+            width: 60%;
+        }
+    }
+    .big_block .item{
+        img{
+            margin: 0 10px;
+        }
+    }
+}
+@media screen and (max-width:1024px){
+    .lit_block .item{
+        width: 80%;
+        margin-left: auto;
+        margin-bottom: 20px;
+        p{
+            width: 60%;
+        }
+    }
+    .big_block .item{
+        width: 60%;
+        height: 260px;
+        margin: 10px auto;
+    }
+}
+@media screen and (max-width:760px){
+    .lit_block .item{
+        margin-left: auto;
+        margin-right: auto;
+        p{
+            width: 70%;
+        }
+    }
+    .big_block .item{
+        width: 90%;
+    }
+}
+@media screen and (max-width:518px){
+    .lit_block .item{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        p{
+            width: 70%;
+        }
+    }
+    .big_block .item{
+        width: 100%;
+        padding: 30px 15px 0;
+    }
+}
+@media screen and (max-width:450px){
+    .lit_block .item{
+        flex-wrap: wrap;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        .image{
+            margin: 0 auto 20px ;
+        }
+        p{
+            width: 100%;
+        }
+    }
+    .big_block .item{
+        height: 300px;
+        padding: 30px 15px 0;
+    }
+}
+@media screen and (max-width:321px){
+    .big_block .item{
+        height: 320px;
+    }
+}
+
+/*.wrapper {
+    background-image: url(images/site.jpg);
+    background-repeat: no-repeat;
+    background-position: top 1000px center;
+}*/
 /*End certificates*/
