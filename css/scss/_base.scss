@@ -581,6 +581,7 @@ ul.slick-dots {
 
 .text {
     ul {
+        counter-reset: ol_ounter;
 		margin-bottom: 40px;
 		padding-top: 4px;
 		margin-left: -5px;
@@ -594,26 +595,56 @@ ul.slick-dots {
 			
 			&:before {
 				content: '';
-				position: absolute;
-				left: 0;
-				top: 1px;
-				width: 15px;
-				height: 10px;
-				border-left: 2px solid #530000;
-				border-bottom: 2px solid #530000;
-				transform: rotate(-45deg);
-                //background: url(images/ol_bg.png) no-repeat left 5px / 100% auto; 
+                width: 20px;
+                height: 10px;
+                background-image: url(images/icon_li.png);
+                background-repeat: no-repeat;
+                position: absolute;
+                left: 0;
+                top: 1px;
 			}
-		}
+        }
+        
+        ol {
+            list-style-type: none;
+            padding: 0px 0 0px 40px;
+			margin-bottom: 20px;
+			margin-left: 4px;
+            position: relative;
+            
+            &::before{
+                counter-increment: ol_ounter;
+                content: counter(ol_ounter);
+    
+                font-weight: 600;
+                font-size: 40px;
+                color: $color_h;
+                line-height: 100%;
+
+                position: absolute;
+                left: 0;
+            } 
+        }
 	}
 	
-	ol {
-		counter-reset: ol_ounter;
-		list-style-type: none;
-		margin: 0;
-		padding: 0 0 35px;
+	/*ol {
+        counter-reset: ol_ounter;
+        /*counter-reset: bold_numbers;*/
+		//list-style-type: none;
+		//margin: 0 0 0 20px;
+        //padding: 0 0 35px;
+        
+        /*&::before{
+            counter-increment: ol_ounter;
+            content: counter(ol_ounter);
 
-		li {
+            font-weight: 600;
+            font-size: 40px;
+            color: $color_h;
+            line-height: 100%;
+        }*/
+
+		/*li {
 			//margin-bottom: 10px;
 			position: relative;
 			padding: 0px 0 0px 0px;
@@ -628,7 +659,7 @@ ul.slick-dots {
 				// height: 40px;
 				// border-radius: 50%;
 				counter-increment: ol_ounter;
-				content:counter(ol_ounter)". ";
+                content:counter(ol_ounter)". ";
 				// font-weight: bold;
 				// font-size: 18px;
 				// line-height: 40px;
@@ -636,6 +667,10 @@ ul.slick-dots {
 				// text-align: center;
 			}
 		}
+    }*/
+
+    .button{
+        margin-top: 50px;
     }
 }
 
