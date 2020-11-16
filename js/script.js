@@ -115,7 +115,17 @@ $(document).ready(function() {
 		},500);
 	});
 	
-	
+	$('.catalog_filter .filter_fieldset .heading').on('click', function(){
+		if( $(this).parent().hasClass('show') ) {
+			$(this).parent().removeClass('show');  
+			$(this).parent().children('.filter_block').slideUp(500);
+		} else {
+			$(".filter_fieldset").removeClass('show');  
+			$('.filter_block').slideUp(500);
+			$(this).parent().addClass('show');  
+			$(this).parent().children('.filter_block').slideDown(500);
+		}
+	});
 
 	
 	// animation
