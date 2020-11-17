@@ -626,9 +626,238 @@
     }
 }
 
+/*End certificates*/
+
+/*Start Contacts*/
+
+.map_and_contacts{
+    display: flex;
+    margin-top: 60px;
+
+    .text_contacts{
+        width: 35%;
+        padding-right: 55px;
+
+        .item{
+            margin-bottom: 30px;
+
+            a{
+                font-weight: 500;
+                position: relative;
+            }
+
+            &:last-child a::after{
+                content: url(images/icon_download.svg);
+                position: absolute;
+                right: -25px;
+                top: 50%;
+                margin-top: -7px;
+
+            }
+        }
+        .contact_titles{
+            color: $color_text_alt;
+        }
+    }
+    iframe{
+        width: 65%;
+
+        border: none;
+    }
+}
+
+.table_block{
+    padding-bottom: 70px;
+    
+    margin-top: 100px;
+
+    border-bottom: #BECAD3 1px solid;
+
+    overflow: auto;
+
+    table{
+        width: 100%;
+        min-width: 760px;
+    
+        tr{
+            height: 77px;
+            padding-left: 20px;
+    
+            &:first-child{
+                border-bottom: 1px solid #BECAD3;
+            }
+            &:nth-child(2n+3){
+                background-color: $color_bg;
+            }
+    
+            td{
+                padding: 0 50px;
+            }
+    
+            th{
+                text-align: left;
+                padding: 0 50px;
+    
+                font-weight: 500;
+                font-size: 14px;
+                color: $color_text_alt;
+            }
+        }
+    }
+}
+
+.road_and_time{
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-bottom: 100px;
+    margin-top: 100px;
+
+    .road_block{
+        width: 40%;
+
+        img{
+            width: 100%;
+        }
+
+        p{
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: 14px;
+            color: $color_a;
+
+            margin: 20px 0 10px;
+        }
+
+        .button::after{
+            content: none;
+        }
+    }
+
+    .time_block{
+        width: 30%;
+        margin-left: 270px;
+        table{
+            width: 100%;
+
+           
+            th{
+                font-weight: normal;
+                font-size: 22px;
+                color: $color_text_alt;
+                text-align: left;
+                padding-bottom: 20px;
+            }
+
+            td{
+                padding-bottom: 15px;
+            }
+            tr:nth-child(2){
+                border-bottom: 1px solid #BECAD3;
+
+                td{
+                    padding-bottom: 40px;
+                }
+            }
+            tr:nth-child(2),
+            tr:nth-child(4){
+                td:nth-child(3){
+                    color: $color_text_alt;
+                }
+            }
+
+            tr:nth-child(3){
+                th{
+                    padding-top: 40px;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:1200px){
+    .road_and_time{
+        justify-content: space-between;
+        .road_block{
+            width: calc(50% - 50px);
+        }
+        .time_block {
+            width: calc(50% - 50px);
+            margin-left: 0;
+        }
+    }
+}
+@media screen and (max-width:1100px){
+    .table_block table tr{
+        height: 110px;
+    }
+}
+@media screen and (max-width:990px){
+    .table_block table tr{
+        height: 130px;
+
+        td{
+            padding: 0 20px;
+        }
+    }
+}
+@media screen and (max-width:792px){
+    .map_and_contacts{
+        .text_contacts{
+            width: 60%;
+        }
+
+        iframe{
+            width: 40%;
+        }
+    }
+
+    .road_and_time{
+        .road_block{
+            width: 80%;
+
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .time_block {
+            width: 80%;
+
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 60px;
+        }
+    }
+}
+@media screen and (max-width:618px){
+    .road_and_time{
+        .road_block{
+            width: 100%;
+        }
+        .time_block {
+            width: 100%;
+        }
+    }
+}
+@media screen and (max-width:542px){
+    .map_and_contacts{
+        flex-wrap: wrap;
+        .text_contacts{
+            width: 100%;
+            order: 2;
+            padding-right: 0px;
+        }
+
+        iframe{
+            width: 100%;
+            order: 1;
+            margin-bottom: 20px;
+        }
+    }
+}
+/* End Contacts*/
+
 /*.wrapper {
     background-image: url(images/site.jpg);
     background-repeat: no-repeat;
-    background-position: top 1000px center;
 }*/
-/*End certificates*/
