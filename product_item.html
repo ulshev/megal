@@ -299,186 +299,318 @@
                         <ul>
                             <li><a href="index.html">Главная</a></li>
                             <li><a href="catalog.html">Продукция</a></li>
-                            <li><a href="#">Алюминиевые лестницы</a></li>
-                            <li class="active">Лестницы приставные</li>
+                            <li><a href="#">Лестницы приставные</a></li>
+                            <li class="active">Вышка модульная алюминиевая ВМА 700 до 12 м</li>
                         </ul>
                     </div>
 
-                    <h1>Продукция</h1>
+                    <h1>Вышка модульная алюминиевая ВМА 700 до 12 м</h1>
                 </div>
             </div>
         <!--end название-->
 
-
-        <!-- Баннеры -->
-        <div class="main_section" id="campaigns">
-            <div class="page_width">
-                <div class="campaigns_slider">
-                    <div class="item" style="background-image: url(images/bg_campaigns.jpg);">
-                        <div class="text">
-                            <h2>Распродажа складских позиций <time>до 31.07.2020</time></h2>
-                            <p>Скидки до -30% на Телескопическую лестницу-платформу</p>
-                        </div>
-                        <div class="discount">-30%</div>
-                        <a class="button btn_invert" href="#">Заказать</a>
-                    </div>
-                    <div class="item" style="background-image: url(images/bg_campaigns.jpg);">
-                        <div class="text">
-                            <h2>Распродажа складских позиций <time>до 31.07.2020</time></h2>
-                            <p>Скидки до -30% на Телескопическую лестницу-платформу</p>
-                        </div>
-                        <div class="discount">-30%</div>
-                        <a class="button btn_invert" href="#">Заказать</a>
-                    </div>
-                    <div class="item" style="background-image: url(images/bg_campaigns.jpg);">
-                        <div class="text">
-                            <h2>Распродажа складских позиций <time>до 31.07.2020</time></h2>
-                            <p>Скидки до -30% на Телескопическую лестницу-платформу</p>
-                        </div>
-                        <div class="discount">-30%</div>
-                        <a class="button btn_invert" href="#">Заказать</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- end баннеры -->
-
-        <!-- Продукция -->
+        <!-- Контент -->
         <main class="content">
             <div class="page_width">
-                <div class="catalog_filter">
-                    <div class="filter_fieldset">
-                        <div class="heading">Габаритная высота<span class="value">: от 1 до 9 м</span><span class="delete">+</span></div>
-                        <div class="filter_block">
-                            <div class="h5">Габаритная высота, м</div>
-                            <form>
-                                <div class="range_slide">
-                                    <div class="range_values">
-                                        <div class="range_values_item"><label for="amount-min-height">От</label>
-                                        <input type="text" id="amount-min-height" readonly></div>
-                                        <div class="minus">-</div>
-                                        <div class="range_values_item"><label for="amount-max-height">До</label>
-                                        <input type="text" id="amount-max-height" readonly></div>
-                                    </div>
-                                       
-                                    <div class="range_block">
-                                        <div id="slider-range-height"></div>
-                                    </div>
-                                    <script type="text/javascript">
-                                        $(function(){
-                                            $( "#slider-range-height" ).slider({
-                                                range: true,
-                                                min: 1.5,
-                                                max: 12,
-                                                step: 0.5,
-                                                values: [ 1.5, 10 ],
-                                                slide: function( event, ui ) {
-                                                $( "#amount-min-height" ).val( ui.values[ 0 ] );
-                                                $( "#amount-max-height" ).val( ui.values[ 1 ] );
-                                                }
-                                            });
-                                            $( "#amount-min-height" ).val( $( "#slider-range-height" ).slider( "values", 0 ) );
-                                            $( "#amount-max-height" ).val( $( "#slider-range-height" ).slider( "values", 1 ) );
-                                        });
-                                    </script>
-                                </div>
-                                <div class="buttons">
-                                    <input class="button" type="submit" value="Применить">
-                                    <input class="button" type="reset" value="Сбросить">
-                                </div>
-                            </form>
+                <div class="product_images">
+                    <div class="novelty">new</div>
+                    <div class="sale">-30%</div>
+                    <div class="main_slider">
+                        <div class="item">
+                            <a data-fancybox="gallery" href="images/catalog_section1.png"><img src="images/catalog_section1.png" alt=""></a>
+                        </div>
+                        <div class="item video">
+                            <a data-fancybox="gallery" href="images/catalog_section2.png"><img src="images/project_image5.png" alt=""></a>
+                        </div>
+                        <div class="item">
+                            <a data-fancybox="gallery" href="images/catalog_section3.png"><img src="images/catalog_section3.png" alt=""></a>
+                        </div>
+                        <div class="item">
+                            <a data-fancybox="gallery" href="images/catalog_section4.png"><img src="images/catalog_section4.png" alt=""></a>
+                        </div>
+                        <div class="item">
+                            <a data-fancybox="gallery" href="images/catalog_section5.png"><img src="images/catalog_section5.png" alt=""></a>
+                        </div>
+                        <div class="item">
+                            <a data-fancybox="gallery" href="images/catalog_section6.png"><img src="images/catalog_section6.png" alt=""></a>
                         </div>
                     </div>
-
-                    <div class="filter_fieldset">
-                        <div class="heading">Масса<span class="value">: от 0 до 15 кг</span><span class="delete">+</span></div>
-                        <div class="filter_block">
-                            <div class="h5">Масса, кг</div>
-                            <form>
-                                <div class="range_slide">
-                                    <div class="range_values">
-                                        <div class="range_values_item"><label for="amount-min-weight">От</label>
-                                        <input type="text" id="amount-min-weight" readonly></div>
-                                        <div class="minus">-</div>
-                                        <div class="range_values_item"><label for="amount-max-weight">До</label>
-                                        <input type="text" id="amount-max-weight" readonly></div>
-                                    </div>
-                                       
-                                    <div class="range_block">
-                                        <div id="slider-range-weight"></div>
-                                    </div>
-                                    <script type="text/javascript">
-                                        $(function(){
-                                            $( "#slider-range-weight" ).slider({
-                                                range: true,
-                                                min: 5,
-                                                max: 15,
-                                                step: 1,
-                                                values: [ 5, 10 ],
-                                                slide: function( event, ui ) {
-                                                $( "#amount-min-weight" ).val( ui.values[ 0 ] );
-                                                $( "#amount-max-weight" ).val( ui.values[ 1 ] );
-                                                }
-                                            });
-                                            $( "#amount-min-weight" ).val( $( "#slider-range-weight" ).slider( "values", 0 ) );
-                                            $( "#amount-max-weight" ).val( $( "#slider-range-weight" ).slider( "values", 1 ) );
-                                        });
-                                    </script>
-                                </div>
-                                <div class="buttons">
-                                    <input class="button" type="submit" value="Применить">
-                                    <input class="button" type="reset" value="Сбросить">
-                                </div>
-                            </form>
-                        </div>
+                    <div class="preview_slider">
+                        <div class="item"><img src="images/catalog_section1.png" alt=""></div>
+                        <div class="item video"><img src="images/project_image5.png" alt=""></div>
+                        <div class="item"><img src="images/catalog_section3.png" alt=""></div>
+                        <div class="item"><img src="images/catalog_section4.png" alt=""></div>
+                        <div class="item"><img src="images/catalog_section5.png" alt=""></div>
+                        <div class="item"><img src="images/catalog_section6.png" alt=""></div>
                     </div>
-
-                    <div class="filter_fieldset selected"><!-- по умолчанию .value и .delete скрыты, а при добавлении класса .selected к родителю, .value и .delete появляются -->
-                        <div class="heading">Цена<span class="value">: от 5 000 до 50 000 ₽ </span><span class="delete">+</span></div>
-                        <div class="filter_block">
-                            <div class="h5">Цена, ₽</div>
-                            <form>
-                                <div class="range_slide">
-                                    <div class="range_values">
-                                        <div class="range_values_item"><label for="amount-min-price">От</label>
-                                        <input type="text" id="amount-min-price" readonly></div>
-                                        <div class="minus">-</div>
-                                        <div class="range_values_item"><label for="amount-max-price">До</label>
-                                        <input type="text" id="amount-max-price" readonly></div>
-                                    </div>
-                                       
-                                    <div class="range_block">
-                                        <div id="slider-range-price"></div>
-                                    </div>
-                                    <script type="text/javascript">
-                                        $(function(){
-                                            $( "#slider-range-price" ).slider({
-                                                range: true,
-                                                min: 5000,
-                                                max: 130000,
-                                                step: 1000,
-                                                values: [ 5000, 100000 ],
-                                                slide: function( event, ui ) {
-                                                $( "#amount-min-price" ).val( ui.values[ 0 ] );
-                                                $( "#amount-max-price" ).val( ui.values[ 1 ] );
-                                                }
-                                            });
-                                            $( "#amount-min-price" ).val( $( "#slider-range-price" ).slider( "values", 0 ) );
-                                            $( "#amount-max-price" ).val( $( "#slider-range-price" ).slider( "values", 1 ) );
-                                        });
-                                    </script>
-                                </div>
-                                <div class="buttons">
-                                    <input class="button" type="submit" value="Применить">
-                                    <input class="button" type="reset" value="Сбросить">
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-
-                    <div class="clear"><span class="delete">+</span> Очистить фильтр</div>
                 </div>
-                <div class="products">
+
+                <div class="description tabs_container">
+                    <div class="tab_buttons">
+                        <span class="tab_but active">Характеристики</span>
+                        <span class="tab_but">Описание</span>
+                        <span class="tab_but">Преимущества</span>
+                        <span class="tab_but">Доставка</span>
+                        <span class="tab_but">Документация</span>									
+                    </div>
+                    <div class="tab active">
+                        <h3 class="mob">Характеристики</h3>
+                        <div class="text">
+                            <p class="made">Производитель <img src="images/logo.png" alt="Мегал"></p>
+                            <div class="char_row">
+                                <div class="cell">Материал</div>
+                                <div class="cell">Алюминий</div>
+                            </div>
+                            <div class="char_row">
+                                <div class="cell">Стандарт</div>
+                                <div class="cell">ГОСТ 24258-88</div>
+                            </div>
+                            <div class="char_row">
+                                <div class="cell">Назначение</div>
+                                <div class="cell">Подъем, организация рабочего места на высоте в строительно-монтажных, ремонтных и прочих работах</div>
+                            </div>
+                            <div class="char_row">
+                                <div class="cell">Грузоподъемность</div>
+                                <div class="cell">200 кг/м2 (280 кг на настил)</div>
+                            </div>
+                            <div class="char_row">
+                                <div class="cell">Размер настила</div>
+                                <div class="cell">2,0 х 0,7 м</div>
+                            </div>
+                            <div class="char_row">
+                                <div class="cell">Высота рабочей площадки</div>
+                                <div class="cell">от 1,1м до 10,3 м</div>
+                            </div>
+                            <div class="char_row">
+                                <div class="cell">Габаритная высота</div>
+                                <div class="cell">от 2,1 до 11,3 м</div>
+                            </div>
+                            <div class="char_row">
+                                <div class="cell">Высота рабочей зоны</div>
+                                <div class="cell">от 3,1 до 12,3 м</div>
+                            </div>
+                            <p>Если вы ищете вышку большей высоты, рекомендуем ознакомиться с моделью  <a href="#">ВМА до 22м</a></p>
+                        </div>
+                    </div>
+                    <div class="tab">
+                        <h3 class="mob">Описание</h3>
+                        <div class="text">
+                            <ul>
+                                <li>Вышка собирается из 2-х метровых и 1 метровых вертикальных рам</li>
+                                <li>Рамы стыкуются между собой крепежными скобами</li>
+                                <li>Все ступени рам выполнены из рифленого профиля</li>
+                                <li>Используются диагональные и горизонтальные связи (стяжки)</li>
+                                <li>Рабочая площадка размером 2,0 х 0,7м с люком</li>
+                                <li>Количество рабочих площадок от 1 до 3, в зависимости от модели</li>
+                                <li>Вышки габаритной высотой более 5 метров оснащены консолями-стабилизаторами</li>
+                                <li>Количество консолей от 2 до 4, в зависимости от модели</li>
+                                <li>Монтируются на узком или широком основании, в зависимости от модели</li>
+                                <li>Все вышки оснащены поворотными колесами со стопорами, регулируемыми по высоте</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="tab">
+                        <h3 class="mob">Преимущества</h3>
+                        <div class="text">
+                            <p><strong>Сборка без инструментов</strong> за счет наличия замкового крепления элементов</p>
+                            <p><strong>Легкий вес</strong> за счет использования алюминиевых сплавов</p>
+                            <p><strong>Безопасный подъем</strong> за счет использования нескользящих рифленых перекладин в рамах</p>
+                            <p><strong>Комфорт.</strong> Рабочая площадка позволяет с удобством расположиться двух рабочих с инструментом</p>
+                            <p><strong>Максимальная грузоподъемность</strong> за счет использования труб и профилей со стенкой не менее 2,5мм</p>
+                            <p><strong>Долговечность</strong> благодаря использованию влагостойой нескользящей фанера на площадках</p>
+                            <p><strong>Максимальный срок службы</strong> достигнут благодаря коррозионностойким свойствам алюминиевых сплавов</p>
+                            <p><strong>Компенсация неровной поверхности</strong> возможна за счет наличия винтовых опор, регулируемых высоте</p>
+                            <p><strong>Мобильность</strong> за счет наличия высокопрочных поворотных колес со стопорами</p>
+                        </div>
+                    </div>
+                    <div class="tab">
+                        <h3 class="mob">Доставка</h3>
+                        <div class="text">
+                            <p>Все наши вышки разборные. В зависимости от высоты, вышка упаковывается в несколько транспортных мест. Наш склад старается сделать это максимально компактно, чтобы вы сэкономили денежные средства на перевозке.<br>
+                            Мы осуществляем доставку в любую точку России и Мира.<br>
+                            Вы можете заказать нашу продукцию, обратившись:<br>
+                            - в главный офис в Санкт-Петербурге;<br>
+                            - в наше представительство в Москве;<br>
+                            - узнать о возможности заказа в региональных представительствах.<br>
+                            Контакты региональных представительств можно узнать у менеджеров по продажам, обратившись по телефону: <a href="tel:+78124485404">+7 (812) 448-54-04</a></p>
+                            <div class="delivery_block">
+                                <div class="item">
+                                    <div class="icon">
+                                        <img src="images/icon_storage.svg" alt="">
+                                    </div>
+                                    <p>Самовывоз со склада ул. Профессора Качалова, 11 лит. К</p>
+                                </div>
+                                <div class="item">
+                                    <div class="icon">
+                                        <img src="images/icon_courier.svg" alt="">
+                                    </div>
+                                    <p>Адресная доставка по городу и области</p>
+                                </div>
+                                <div class="item">
+                                    <div class="icon">
+                                        <img src="images/icon_to_terminal.svg" alt="">
+                                    </div>
+                                    <p>До терминала транспортной компании</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab">
+                        <h3 class="mob">Документация</h3>
+                        <div class="text">
+                            <p>Вышка поставляется со следующими документами<br>
+                                - паспорт с отметкой ОТК<br>
+                                - инструкция по эксплуатации<br>
+                                - заверенная копия сертификата соответствия<br>
+                                Внимание! Все паспорта бренда «MEGAL» снабжены оригинальными голограммами. Голограмма располагается на титульной странице паспорта и гарантирует подлинность товара.</p>
+                            <div class="documents_box">
+                                <a href="#" class="download">Паспорт</a>
+                                <a href="#" class="download">Инструкция по сборке</a>
+                                <a href="#" class="download">Инструкция по эксплутации</a>
+                                <a href="#" class="download">Страница из каталога</a>
+                                <a href="#" class="download">Паспорт</a>
+                                <a href="#" class="download">Инструкция по сборке</a>
+                                <a href="#" class="download">Инструкция по эксплутации</a>
+                                <a href="#" class="download">Страница из каталога</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="product_price">от <span class="big">100 000</span> до <span class="big">170 000 ₽</span></div>
+                <div class="buttons"><a class="button" href="#">Узнать точную цену</a></div>
+
+
+                <div class="available_options">
+                    <h3>Доступные варианты:</h3>
+                    <div class="table">
+                    <table>
+                        <tr>
+                            <th>Тип</th>
+                            <th>Высота рабочей площадки, м</th>
+                            <th>Габаритная высота, м</th>
+                            <th>Высота рабочей зоны, м</th>
+                            <th>Масса, кг</th>
+                            <th>Высота рабочей зоны, м</th>
+                            <th>Масса, кг</th>
+                            <th>Заказать</th>
+                        </tr>
+                        <tr>
+                            <td><a data-fancybox="available_options" href="images/catalog_section1.png" data-caption="ВМА 700/3">ВМА 700/3</a></td>
+                            <td>1,1</td>
+                            <td>2,1</td>
+                            <td>3,1</td>
+                            <td>56</td>
+                            <td>3,1</td>
+                            <td>56</td>
+                            <td><a herf="#">В корзину</a></td>
+                        </tr>
+                        <tr>
+                            <td><a data-fancybox="available_options" href="images/catalog_section1.png" data-caption="ВМА 700/4">ВМА 700/4</a></td>
+                            <td>1,1</td>
+                            <td>2,1</td>
+                            <td>3,1</td>
+                            <td>56</td>
+                            <td>3,1</td>
+                            <td>56</td>
+                            <td><a herf="#">В корзину</a></td>
+                        </tr>
+                        <tr>
+                            <td><a data-fancybox="available_options" href="images/catalog_section1.png" data-caption="ВМА 700/5">ВМА 700/5</a></td>
+                            <td>1,1</td>
+                            <td>2,1</td>
+                            <td>3,1</td>
+                            <td>56</td>
+                            <td>3,1</td>
+                            <td>56</td>
+                            <td><a herf="#">В корзину</a></td>
+                        </tr>
+                        <tr>
+                            <td><a data-fancybox="available_options" href="images/catalog_section1.png" data-caption="ВМА 700/6">ВМА 700/6</a></td>
+                            <td>1,1</td>
+                            <td>2,1</td>
+                            <td>3,1</td>
+                            <td>56</td>
+                            <td>3,1</td>
+                            <td>56</td>
+                            <td><a herf="#">В корзину</a></td>
+                        </tr>
+                        <tr>
+                            <td><a data-fancybox="available_options" href="images/catalog_section1.png" data-caption="ВМА 700/7">ВМА 700/7</a></td>
+                            <td>1,1</td>
+                            <td>2,1</td>
+                            <td>3,1</td>
+                            <td>56</td>
+                            <td>3,1</td>
+                            <td>56</td>
+                            <td><a herf="#">В корзину</a></td>
+                        </tr>
+                        <tr>
+                            <td><a data-fancybox="available_options" href="images/catalog_section1.png" data-caption="ВМА 700/8">ВМА 700/8</a></td>
+                            <td>1,1</td>
+                            <td>2,1</td>
+                            <td>3,1</td>
+                            <td>56</td>
+                            <td>3,1</td>
+                            <td>56</td>
+                            <td><a herf="#">В корзину</a></td>
+                        </tr>
+                        <tr>
+                            <td><a data-fancybox="available_options" href="images/catalog_section1.png" data-caption="ВМА 700/9">ВМА 700/9</a></td>
+                            <td>1,1</td>
+                            <td>2,1</td>
+                            <td>3,1</td>
+                            <td>56</td>
+                            <td>3,1</td>
+                            <td>56</td>
+                            <td><a herf="#">В корзину</a></td>
+                        </tr>
+                        <tr>
+                            <td><a data-fancybox="available_options" href="images/catalog_section1.png" data-caption="ВМА 700/10">ВМА 700/10</a></td>
+                            <td>1,1</td>
+                            <td>2,1</td>
+                            <td>3,1</td>
+                            <td>56</td>
+                            <td>3,1</td>
+                            <td>56</td>
+                            <td><a herf="#">В корзину</a></td>
+                        </tr>
+                        <tr>
+                            <td><a data-fancybox="available_options" href="images/catalog_section1.png" data-caption="ВМА 700/11">ВМА 700/11</a></td>
+                            <td>1,1</td>
+                            <td>2,1</td>
+                            <td>3,1</td>
+                            <td>56</td>
+                            <td>3,1</td>
+                            <td>56</td>
+                            <td><a herf="#">В корзину</a></td>
+                        </tr>
+                        <tr>
+                            <td><a data-fancybox="available_options" href="images/catalog_section1.png" data-caption="ВМА 700/12">ВМА 700/12</a></td>
+                            <td>1,1</td>
+                            <td>2,1</td>
+                            <td>3,1</td>
+                            <td>56</td>
+                            <td>3,1</td>
+                            <td>56</td>
+                            <td><a herf="#">В корзину</a></td>
+                        </tr>
+                    </table>
+                    </div>
+                </div>
+
+                
+            </div>
+        </main>
+        <!-- end Контент -->
+
+         <!-- Дополнительная Продукция -->
+         <div class="main_section additional_slider">
+            <div class="page_width">
+                <h3>Дополнительная комплектация</h3>
+                <div class="products products_slider">
                     <div class="item">
                         <div class="novelty">new</div>
                         <div class="img"><a href="product_item.html"><img src="images/product_image1.jpg"></a></div>
@@ -656,60 +788,195 @@
                         </div>
                     </div>
                 </div>
+            </div>	
+        </div>
+        <!--End Дополнительная Продукция-->
 
-
-                <div class="text_and_image">
-                    <div class="image left_image">
-                        <img src="images/catalog_section_1.png" alt="">
+         <!-- Продукция -->
+         <div class="main_section grey_bg">
+            <div class="page_width">
+                <h3>С этим товаром покупают</h3>
+                <div class="products products_slider">
+                    <div class="item">
+                        <div class="novelty">new</div>
+                        <div class="img"><a href="product_item.html"><img src="images/product_image1.jpg"></a></div>
+                        <div class="info">
+                            <h6><a href="product_item.html">Лестница приставная с широкими ступенями ЛПШ-тип 1</a></h6>
+                            <div class="char">
+                                <p>
+                                    <span class="name">Ширина, м</span>
+                                    <span class="val">0,34</span>
+                                </p>
+                                <p>
+                                    <span class="name">Габаритная высота, м</span>
+                                    <span class="val">от 1,5 до 4,5</span>
+                                </p>
+                                <p>
+                                    <span class="name">Масса, кг</span>
+                                    <span class="val">от 4,1 до 6,5</span>
+                                </p>
+                            </div>
+                            <span class="button">В корзину</span>
+                        </div>
                     </div>
-                    <div class="text">
-                        <h2>Лестницы завода MEGAL</h2>
-                        <p>Компания «Мегал» изготавливает и реализует различные алюминиевые конструкции, в том числе популярные сегодня вышки-туры и леса строительные на колесах. Отменные эксплуатационные свойства, предлагаемых потенциальным покупателям изделий, которые дополняются разумной ценой, а также работой предприятия и в Санкт-Петербурге, и в Москве, объясняют востребованность подобных изделий на рынке.</p>
+                    <div class="item">
+                        <!-- <div class="novelty">new</div> -->
+                        <div class="img"><a href="product_item.html"><img src="images/product_image2.jpg"></a></div>
+                        <div class="info">
+                            <h6><a href="product_item.html">Лестница приставная с широкими ступенями ЛПШ-тип 2</a></h6>
+                            <div class="char">
+                                <p>
+                                    <span class="name">Ширина, м</span>
+                                    <span class="val">0,34</span>
+                                </p>
+                                <p>
+                                    <span class="name">Габаритная высота, м</span>
+                                    <span class="val">от 1,5 до 4,5</span>
+                                </p>
+                                <p>
+                                    <span class="name">Масса, кг</span>
+                                    <span class="val">от 4,1 до 6,5</span>
+                                </p>
+                            </div>
+                            <span class="button">В корзину</span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <!-- <div class="novelty">new</div> -->
+                        <div class="img"><a href="product_item.html"><img src="images/product_image3.jpg"></a></div>
+                        <div class="info">
+                            <h6><a href="product_item.html">Лестница приставная бытовая ЛПБ 400 мм</a></h6>
+                            <div class="char">
+                                <p>
+                                    <span class="name">Ширина, м</span>
+                                    <span class="val">0,34</span>
+                                </p>
+                                <p>
+                                    <span class="name">Габаритная высота, м</span>
+                                    <span class="val">от 1,5 до 4,5</span>
+                                </p>
+                                <p>
+                                    <span class="name">Масса, кг</span>
+                                    <span class="val">от 4,1 до 6,5</span>
+                                </p>
+                            </div>
+                            <span class="button">В корзину</span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <!-- <div class="novelty">new</div> -->
+                        <div class="img"><a href="product_item.html"><img src="images/product_image3.jpg"></a></div>
+                        <div class="info">
+                            <h6><a href="product_item.html">Лестница приставная бытовая ЛПБ 510 мм</a></h6>
+                            <div class="char">
+                                <p>
+                                    <span class="name">Ширина, м</span>
+                                    <span class="val">0,34</span>
+                                </p>
+                                <p>
+                                    <span class="name">Габаритная высота, м</span>
+                                    <span class="val">от 1,5 до 4,5</span>
+                                </p>
+                                <p>
+                                    <span class="name">Масса, кг</span>
+                                    <span class="val">от 4,1 до 6,5</span>
+                                </p>
+                            </div>
+                            <span class="button">В корзину</span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <!-- <div class="novelty">new</div> -->
+                        <div class="img"><a href="product_item.html"><img src="images/product_image4.jpg"></a></div>
+                        <div class="info">
+                            <h6><a href="product_item.html">Лестница приставная с поручнями ЛПНА 3,0 (4,17)</a></h6>
+                            <div class="char">
+                                <p>
+                                    <span class="name">Ширина, м</span>
+                                    <span class="val">0,34</span>
+                                </p>
+                                <p>
+                                    <span class="name">Габаритная высота, м</span>
+                                    <span class="val">от 1,5 до 4,5</span>
+                                </p>
+                                <p>
+                                    <span class="name">Масса, кг</span>
+                                    <span class="val">от 4,1 до 6,5</span>
+                                </p>
+                            </div>
+                            <span class="button">В корзину</span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <!-- <div class="novelty">new</div> -->
+                        <div class="img"><a href="product_item.html"><img src="images/product_image5.jpg"></a></div>
+                        <div class="info">
+                            <h6><a href="product_item.html">Лестница приставная наклонная ЛПНА 3,0 (3,0)</a></h6>
+                            <div class="char">
+                                <p>
+                                    <span class="name">Ширина, м</span>
+                                    <span class="val">0,34</span>
+                                </p>
+                                <p>
+                                    <span class="name">Габаритная высота, м</span>
+                                    <span class="val">от 1,5 до 4,5</span>
+                                </p>
+                                <p>
+                                    <span class="name">Масса, кг</span>
+                                    <span class="val">от 4,1 до 6,5</span>
+                                </p>
+                            </div>
+                            <span class="button">В корзину</span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <!-- <div class="novelty">new</div> -->
+                        <div class="img"><a href="product_item.html"><img src="images/product_image6.jpg"></a></div>
+                        <div class="info">
+                            <h6><a href="product_item.html">Лестница односекционная приставная</a></h6>
+                            <div class="char">
+                                <p>
+                                    <span class="name">Ширина, м</span>
+                                    <span class="val">0,34</span>
+                                </p>
+                                <p>
+                                    <span class="name">Габаритная высота, м</span>
+                                    <span class="val">от 1,5 до 4,5</span>
+                                </p>
+                                <p>
+                                    <span class="name">Масса, кг</span>
+                                    <span class="val">от 4,1 до 6,5</span>
+                                </p>
+                            </div>
+                            <span class="button">В корзину</span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <!-- <div class="novelty">new</div> -->
+                        <div class="img"><a href="product_item.html"><img src="images/product_image7.jpg"></a></div>
+                        <div class="info">
+                            <h6><a href="product_item.html">Лестница приставная наклонная с поручнями ЛПНА-8,2 (4,2)</a></h6>
+                            <div class="char">
+                                <p>
+                                    <span class="name">Ширина, м</span>
+                                    <span class="val">0,34</span>
+                                </p>
+                                <p>
+                                    <span class="name">Габаритная высота, м</span>
+                                    <span class="val">от 1,5 до 4,5</span>
+                                </p>
+                                <p>
+                                    <span class="name">Масса, кг</span>
+                                    <span class="val">от 4,1 до 6,5</span>
+                                </p>
+                            </div>
+                            <span class="button">В корзину</span>
+                        </div>
                     </div>
                 </div>
-                <div class="text_and_image">
-                    <div class="image right_image">
-                        <img src="images/catalog_section_2.png" alt="">
-                    </div>
-                    <div class="text">
-                        <p>ПРЕИМУЩЕСТВА ПЕРЕДВИЖНЫХ АЛЮМИНИЕВЫХ ВЫШЕК-ТУР</p>
-                        <p>Строительная передвижная вышка-тура – это модульная конструкция, которая используется в процессе осуществления различных строительных и ремонтных работ. Она собирается непосредственно на объекте и включает в себя такие детали, части и элементы:</p>
-                        <ul>
-                            <li>изготовленная из алюминия рама, которая нередко оснащается вертикальными опорами, регулирующими высоту расположения рабочей площадки;</li>
-                            <li>непосредственно площадка, которая используется для размещения инструмента, материалов и собственно рабочих;</li>
-                            <li>ограждение, необходимое для безопасной эксплуатации вышки-туры;</li>
-                            <li>колеса, используемые для быстрого и удобного перемещения изделия по строительной площадке или другому месту использования.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="text_and_image">
-                    <div class="image left_image">
-                        <img src="images/catalog_section_3.png" alt="">
-                    </div>
-                    <div class="text">
-                        <p>ОБЛАСТЬ ПРИМЕНЕНИЯ СТРОИТЕЛЬНЫХ ЛЕСОВ</p>
-                        <p>По большому счету, вышка-тура выступает как мобильные подмости для работы на высоте. Они выступают разновидностью такого необходимого и широко распространенного инвентаря как алюминиевые строительные леса. Область их применения чрезвычайно разнообразна и включает в себя такие виды работ, производимых на высоте:</p>
-                        <ul>
-                            <li>ремонт и строительство зданий, конструкция которых предусматривает два этажа или более;</li>
-                            <li>ремонт и отделка фасадов различных построек;</li>
-                            <li>наружная отделка и оформление сооружений;</li>
-                            <li>обслуживание ЛЭП и осветительных приборов, размещенных на столбах;</li>
-                            <li>устройство и ремонт водосточной системы;</li>
-                            <li>устройство и пошив карнизов и карнизных свесов и т.д.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="text_and_image">
-                    <div class="image right_image">
-                        <img src="images/catalog_section_4.png" alt="">
-                    </div>
-                    <div class="text">
-                        <p>Алюминиевые вышки-туры, изготовленные компанией «Мегал» - это качественная продукция, реализуемая производителем по доступной для потенциальных покупателей цене. Она соответствует действующим ГОСТам и обеспечивает комфортное и безопасное выполнение различных высотных работ. Купить строительную вышку-туру в Санкт-Петербурге и Москве Вы можете на нашем сайте, достаточно просто заполнить форму, и наши сотрудники свяжутся с Вами. В качестве приятного бонуса – долговечность конструкции и низкий уровень цены, который достигается работой напрямую с производителем.</p>
-                    </div>
-                </div>
-            </div>
-        </main>
-        <!-- end Продукция -->
+            </div>	
+        </div>
+        <!--End Продукция-->
         
          <!-- Форма -->
         <div class="main_section" id="small_form">

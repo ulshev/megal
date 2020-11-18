@@ -121,7 +121,7 @@ strong, b {
 }
 
 p {
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
@@ -581,7 +581,7 @@ ul.slick-dots {
 
 .text {
     ul {
-        counter-reset: ol_ounter;
+        //counter-reset: ol_ounter;
 		margin-bottom: 40px;
 		padding-top: 4px;
 		margin-left: -5px;
@@ -597,77 +597,41 @@ ul.slick-dots {
 				content: '';
                 width: 20px;
                 height: 10px;
-                background-image: url(images/icon_li.png);
+                background-image: url(images/icon_li.svg);
                 background-repeat: no-repeat;
                 position: absolute;
                 left: 0;
-                top: 1px;
+                top: 6px;
 			}
         }
-        
-        ol {
-            list-style-type: none;
-            padding: 0px 0 0px 40px;
+	}
+	
+	ol {
+        counter-reset: ol_ounter;
+		list-style-type: none;
+		//margin: 0 0 0 20px;
+        //padding: 0 0 35px;
+
+		li {
+			//margin-bottom: 10px;
+			padding: 0px 0 0px 40px;
 			margin-bottom: 20px;
 			margin-left: 4px;
             position: relative;
-            
-            &::before{
+			
+			&:before {
                 counter-increment: ol_ounter;
                 content: counter(ol_ounter);
-    
-                font-weight: 600;
+				font-weight: 600;
                 font-size: 40px;
                 color: $color_h;
                 line-height: 100%;
 
                 position: absolute;
                 left: 0;
-            } 
-        }
-	}
-	
-	/*ol {
-        counter-reset: ol_ounter;
-        /*counter-reset: bold_numbers;*/
-		//list-style-type: none;
-		//margin: 0 0 0 20px;
-        //padding: 0 0 35px;
-        
-        /*&::before{
-            counter-increment: ol_ounter;
-            content: counter(ol_ounter);
-
-            font-weight: 600;
-            font-size: 40px;
-            color: $color_h;
-            line-height: 100%;
-        }*/
-
-		/*li {
-			//margin-bottom: 10px;
-			position: relative;
-			padding: 0px 0 0px 0px;
-			margin: 0 0 10px;
-			margin-left: 0px;
-			
-			&:before {
-				// position: absolute;
-				// left: 0;
-				// top: 5px;
-				// width: 40px;
-				// height: 40px;
-				// border-radius: 50%;
-				counter-increment: ol_ounter;
-                content:counter(ol_ounter)". ";
-				// font-weight: bold;
-				// font-size: 18px;
-				// line-height: 40px;
-				// vertical-align: middle;
-				// text-align: center;
 			}
 		}
-    }*/
+    }
 
     .button{
         margin-top: 50px;
@@ -704,6 +668,7 @@ ul.slick-dots {
             padding: 11px 5px;
             box-sizing: border-box;
             position: relative;
+            justify-content: center;
 
             &::after {
                 content: '';
@@ -747,3 +712,70 @@ ul.slick-dots {
     }
 }
 
+
+
+
+.tabs_container {
+	position: relative;
+	//margin-bottom: 70px;
+}
+    
+.tab {
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    @include transition(opacity);
+}
+.tab.active {
+    opacity: 1;
+    height: auto;
+    overflow: visible;
+    //padding-top: 8px;
+	position: relative;
+	z-index: 2;
+}
+
+.tab_buttons {
+    position: relative;
+    z-index: 2;
+    //height: 55px;
+	margin: 0 auto 0px;
+	padding-top: 10px;
+    text-align: left;
+    border-bottom: 2px solid #134983;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+	
+    span, a {
+		cursor: pointer;
+		z-index: 2;
+		white-space: nowrap;
+		padding: 10px 18px 3px;
+		font-size: 14px;
+        line-height: 20px;
+        font-weight: 500;
+		vertical-align: middle;
+		display: inline-block;
+		//border-radius: 10px;
+		border-bottom: 2px solid transparent;
+        @include transition(all);
+        
+        &:last-child {
+            margin-right: 0;
+        }
+	
+		&.active {
+			background-color: $color_a;
+			color: #fff;
+			
+		}
+    } 
+}
+
+
+
+
+body.compensate-for-scrollbar, .fancybox-enabled {
+    overflow: auto;
+}
