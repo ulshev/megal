@@ -153,7 +153,7 @@ $(document).ready(function() {
 	    
 	});
 
-
+	$("[data-fancybox]").fancybox();
 
 	$('.features_slider').slick({
 	    slidesToShow: 4,
@@ -298,8 +298,85 @@ $(document).ready(function() {
 	});
 
 
+	$('.product_images .main_slider').slick({
+	    slidesToShow: 1,
+	    slidesToScroll: 1,
+	    arrows: false,
+	    fade: true,
+	    //variableWidth: true,
+	    adaptiveHeight: true,
+	    asNavFor: '.product_images .preview_slider',
+	    responsive: [
+		  {
+		    breakpoint: 451,
+		    settings: {
+		      arrows: true,
+		      prevArrow: '<span class="slick-prev">&nbsp;</span>',
+		      nextArrow: '<span class="slick-next">&nbsp;</span>',
+		    }
+		  },
+		]
+	  });
+	$('.product_images .preview_slider').slick({
+	    slidesToShow: 5,
+	    slidesToScroll: 1,
+	    arrows: true,
+	    prevArrow: '<span class="slick-prev">&nbsp;</span>',
+	    nextArrow: '<span class="slick-next">&nbsp;</span>',
+	    asNavFor: '.product_images .main_slider',
+	    dots: false,
+	    //centerMode: true,
+	    //vertical: true,
+	    focusOnSelect: true,
+	    responsive: [
+		  {
+		    breakpoint: 600,
+		    settings: {
+		      slidesToShow: 4,
+		    }
+		  },
+		]
+	});
 
-
+	$('.products_slider').slick({
+		slidesToShow: 5,
+		slidesToScroll: 1,
+		arrows: true,
+		dots: false,
+		//centerMode: true,
+		//variableWidth: true,
+		infinite: true,
+		//fade: true,
+		prevArrow: '<span class="slick-prev">&nbsp;</span>',
+		nextArrow: '<span class="slick-next">&nbsp;</span>',
+		responsive: [
+			{
+				breakpoint: 1300,
+				settings: {
+				slidesToShow: 4,
+				}
+			},
+			{
+				breakpoint: 1030,
+				settings: {
+				slidesToShow: 3,
+				}
+			},
+			{
+				breakpoint: 750,
+				settings: {
+				slidesToShow: 3,
+				}
+			},
+			{
+				breakpoint: 450,
+				settings: {
+				slidesToShow: 1,
+				//slidesToScroll: 1,
+				}
+			},
+		]
+	});
 
 
 
@@ -661,51 +738,6 @@ $(document).ready(function() {
 	});
 
 
-	$('.product_images .main_slider').slick({
-	    slidesToShow: 1,
-	    slidesToScroll: 1,
-	    arrows: false,
-	    fade: true,
-	    //variableWidth: true,
-	    adaptiveHeight: true,
-	    asNavFor: '.product_images .preview_slider',
-	    responsive: [
-		  {
-		    breakpoint: 451,
-		    settings: {
-		      arrows: true,
-		      prevArrow: '<span class="slick-prev">&nbsp;</span>',
-		      nextArrow: '<span class="slick-next">&nbsp;</span>',
-		    }
-		  },
-		]
-	  });
-	$('.product_images .preview_slider').slick({
-	    slidesToShow: 3,
-	    slidesToScroll: 1,
-	    arrows: true,
-	    prevArrow: '<span class="slick-prev">&nbsp;</span>',
-	    nextArrow: '<span class="slick-next">&nbsp;</span>',
-	    asNavFor: '.product_images .main_slider',
-	    dots: false,
-	    //centerMode: true,
-	    //vertical: true,
-	    focusOnSelect: true,
-	    responsive: [
-		  {
-		    breakpoint: 1200,
-		    settings: {
-		      slidesToShow: 3,
-		    }
-		  },
-		  {
-		    breakpoint: 1030,
-		    settings: {
-		      slidesToShow: 2,
-		    }
-		  },
-		]
-	});
 
 
 	$( "#faq_accordion" )
