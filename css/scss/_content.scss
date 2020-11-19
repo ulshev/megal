@@ -4,6 +4,8 @@
     padding-bottom: 2px;
     margin-bottom: 50px;
     background-color: $color_bg;
+    box-sizing: border-box;
+    min-height: 130px;
     ul{
         li{
             display: inline-block;
@@ -21,14 +23,17 @@
             }
 
             a:after{
-                    content: "→";
+                    content: "";
                     display: inline-block;
 
-                    font-size: 20px;
+                    //font-size: 20px;
 
                     margin-left: 18px;
                     margin-right: 13px;
                     color: #13498383;
+                    width: 12px;
+                    height: 7px;
+                    background: url(images/arrow_grey.svg) no-repeat right center;
                 
             }
         }
@@ -270,11 +275,11 @@
         &:before {
             content: "";
             position: absolute;
-            width: 98px;
-            height: 98px;
+            width: 134px;
+            height: 146px;
             top: 50%;
             left: 50%;
-            margin: -49px 0 0 -34px;
+            margin: -67px 0 0 -47px;
             background: url(images/icon_play.svg) no-repeat center/100% auto;
         }
 
@@ -301,9 +306,9 @@
         justify-self: right;
         box-sizing: border-box;
         width: 50%;
-        min-height: 440px;
+        min-height: 390px;
         //background-color: #0a2a4fcc;
-
+        margin-right: -1px;
         padding: 50px 75px;
     }
 
@@ -347,9 +352,34 @@
         }
     }
 
+    &.white_bg .text{
+        background: rgba(255, 255, 255, 0.85);
+    }
+
+    &.text_white .text {
+        padding-top: 90px;
+        h2, p{
+            color: #ffffff;
+        }
+
+        .button{
+            background-color: transparent;
+            border: 2px solid #FFF;
+    
+            &:hover{
+                background-color: #FFF;
+                color: $color_a;
+            }
+        }
+    }
+
     &.text_left .text {
         justify-self: left;
         margin-left: 0;
+    }
+    .video {
+        margin-right: auto;
+        margin-left: 15.5%;
     }
 
     &.text_left .video {

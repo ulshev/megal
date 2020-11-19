@@ -306,16 +306,6 @@ $(document).ready(function() {
 	    //variableWidth: true,
 	    adaptiveHeight: true,
 	    asNavFor: '.product_images .preview_slider',
-	    responsive: [
-		  {
-		    breakpoint: 451,
-		    settings: {
-		      arrows: true,
-		      prevArrow: '<span class="slick-prev">&nbsp;</span>',
-		      nextArrow: '<span class="slick-next">&nbsp;</span>',
-		    }
-		  },
-		]
 	  });
 	$('.product_images .preview_slider').slick({
 	    slidesToShow: 5,
@@ -378,23 +368,6 @@ $(document).ready(function() {
 		]
 	});
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	$('.campaigns_slider').slick({
 	    slidesToShow: 1,
 	    slidesToScroll: 1,
@@ -404,6 +377,86 @@ $(document).ready(function() {
 	    prevArrow: '<span class="slick-prev">&nbsp;</span>',
 		nextArrow: '<span class="slick-next">&nbsp;</span>',
 	});
+
+	$('.project_page .main_slider').slick({
+	    slidesToShow: 1,
+	    slidesToScroll: 1,
+	    arrows: false,
+	    fade: true,
+	    //variableWidth: true,
+	    adaptiveHeight: true,
+	    asNavFor: '.project_page .preview_slider',
+	  });
+	$('.project_page .preview_slider').slick({
+	    slidesToShow: 4,
+	    slidesToScroll: 1,
+	    arrows: true,
+	    prevArrow: '<span class="slick-prev">&nbsp;</span>',
+	    nextArrow: '<span class="slick-next">&nbsp;</span>',
+	    asNavFor: '.project_page .main_slider',
+	    dots: false,
+	    //centerMode: true,
+	    //vertical: true,
+	    focusOnSelect: true,
+	    responsive: [
+		  {
+		    breakpoint: 600,
+		    settings: {
+		      slidesToShow: 4,
+		    }
+		  },
+		]
+	});
+
+
+	$('.gallery_slider').slick({
+	    slidesToShow: 4,
+	    slidesToScroll: 1,
+		arrows: true,
+		prevArrow: '<span class="slick-prev">&nbsp;</span>',
+		nextArrow: '<span class="slick-next">&nbsp;</span>',
+	    dots: true,
+	    //centerMode: true,
+		//vertical: true,
+		focusOnSelect: true,
+		responsive: [
+			{
+				breakpoint: 1200,
+				settings: {
+					slidesToShow: 3,
+				}
+			},
+			
+			{
+				breakpoint: 800,
+				settings: {
+				  	slidesToShow: 2,
+				}
+			},
+			{
+				breakpoint: 450,
+				settings: {
+					slidesToShow: 1,
+				}
+			},
+		]
+	});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	$('.services_slider').slick({
 		prevArrow: '<span class="slick-prev"></span>',
@@ -429,45 +482,6 @@ $(document).ready(function() {
 		]
 	});
 
-
-	$(window).on('load resize', function(){
-		if ( window.innerWidth>1600 && $('.advantages').hasClass('slick-initialized') ) {
-		  $('.advantages').slick('unslick');
-		} else if ( window.innerWidth<=1600 && !$('.advantages').hasClass('slick-initialized') ) {
-		  	$('.advantages').slick({
-				slidesToShow: 3,
-				slidesToScroll: 1,
-				infinite: false,
-				dots: false,
-				//focusOnSelect: true,
-				arrows: true,
-				adaptiveHeight: true,
-				prevArrow: '<span class="slick-prev">&nbsp;</span>',
-				nextArrow: '<span class="slick-next">&nbsp;</span>',
-				responsive: [
-					{
-						breakpoint: 1200,
-						settings: {
-						slidesToShow: 2,
-						}
-					},
-					{
-						breakpoint: 901,
-						settings: {
-						slidesToShow: 2,
-						}
-					},
-					
-					{
-						breakpoint: 600,
-						settings: {
-						slidesToShow: 1,
-						}
-					},
-				]
-			});
-		}
-	});
 
 	$(window).on('load resize', function(){
 		if ( window.innerWidth>1300 && $('#news .news_block').hasClass('slick-initialized') ) {
@@ -497,195 +511,7 @@ $(document).ready(function() {
 		}
 	});
 
-	$(window).on('load resize', function(){
-		if ( window.innerWidth>1300 && $('.left_col .news_block').hasClass('slick-initialized') ) {
-		  $('.left_col .news_block').slick('unslick');
-		} else if ( window.innerWidth<=1300 && !$('.left_col .news_block').hasClass('slick-initialized') ) {
-		  $('.left_col .news_block').slick({
-		    prevArrow: '<span class="slick-prev"></span>',
-		    nextArrow: '<span class="slick-next"></span>',
-		    slidesToShow: 3,
-			adaptiveHeight: true,
-			responsive: [
-				{
-					breakpoint: 1250,
-					settings: {
-						slidesToShow: 2,
-					}
-				},
-				{
-					breakpoint: 600,
-					settings: {
-					  slidesToShow: 1,
-					  vertical: false,
-					}
-				},
-			]
-		  });
-		}
-	});
-
-	$('.applying_slider').slick({
-	    slidesToShow: 3,
-	    slidesToScroll: 1,
-		arrows: true,
-		prevArrow: '<span class="slick-prev">&nbsp;</span>',
-		nextArrow: '<span class="slick-next">&nbsp;</span>',
-	    dots: false,
-	    //centerMode: true,
-		//vertical: true,
-		focusOnSelect: true,
-		responsive: [
-			{
-				breakpoint: 1230,
-				settings: {
-					slidesToShow: 2,
-				}
-			},
-			
-			{
-				breakpoint: 800,
-				settings: {
-				  	slidesToShow: 2,
-				}
-			},
-			{
-				breakpoint: 450,
-				settings: {
-					slidesToShow: 1,
-				}
-			},
-		]
-	});
 	
-
-	$('.photogalery_slider').slick({
-	    slidesToShow: 4,
-	    slidesToScroll: 1,
-		arrows: true,
-		prevArrow: '<span class="slick-prev">&nbsp;</span>',
-		nextArrow: '<span class="slick-next">&nbsp;</span>',
-	    dots: false,
-	    //centerMode: true,
-		//vertical: true,
-		focusOnSelect: true,
-		responsive: [
-			{
-				breakpoint: 1230,
-				settings: {
-					slidesToShow: 3,
-				}
-			},
-			
-			{
-				breakpoint: 800,
-				settings: {
-				  	slidesToShow: 2,
-				}
-			},
-			{
-				breakpoint: 450,
-				settings: {
-					slidesToShow: 1,
-				}
-			},
-		]
-	});
-
-	$('.photogalery_slider_item3').slick({
-	    slidesToShow: 3,
-	    slidesToScroll: 1,
-		arrows: true,
-		prevArrow: '<span class="slick-prev">&nbsp;</span>',
-		nextArrow: '<span class="slick-next">&nbsp;</span>',
-	    dots: false,
-	    //centerMode: true,
-		//vertical: true,
-		focusOnSelect: true,
-		responsive: [
-			{
-				breakpoint: 1230,
-				settings: {
-					slidesToShow: 2,
-				}
-			},
-			{
-				breakpoint: 450,
-				settings: {
-					slidesToShow: 1,
-				}
-			},
-		]
-	});
-
-	$('.videogalery_slider').slick({
-	    slidesToShow: 3,
-	    slidesToScroll: 1,
-		arrows: true,
-		prevArrow: '<span class="slick-prev">&nbsp;</span>',
-		nextArrow: '<span class="slick-next">&nbsp;</span>',
-	    dots: false,
-	    //centerMode: true,
-		//vertical: true,
-		focusOnSelect: true,
-		responsive: [
-			{
-				breakpoint: 1230,
-				settings: {
-					slidesToShow: 2,
-				}
-			},
-			
-			{
-				breakpoint: 800,
-				settings: {
-				  	slidesToShow: 2,
-				}
-			},
-			{
-				breakpoint: 450,
-				settings: {
-					slidesToShow: 1,
-				}
-			},
-		]
-	});
-
-
-	$('.content_advantages').slick({
-	    slidesToShow: 4,
-	    slidesToScroll: 1,
-		arrows: true,
-		prevArrow: '<span class="slick-prev">&nbsp;</span>',
-		nextArrow: '<span class="slick-next">&nbsp;</span>',
-	    dots: false,
-	    //centerMode: true,
-		//vertical: true,
-		focusOnSelect: true,
-		responsive: [
-			{
-				breakpoint: 1230,
-				settings: {
-					slidesToShow: 3,
-				}
-			},
-			
-			{
-				breakpoint: 800,
-				settings: {
-				  	slidesToShow: 2,
-				}
-			},
-			{
-				breakpoint: 450,
-				settings: {
-					slidesToShow: 1,
-				}
-			},
-		]
-	});
-
-
 	$('.certificates_slider').slick({
 	    slidesToShow: 3,
 	    slidesToScroll: 1,
@@ -715,31 +541,6 @@ $(document).ready(function() {
 	});
 
 
-	$('.production_technology_slider .info_slider').slick({
-	    slidesToShow: 1,
-	    slidesToScroll: 1,
-		arrows: true,
-		prevArrow: '<span class="slick-prev">&nbsp;</span>',
-	    nextArrow: '<span class="slick-next">&nbsp;</span>',
-		fade: true,
-		dots: false,
-		infinite: false,
-	    //variableWidth: true,
-	    adaptiveHeight: true,
-	    asNavFor: '.production_technology_slider .number_slider'
-	  });
-	$('.production_technology_slider .number_slider').slick({
-	    slidesToShow: 10,
-	    slidesToScroll: 1,
-		arrows: false,
-		infinite: false,
-	    asNavFor: '.production_technology_slider .info_slider',
-	    dots: false
-	});
-
-
-
-
 	$( "#faq_accordion" )
       .accordion({
 		heightStyle: "content",
@@ -764,7 +565,6 @@ $(document).ready(function() {
 		e.preventDefault();
     });
 	
-	/* 21.10.2020 */
 	$(document).on('keydown', function (evt) {
         if (evt.keyCode == 27) {
 			evt.preventDefault();
@@ -779,7 +579,6 @@ $(document).ready(function() {
 	$(document).on("click", function (e) {    
 		modalClose();
     });
-	/* 21.10.2020 */
 
 	modalOpen($('.btn-call'), $('.form-call'));
 	modalOpen($('.btn-question'), $('.form-question'));
@@ -801,9 +600,7 @@ $(document).ready(function() {
 			window.location.reload();
 		}
     };
-    // end forms
 	
-	/* 21.10.2020 */
 	$(document).ajaxSuccess(function(e) {
 		$('.form__btn-close').click(function (e) {
 			modalClose();
@@ -818,27 +615,6 @@ $(document).ready(function() {
 		});			
 		modalOpen($('.btn-basket_order'), $('.form-basket_order'));			
 	});
-	/* 21.10.2020 */
+    // end forms
 });
 
-document.onreadystatechange = function(){
-	if(document.readyState === 'complete'){
-		$('.main_menu > ul > li > ul > li').each(function(){
-			var list = $(this).children('ul');
-	
-			if(list.length > 0){
-				list.parent().addClass('submenu2');
-			};
-		});
-
-		$(window).on('load scroll resize', function(){
-			$('.dropdown-menu .submenu2 a').on('click', function(e){
-				if( !$(this).parent().hasClass('show') ) {
-					$(this).parent().addClass('show');  
-					$(this).parent().children('ul').slideDown(500);
-					e.preventDefault();
-				}
-			});
-		});
-	}
-}

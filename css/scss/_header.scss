@@ -424,11 +424,13 @@ header .search {
 			}
 
 			&::after {
-				content: "→";
+				content: "";
 				display: inline-block;
 				margin-left: 10px;
 				opacity: 0;
-				font-size: 21px;
+				width: 16px;
+				height: 11px;
+				background: url(images/arrow_blue.svg) no-repeat right center;
 				@include transition(all);
 			}
 		}
@@ -963,11 +965,13 @@ header .search {
 			}
 			> a {
 				&::after {
-					content: "→";
+					content: "";
 					display: inline-block;
 					margin-left: 10px;
 					opacity: 0;
-					font-size: 21px;
+					width: 16px;
+					height: 11px;
+					background: url(images/arrow_blue.svg) no-repeat right center;
 					opacity: 0;
 					@include transition(all);
 				}

@@ -99,6 +99,66 @@
         }
     }
 }
+
+#manufacture_features {
+    background-color: #EEF5F9;
+
+    .page_width {
+        padding-top: 64px;
+        padding-bottom: 70px;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .features_slider {
+        .item {
+            background-color: transparent;
+            box-shadow: 0 0 0 rgba(19, 73, 131, 0.0);
+            border-left: 1px solid #CFDBE7;
+            padding-right: 7px;
+            padding-bottom: 0;
+            padding-top: 0;
+            height: 250px;
+            overflow: hidden;
+
+            &::before{
+                display: none;
+            }
+
+            .icon {
+                background-color: #fff;
+                margin-bottom: 27px;
+            }
+
+            .h4 {
+                min-height: 40px;
+                margin-bottom: 20px;
+                line-height: 20px;
+                font-size: 16px;
+            }
+
+            &.slick-current {
+                border-left-color: transparent;
+            }
+
+            &:hover {
+                background-color: transparent;
+                color: $color_text;
+                .h4 {
+                    color: $color_text;
+                }
+                .icon {
+                    background-color: #fff;
+                }
+                img {
+                    filter: initial;
+                }
+            }
+        }
+    }
+}
     
 
 

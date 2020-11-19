@@ -249,10 +249,13 @@ h5, .h5, h6, .h6 {
     @include transition(all);
 
     &::after {
-        content: "→";
+        content: "";
         display: inline-block;
         margin-left: 20px;
         font-size: 21px;
+        width: 20px;
+        height: 11px;
+        background: url(images/arrow_white.svg) no-repeat right center;
     }
     
     &:hover {
@@ -266,11 +269,19 @@ h5, .h5, h6, .h6 {
         color: $color_a;
         border: 1px solid $color_a;
 
+        &::after {
+            background-image: url(images/arrow_blue.svg);
+        }
+
         &:hover {
             background: $color_a_hover;
             color: #fff;
             border-color: $color_a_hover;
+            &::after {
+                background-image: url(images/arrow_white.svg);
+            }
         }
+
     }
 } 
 
@@ -655,7 +666,7 @@ ul.slick-dots {
         
         li {
             margin: 0 20px;
-            flex-grow: 1;
+            //flex-grow: 1;
             // display: flex;
             // align-items: center;
         }
@@ -739,11 +750,10 @@ ul.slick-dots {
     position: relative;
     z-index: 2;
     //height: 55px;
-	margin: 0 auto 0px;
+	margin: 0 auto 25px;
 	padding-top: 10px;
     text-align: left;
     border-bottom: 2px solid #134983;
-    margin-bottom: 25px;
     display: flex;
     justify-content: space-between;
 	
@@ -774,8 +784,7 @@ ul.slick-dots {
 }
 
 
-
-
 body.compensate-for-scrollbar, .fancybox-enabled {
     overflow: auto;
 }
+
