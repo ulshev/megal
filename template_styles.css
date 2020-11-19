@@ -4664,6 +4664,336 @@ footer #dev {
   }
 }
 /* End Contacts*/
+/*Start Press-Center*/
+.events_baner {
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+}
+.events_baner .baner_title {
+  box-sizing: border-box;
+  width: 30%;
+  padding: 50px 80px 20px;
+  background-color: #003561;
+}
+.events_baner .baner_title h2 {
+  color: #FFF;
+}
+.events_baner .baner_title h2::after {
+  content: url(images/clock.svg);
+  display: block;
+  margin-top: 60px;
+}
+.events_baner .text {
+  position: relative;
+  box-sizing: border-box;
+  padding: 50px 80px;
+  width: 70%;
+  border: 2px solid #BECAD3;
+}
+.events_baner .text p {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 27px;
+  width: 60%;
+  margin-bottom: 50px;
+}
+.events_baner .text p:first-child {
+  color: #7089A4;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.events_baner .text a {
+  margin-top: 20px;
+  background-color: #fff;
+  border: 1px solid #0A2A4F;
+  color: #0A2A4F;
+  padding: 5px 19px;
+  height: 30px;
+  text-align: center;
+  display: inline;
+  transition: all 0.3s;
+}
+.events_baner .text a::after {
+  content: none;
+}
+.events_baner .text a:hover {
+  background-color: #0A2A4F;
+  color: #FFF;
+}
+.events_baner .text .image {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.event_calender {
+  margin-top: 50px;
+  margin-bottom: 70px;
+}
+.event_calender h3, .event_calender a {
+  display: inline-block;
+}
+.event_calender h3 {
+  margin-right: 36px;
+}
+.event_calender h3::before {
+  content: url(images/calender.svg);
+  margin-right: 27px;
+  vertical-align: middle;
+}
+
+.materials {
+  display: flex;
+  flex-wrap: wrap;
+}
+.materials .item {
+  width: calc(33.33% - 20px);
+  margin: 0px 10px 40px 10px;
+}
+.materials .item:hover .image img,
+.materials .item:hover .text a {
+  opacity: 100;
+}
+.materials .item:hover .image .button {
+  display: block;
+}
+.materials .item .image {
+  background-color: #347FCF;
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 253px;
+  overflow: hidden;
+}
+.materials .item .image img {
+  opacity: 60%;
+  object-fit: cover;
+  object-position: center;
+  height: 100%;
+  width: 100%;
+  transition: all 0.3s;
+}
+.materials .item .image .button {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -80px;
+  margin-top: -30px;
+  transition: all 0.3s;
+}
+.materials .item .text {
+  display: block;
+  padding-top: 20px;
+}
+.materials .item .text p {
+  margin-bottom: 10px;
+}
+.materials .item .text p:first-child {
+  font-weight: normal;
+  font-size: 12px;
+}
+.materials .item .text a {
+  opacity: 0;
+  margin-top: 20px;
+  background-color: #fff;
+  border: 1px solid #0A2A4F;
+  color: #0A2A4F;
+  padding: 5px 19px;
+  height: 30px;
+  text-align: center;
+  display: inline;
+  transition: all 0.3s;
+}
+.materials .item .text a::after {
+  content: none;
+}
+.materials .item .text a:hover {
+  background-color: #0A2A4F;
+  color: #FFF;
+}
+
+.paginacia_1_button {
+  margin: 0 auto;
+}
+.paginacia_1_button .button::after {
+  content: none;
+}
+
+.mini_email_block {
+  margin-top: 130px;
+  margin-bottom: 100px;
+  max-width: 100%;
+}
+.mini_email_block p {
+  text-align: center;
+  width: 100%;
+}
+.mini_email_block form {
+  width: 100%;
+}
+.mini_email_block form .input_text {
+  margin: 0 auto;
+  float: none;
+}
+.mini_email_block form .input_text input {
+  width: 80%;
+  height: 50px;
+  border: 1px solid #BECAD3;
+  box-sizing: border-box;
+  display: inline-block;
+  position: relative;
+  padding: 16px 22px;
+  margin-right: -5px;
+}
+.mini_email_block form .input_text button {
+  box-sizing: border-box;
+  border: none;
+  height: 50px;
+  margin-left: 0px;
+}
+.mini_email_block form .input_text button img {
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 1440px) {
+  .events_baner .baner_title {
+    padding: 50px 40px 20px;
+  }
+  .events_baner .text {
+    padding: 50px 40px;
+  }
+  .events_baner .text .image img {
+    width: 250px;
+    margin-top: 30px;
+  }
+}
+@media screen and (max-width: 1147px) {
+  .events_baner .baner_title {
+    padding: 50px 35px 20px;
+  }
+  .events_baner .text {
+    padding: 50px 35px;
+  }
+  .events_baner .text .image img {
+    width: 220px;
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 862px) {
+  .events_baner .baner_title {
+    padding: 50px 30px 20px;
+  }
+  .events_baner .text {
+    padding: 50px 30px;
+  }
+  .events_baner .text .image img {
+    width: 200px;
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 830px) {
+  .events_baner .baner_title {
+    padding: 30px 40px 0px;
+    width: 100%;
+  }
+  .events_baner .baner_title h2::after {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 0px;
+    margin-left: 30px;
+  }
+  .events_baner .text {
+    width: 100%;
+    padding: 50px 40px;
+  }
+  .events_baner .text .image img {
+    width: 230px;
+    margin-top: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .materials .item {
+    width: calc(50% - 20px);
+  }
+}
+@media screen and (max-width: 590px) {
+  .events_baner .baner_title {
+    padding: 30px 30px 0px;
+  }
+  .events_baner .text {
+    padding: 50px 30px;
+  }
+  .events_baner .text .image img {
+    width: 200px;
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 510px) {
+  .events_baner .baner_title h2:after {
+    display: block;
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+  .events_baner .text .image img {
+    width: 180px;
+    margin-top: 60px;
+  }
+}
+@media screen and (max-width: 573px) {
+  .materials .item {
+    width: 100%;
+    margin: 0px 0px 60px 0px;
+  }
+}
+@media screen and (max-width: 463px) {
+  .events_baner .baner_title h2:after {
+    display: block;
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+  .events_baner .text p {
+    width: 100%;
+  }
+  .events_baner .text .image img {
+    display: none;
+  }
+}
+@media screen and (max-width: 454px) {
+  .event_calender h3, .event_calender a {
+    display: block;
+  }
+  .event_calender h3 {
+    margin-right: 0;
+  }
+  .event_calender h3::before {
+    content: url(images/calender.svg);
+    margin-right: 20px;
+    vertical-align: middle;
+  }
+  .event_calender a {
+    margin-left: 55px;
+  }
+}
+@media screen and (max-width: 341px) {
+  .event_calender h3, .event_calender a {
+    display: block;
+  }
+  .event_calender h3 {
+    margin-right: 0;
+  }
+  .event_calender h3::before {
+    content: url(images/calender.svg);
+    margin-right: 0px;
+    margin-bottom: 10px;
+    display: block;
+  }
+  .event_calender a {
+    margin-left: 0px;
+  }
+}
+/*End Press-Center*/
 /*.wrapper {
     background-image: url(images/site.jpg);
     background-repeat: no-repeat;
