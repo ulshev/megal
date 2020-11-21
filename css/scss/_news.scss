@@ -553,8 +553,28 @@
 
 
 }
-
-
+@media screen and (max-width: 1330px){
+    .news_block{
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width:1024px){
+    .news_container   {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .latest_news{
+        width: 100%;
+        max-width: none;
+        margin-right: 0;
+    }
+    .latest_news + .news_block {
+        margin-left: 0px;
+    }
+    .news_block{
+        width: 100%;
+    }
+}
 
 
 
