@@ -4172,6 +4172,7 @@ footer #dev {
   .text_and_image .text {
     width: 100%;
     order: 2;
+    margin-top: 20px;
   }
 }
 /*@media screen and (max-width:760px){
@@ -4937,6 +4938,119 @@ footer #dev {
   }
 }
 /* End Contacts*/
+/*Start Vacancies*/
+.vacansis_block {
+  display: flex;
+  flex-wrap: wrap;
+}
+.vacansis_block .item {
+  box-sizing: border-box;
+  width: calc(50% - 24px);
+  margin: 0 12px;
+  padding: 30px 47px 10px 60px;
+  box-shadow: -10px 10px 20px rgba(19, 73, 131, 0.2);
+  overflow: hidden;
+  position: relative;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.vacansis_block .item::before {
+  content: "";
+  position: absolute;
+  /*width: calc(100% - 172px);
+      right: 272px;*/
+  width: 36px;
+  left: 0;
+  top: 75px;
+  height: 22px;
+  background-color: #134983;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.vacansis_block .item .image {
+  box-sizing: border-box;
+  background-color: #EFF4FA;
+  width: 106px;
+  height: 106px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.vacansis_block .item .image img {
+  max-width: 80%;
+  max-height: 80%;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.vacansis_block .item .text {
+  margin-left: 130px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.vacansis_block .item .text p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 176.4%;
+  text-transform: uppercase;
+}
+.vacansis_block .item .text .button {
+  background-color: transparent;
+  margin-top: 0px;
+  padding: 0px 20px 0 0;
+  display: inline;
+  opacity: 0;
+}
+.vacansis_block .item .text .button:hover {
+  text-decoration: underline;
+}
+.vacansis_block .item:hover {
+  background-color: #134983;
+  color: #fff;
+  box-shadow: none;
+}
+.vacansis_block .item:hover::before {
+  background-color: #659EDB;
+}
+.vacansis_block .item:hover .image {
+  background: rgba(239, 244, 250, 0.2);
+}
+.vacansis_block .item:hover .image img {
+  filter: brightness(0.5) contrast(300%) invert(1);
+}
+.vacansis_block .item:hover .text .button {
+  opacity: 100;
+}
+
+@media screen and (max-width: 1024px) {
+  .vacansis_block .item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 573px) {
+  .vacansis_block .item .image {
+    position: static;
+  }
+  .vacansis_block .item .text {
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+}
+/*End Vacancies*/
 /*.wrapper {
     background-image: url(images/site.jpg);
     background-repeat: no-repeat;
