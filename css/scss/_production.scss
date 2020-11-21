@@ -745,9 +745,10 @@
     }
 }
 
-.product_price + .buttons {
+.content .product_price + .buttons {
     margin-left: 560px;
     padding-left: 4.5%;
+    text-align: left;
 
     .button {
         padding-left: 30px;

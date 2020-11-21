@@ -377,6 +377,43 @@
     }
 }
 
+
+.mini_email_block{
+    margin-top: 90px;
+    margin-bottom: 100px;
+    max-width: 100%;
+    p{
+        text-align: center;
+        width: 100%;
+    }
+
+    form{
+        //width: 100%;
+        text-align: center;
+        .input_text{
+            margin: 0 auto;
+            float: none;
+            max-width: 730px;;
+            input{
+                width: calc(100% - 60px);
+                height: 50px;
+                margin-right: -5px;
+            }
+            button{
+                height: 50px;
+                width: 60px;
+                margin-left: 0px;
+
+                img{
+                    vertical-align: middle;
+                    margin-bottom: 2px;
+                }
+            }
+        }
+    }
+        
+}
+
 @media screen and (max-width: 1600px) {
     
 }

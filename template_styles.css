@@ -80,7 +80,6 @@ body {
 }
 
 .wrapper {
-  overflow: hidden;
   position: relative;
   width: 100%;
   min-height: 100%;
@@ -2699,15 +2698,16 @@ header .language.show::after {
   font-size: 25px;
 }
 
-.product_price + .buttons {
+.content .product_price + .buttons {
   margin-left: 560px;
   padding-left: 4.5%;
+  text-align: left;
 }
-.product_price + .buttons .button {
+.content .product_price + .buttons .button {
   padding-left: 30px;
   padding-right: 30px;
 }
-.product_price + .buttons .button::after {
+.content .product_price + .buttons .button::after {
   display: none;
 }
 
@@ -3792,6 +3792,38 @@ header .language.show::after {
   display: none;
 }
 
+.mini_email_block {
+  margin-top: 90px;
+  margin-bottom: 100px;
+  max-width: 100%;
+}
+.mini_email_block p {
+  text-align: center;
+  width: 100%;
+}
+.mini_email_block form {
+  text-align: center;
+}
+.mini_email_block form .input_text {
+  margin: 0 auto;
+  float: none;
+  max-width: 730px;
+}
+.mini_email_block form .input_text input {
+  width: calc(100% - 60px);
+  height: 50px;
+  margin-right: -5px;
+}
+.mini_email_block form .input_text button {
+  height: 50px;
+  width: 60px;
+  margin-left: 0px;
+}
+.mini_email_block form .input_text button img {
+  vertical-align: middle;
+  margin-bottom: 2px;
+}
+
 /* end forms styles */
 /* start footer styles */
 #pre_foo {
@@ -4202,24 +4234,18 @@ footer #dev {
 }
 
 .documents_box {
-  align-items: center;
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto 80px;
 }
 .documents_box .download {
   width: 31%;
-  height: 90px;
+  min-height: 90px;
   margin: 1.2% 1.1%;
   display: flex;
   align-items: center;
 }
 
-@media screen and (max-width: 1480px) {
-  .documents_box .download {
-    height: 100px;
-  }
-}
 @media screen and (max-width: 1200px) {
   .documents_box .download {
     width: 32%;
@@ -4227,28 +4253,16 @@ footer #dev {
     padding-left: 20px;
   }
 }
-@media screen and (max-width: 1112px) {
-  .documents_box .download {
-    height: 140px;
-  }
-}
 @media screen and (max-width: 1024px) {
   .documents_box .download {
-    height: 140px;
     width: 48%;
     margin: 1%;
   }
 }
 @media screen and (max-width: 601px) {
   .documents_box .download {
-    height: 90px;
     width: 100%;
     margin: 2% 0;
-  }
-}
-@media screen and (max-width: 398px) {
-  .documents_box .download {
-    height: 130px;
   }
 }
 /*End for download*/
@@ -4923,336 +4937,6 @@ footer #dev {
   }
 }
 /* End Contacts*/
-/*Start Press-Center*/
-.events_baner {
-  overflow: hidden;
-  display: flex;
-  flex-wrap: wrap;
-}
-.events_baner .baner_title {
-  box-sizing: border-box;
-  width: 30%;
-  padding: 50px 80px 20px;
-  background-color: #003561;
-}
-.events_baner .baner_title h2 {
-  color: #FFF;
-}
-.events_baner .baner_title h2::after {
-  content: url(images/clock.svg);
-  display: block;
-  margin-top: 60px;
-}
-.events_baner .text {
-  position: relative;
-  box-sizing: border-box;
-  padding: 50px 80px;
-  width: 70%;
-  border: 2px solid #BECAD3;
-}
-.events_baner .text p {
-  font-weight: 500;
-  font-size: 22px;
-  line-height: 27px;
-  width: 60%;
-  margin-bottom: 50px;
-}
-.events_baner .text p:first-child {
-  color: #7089A4;
-  font-size: 12px;
-  margin-bottom: 10px;
-}
-.events_baner .text a {
-  margin-top: 20px;
-  background-color: #fff;
-  border: 1px solid #0A2A4F;
-  color: #0A2A4F;
-  padding: 5px 19px;
-  height: 30px;
-  text-align: center;
-  display: inline;
-  transition: all 0.3s;
-}
-.events_baner .text a::after {
-  content: none;
-}
-.events_baner .text a:hover {
-  background-color: #0A2A4F;
-  color: #FFF;
-}
-.events_baner .text .image {
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-.event_calender {
-  margin-top: 50px;
-  margin-bottom: 70px;
-}
-.event_calender h3, .event_calender a {
-  display: inline-block;
-}
-.event_calender h3 {
-  margin-right: 36px;
-}
-.event_calender h3::before {
-  content: url(images/calender.svg);
-  margin-right: 27px;
-  vertical-align: middle;
-}
-
-.materials {
-  display: flex;
-  flex-wrap: wrap;
-}
-.materials .item {
-  width: calc(33.33% - 20px);
-  margin: 0px 10px 40px 10px;
-}
-.materials .item:hover .image img,
-.materials .item:hover .text a {
-  opacity: 100;
-}
-.materials .item:hover .image .button {
-  display: block;
-}
-.materials .item .image {
-  background-color: #347FCF;
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 253px;
-  overflow: hidden;
-}
-.materials .item .image img {
-  opacity: 60%;
-  object-fit: cover;
-  object-position: center;
-  height: 100%;
-  width: 100%;
-  transition: all 0.3s;
-}
-.materials .item .image .button {
-  display: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-left: -80px;
-  margin-top: -30px;
-  transition: all 0.3s;
-}
-.materials .item .text {
-  display: block;
-  padding-top: 20px;
-}
-.materials .item .text p {
-  margin-bottom: 10px;
-}
-.materials .item .text p:first-child {
-  font-weight: normal;
-  font-size: 12px;
-}
-.materials .item .text a {
-  opacity: 0;
-  margin-top: 20px;
-  background-color: #fff;
-  border: 1px solid #0A2A4F;
-  color: #0A2A4F;
-  padding: 5px 19px;
-  height: 30px;
-  text-align: center;
-  display: inline;
-  transition: all 0.3s;
-}
-.materials .item .text a::after {
-  content: none;
-}
-.materials .item .text a:hover {
-  background-color: #0A2A4F;
-  color: #FFF;
-}
-
-.paginacia_1_button {
-  margin: 0 auto;
-}
-.paginacia_1_button .button::after {
-  content: none;
-}
-
-.mini_email_block {
-  margin-top: 130px;
-  margin-bottom: 100px;
-  max-width: 100%;
-}
-.mini_email_block p {
-  text-align: center;
-  width: 100%;
-}
-.mini_email_block form {
-  width: 100%;
-}
-.mini_email_block form .input_text {
-  margin: 0 auto;
-  float: none;
-}
-.mini_email_block form .input_text input {
-  width: 80%;
-  height: 50px;
-  border: 1px solid #BECAD3;
-  box-sizing: border-box;
-  display: inline-block;
-  position: relative;
-  padding: 16px 22px;
-  margin-right: -5px;
-}
-.mini_email_block form .input_text button {
-  box-sizing: border-box;
-  border: none;
-  height: 50px;
-  margin-left: 0px;
-}
-.mini_email_block form .input_text button img {
-  vertical-align: middle;
-}
-
-@media screen and (max-width: 1440px) {
-  .events_baner .baner_title {
-    padding: 50px 40px 20px;
-  }
-  .events_baner .text {
-    padding: 50px 40px;
-  }
-  .events_baner .text .image img {
-    width: 250px;
-    margin-top: 30px;
-  }
-}
-@media screen and (max-width: 1147px) {
-  .events_baner .baner_title {
-    padding: 50px 35px 20px;
-  }
-  .events_baner .text {
-    padding: 50px 35px;
-  }
-  .events_baner .text .image img {
-    width: 220px;
-    margin-top: 40px;
-  }
-}
-@media screen and (max-width: 862px) {
-  .events_baner .baner_title {
-    padding: 50px 30px 20px;
-  }
-  .events_baner .text {
-    padding: 50px 30px;
-  }
-  .events_baner .text .image img {
-    width: 200px;
-    margin-top: 50px;
-  }
-}
-@media screen and (max-width: 830px) {
-  .events_baner .baner_title {
-    padding: 30px 40px 0px;
-    width: 100%;
-  }
-  .events_baner .baner_title h2::after {
-    display: inline-block;
-    vertical-align: middle;
-    margin-top: 0px;
-    margin-left: 30px;
-  }
-  .events_baner .text {
-    width: 100%;
-    padding: 50px 40px;
-  }
-  .events_baner .text .image img {
-    width: 230px;
-    margin-top: 30px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .materials .item {
-    width: calc(50% - 20px);
-  }
-}
-@media screen and (max-width: 590px) {
-  .events_baner .baner_title {
-    padding: 30px 30px 0px;
-  }
-  .events_baner .text {
-    padding: 50px 30px;
-  }
-  .events_baner .text .image img {
-    width: 200px;
-    margin-top: 50px;
-  }
-}
-@media screen and (max-width: 510px) {
-  .events_baner .baner_title h2:after {
-    display: block;
-    margin-left: 0px;
-    margin-top: 20px;
-  }
-  .events_baner .text .image img {
-    width: 180px;
-    margin-top: 60px;
-  }
-}
-@media screen and (max-width: 573px) {
-  .materials .item {
-    width: 100%;
-    margin: 0px 0px 60px 0px;
-  }
-}
-@media screen and (max-width: 463px) {
-  .events_baner .baner_title h2:after {
-    display: block;
-    margin-left: 0px;
-    margin-top: 20px;
-  }
-  .events_baner .text p {
-    width: 100%;
-  }
-  .events_baner .text .image img {
-    display: none;
-  }
-}
-@media screen and (max-width: 454px) {
-  .event_calender h3, .event_calender a {
-    display: block;
-  }
-  .event_calender h3 {
-    margin-right: 0;
-  }
-  .event_calender h3::before {
-    content: url(images/calender.svg);
-    margin-right: 20px;
-    vertical-align: middle;
-  }
-  .event_calender a {
-    margin-left: 55px;
-  }
-}
-@media screen and (max-width: 341px) {
-  .event_calender h3, .event_calender a {
-    display: block;
-  }
-  .event_calender h3 {
-    margin-right: 0;
-  }
-  .event_calender h3::before {
-    content: url(images/calender.svg);
-    margin-right: 0px;
-    margin-bottom: 10px;
-    display: block;
-  }
-  .event_calender a {
-    margin-left: 0px;
-  }
-}
-/*End Press-Center*/
 /*.wrapper {
     background-image: url(images/site.jpg);
     background-repeat: no-repeat;
@@ -5424,5 +5108,464 @@ footer #dev {
 }
 
 /* end gallery styles */
+/*Start Press-Center*/
+.events_baner {
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+}
+.events_baner .baner_title {
+  box-sizing: border-box;
+  width: 30%;
+  padding: 50px 80px 20px;
+  background-color: #003561;
+}
+.events_baner .baner_title h2 {
+  color: #FFF;
+}
+.events_baner .baner_title h2::after {
+  content: url(images/clock.svg);
+  display: block;
+  margin-top: 60px;
+}
+.events_baner .text {
+  position: relative;
+  box-sizing: border-box;
+  padding: 50px 80px;
+  width: 70%;
+  border: 2px solid #BECAD3;
+}
+.events_baner .text p {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 27px;
+  width: 60%;
+  margin-bottom: 50px;
+}
+.events_baner .text p:first-child {
+  color: #7089A4;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.events_baner .text a {
+  margin-top: 20px;
+  background-color: #fff;
+  border: 1px solid #0A2A4F;
+  color: #0A2A4F;
+  padding: 5px 19px;
+  height: 30px;
+  text-align: center;
+  display: inline;
+  transition: all 0.3s;
+}
+.events_baner .text a::after {
+  content: none;
+}
+.events_baner .text a:hover {
+  background-color: #0A2A4F;
+  color: #FFF;
+}
+.events_baner .text .image {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.event_calender {
+  margin-top: 50px;
+  margin-bottom: 70px;
+}
+.event_calender h3, .event_calender a {
+  display: inline-block;
+}
+.event_calender h3 {
+  margin-right: 36px;
+}
+.event_calender h3::before {
+  content: url(images/calender.svg);
+  margin-right: 27px;
+  vertical-align: middle;
+}
+
+.materials {
+  display: flex;
+  flex-wrap: wrap;
+  clear: both;
+  margin: 0 -10px;
+}
+.materials .item {
+  width: calc(33.33% - 20px);
+  margin: 0px 10px 40px 10px;
+}
+.materials .item:hover .image img,
+.materials .item:hover .text a {
+  opacity: 1;
+}
+.materials .item:hover .text p {
+  color: #134983;
+}
+.materials .item:hover .image .button {
+  display: block;
+}
+.materials .item .image {
+  background-color: #347FCF;
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 253px;
+  overflow: hidden;
+}
+.materials .item .image img {
+  opacity: 0.7;
+  object-fit: cover;
+  object-position: center;
+  height: 100%;
+  width: 100%;
+  transition: all 0.3s;
+}
+.materials .item .image .button {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -80px;
+  margin-top: -30px;
+  transition: all 0.3s;
+}
+.materials .item .text {
+  display: block;
+  padding-top: 20px;
+}
+.materials .item .text p {
+  margin-bottom: 10px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.materials .item .text .button {
+  opacity: 0;
+  margin-top: 0px;
+  background-color: #fff;
+  border: 1px solid #134983;
+  color: #134983;
+  height: 30px;
+  line-height: 29px;
+}
+.materials .item .text .button::after {
+  content: none;
+}
+.materials .item .text .button:hover {
+  background-color: #134983;
+  color: #FFF;
+}
+.materials .item .text time {
+  display: inline-block;
+  font-size: 12px;
+  line-height: 15px;
+  color: #0A2A4F;
+  margin-bottom: 7px;
+}
+
+.content .buttons {
+  text-align: center;
+}
+.content .buttons .button::after {
+  content: none;
+}
+
+@media screen and (max-width: 1440px) {
+  .events_baner .baner_title {
+    padding: 50px 40px 20px;
+  }
+  .events_baner .text {
+    padding: 50px 40px;
+  }
+  .events_baner .text .image img {
+    width: 250px;
+    margin-top: 30px;
+  }
+}
+@media screen and (max-width: 1147px) {
+  .events_baner .baner_title {
+    padding: 50px 35px 20px;
+  }
+  .events_baner .text {
+    padding: 50px 35px;
+  }
+  .events_baner .text .image img {
+    width: 220px;
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 862px) {
+  .events_baner .baner_title {
+    padding: 50px 30px 20px;
+  }
+  .events_baner .text {
+    padding: 50px 30px;
+  }
+  .events_baner .text .image img {
+    width: 200px;
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 830px) {
+  .events_baner .baner_title {
+    padding: 30px 40px 0px;
+    width: 100%;
+  }
+  .events_baner .baner_title h2::after {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 0px;
+    margin-left: 30px;
+  }
+  .events_baner .text {
+    width: 100%;
+    padding: 50px 40px;
+  }
+  .events_baner .text .image img {
+    width: 230px;
+    margin-top: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .materials .item {
+    width: calc(50% - 20px);
+  }
+}
+@media screen and (max-width: 590px) {
+  .events_baner .baner_title {
+    padding: 30px 30px 0px;
+  }
+  .events_baner .text {
+    padding: 50px 30px;
+  }
+  .events_baner .text .image img {
+    width: 200px;
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 510px) {
+  .events_baner .baner_title h2:after {
+    display: block;
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+  .events_baner .text .image img {
+    width: 180px;
+    margin-top: 60px;
+  }
+}
+@media screen and (max-width: 573px) {
+  .materials .item {
+    width: 100%;
+    margin: 0px 0px 60px 0px;
+  }
+}
+@media screen and (max-width: 463px) {
+  .events_baner .baner_title h2:after {
+    display: block;
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+  .events_baner .text p {
+    width: 100%;
+  }
+  .events_baner .text .image img {
+    display: none;
+  }
+}
+@media screen and (max-width: 454px) {
+  .event_calender h3, .event_calender a {
+    display: block;
+  }
+  .event_calender h3 {
+    margin-right: 0;
+  }
+  .event_calender h3::before {
+    content: url(images/calender.svg);
+    margin-right: 20px;
+    vertical-align: middle;
+  }
+  .event_calender a {
+    margin-left: 55px;
+  }
+}
+@media screen and (max-width: 341px) {
+  .event_calender h3, .event_calender a {
+    display: block;
+  }
+  .event_calender h3 {
+    margin-right: 0;
+  }
+  .event_calender h3::before {
+    content: url(images/calender.svg);
+    margin-right: 0px;
+    margin-bottom: 10px;
+    display: block;
+  }
+  .event_calender a {
+    margin-left: 0px;
+  }
+}
+.latest_news {
+  float: left;
+  width: 60%;
+  max-width: 855px;
+  margin-right: 7%;
+  margin-bottom: 30px;
+}
+.latest_news .image {
+  width: 100%;
+  max-height: 500px;
+  margin-bottom: 30px;
+}
+.latest_news .image img {
+  width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+.latest_news time {
+  font-size: 12px;
+  line-height: 15px;
+  color: #7089A4;
+}
+.latest_news h3 {
+  font-size: 22px;
+  line-height: 27px;
+  text-transform: none;
+  padding-top: 13px;
+  max-width: 700px;
+}
+.latest_news .button {
+  background-color: #fff;
+  border: 1px solid #134983;
+  color: #134983;
+  height: 30px;
+  line-height: 29px;
+  margin-top: 0;
+}
+.latest_news .button::after {
+  content: none;
+}
+.latest_news .button:hover {
+  background-color: #134983;
+  color: #FFF;
+}
+
+.latest_news + .news_block {
+  margin-left: calc(60% + 30px);
+}
+
+.news_container {
+  position: relative;
+  padding-top: 45px;
+}
+.news_container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.news_block {
+  position: relative;
+}
+.news_block .news {
+  border: 1px solid #BECAD3;
+  border-left-width: 8px;
+  padding: 20px 25px;
+  margin-top: -1px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.news_block .news h5 {
+  margin-bottom: 15px;
+}
+.news_block .news .news_foo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.news_block .news time {
+  font-size: 12px;
+  line-height: 15px;
+  color: #0A2A4F;
+  padding-left: 25px;
+  background: url(images/icon_calendar.svg) left center no-repeat;
+}
+.news_block .news .button {
+  background-color: #fff;
+  border: 1px solid #134983;
+  color: #134983;
+  height: 30px;
+  line-height: 29px;
+  margin-top: 0;
+}
+.news_block .news .button::after {
+  content: none;
+}
+.news_block .news:hover {
+  border-left-color: #134983;
+  background: #EEF5F9;
+}
+.news_block .news:hover .button {
+  background-color: #134983;
+  color: #FFF;
+}
+
+.cols_container {
+  display: flex;
+}
+
+.left_col {
+  width: 33%;
+  position: relative;
+}
+.left_col .sticky {
+  position: sticky;
+  top: 0px;
+}
+.left_col .scroll_to {
+  position: relative;
+  padding-bottom: 40px;
+}
+.left_col .scroll_to li {
+  margin-bottom: 24px;
+  font-weight: 500;
+  height: 22px;
+}
+.left_col .scroll_to li a {
+  color: #0A2A4F;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.left_col .scroll_to li a:hover {
+  color: #134983;
+  font-size: 18px;
+  text-decoration: none;
+}
+.left_col .scroll_to + .button::after {
+  display: none;
+}
+
+.left_indent {
+  width: 68%;
+}
+
+.faq_container .group {
+  position: relative;
+}
+.faq_container h3 {
+  font-size: 16px;
+  line-height: 22px;
+  padding: 20px 120px 20px 30px;
+  text-transform: none;
+}
+
+/*End Press-Center*/
 
 /*# sourceMappingURL=template_styles.css.map */
