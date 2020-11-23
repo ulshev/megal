@@ -3842,6 +3842,7 @@ footer {
   font-weight: 400;
   background-color: #134983;
   color: #fff;
+  overflow: hidden;
 }
 footer .page_width {
   z-index: 3;
@@ -5575,6 +5576,23 @@ footer #dev {
   display: block;
   clear: both;
 }
+.news_container .image_left {
+  float: left;
+  width: 48%;
+  max-width: 660px;
+}
+.news_container .image_left img {
+  max-width: 100%;
+}
+.news_container .image_left + .faq_container {
+  margin-left: 50%;
+  padding-bottom: 80px;
+}
+.news_container .image_left + .faq_container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
 
 .news_block {
   position: relative;
@@ -5634,7 +5652,7 @@ footer #dev {
 }
 .left_col .sticky {
   position: sticky;
-  top: 0px;
+  top: 30px;
 }
 .left_col .scroll_to {
   position: relative;
@@ -5657,22 +5675,115 @@ footer #dev {
   font-size: 18px;
   text-decoration: none;
 }
+.left_col .scroll_to li a:hover::after {
+  opacity: 1;
+}
+.left_col .scroll_to li a::after {
+  content: "";
+  display: inline-block;
+  margin-left: 10px;
+  opacity: 0;
+  width: 16px;
+  height: 11px;
+  background: url(images/arrow_blue.svg) no-repeat right center;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
 .left_col .scroll_to + .button::after {
   display: none;
 }
 
 .left_indent {
   width: 68%;
+  padding-bottom: 80px;
 }
 
 .faq_container .group {
   position: relative;
+  margin-bottom: 14px;
+  background-color: #EEF5F9;
+}
+.faq_container .group > div {
+  padding: 10px 120px 15px 30px;
+  font-size: 15px;
+  line-height: 23px;
+}
+.faq_container .group p {
+  margin-bottom: 10px;
 }
 .faq_container h3 {
   font-size: 16px;
   line-height: 22px;
   padding: 20px 120px 20px 30px;
+  margin-bottom: 0;
   text-transform: none;
+  border: 1px solid #EEF5F9;
+  background-color: #fff;
+  box-sizing: border-box;
+  box-shadow: -10px 10px 20px rgba(19, 73, 131, 0.2);
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.faq_container h3.ui-state-active {
+  background: transparent;
+  box-shadow: 0px 0px 0px rgba(19, 73, 131, 0);
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.faq_container h3.ui-state-active .ui-accordion-header-icon::before {
+  transform: rotate(0deg);
+}
+.faq_container .button {
+  background-color: transparent;
+  color: #134983;
+  font-weight: 500;
+  padding: 0;
+}
+.faq_container .button::after {
+  background-image: url(images/arrow_blue.svg);
+  width: 10px;
+  margin-left: 10px;
+  margin-bottom: -1px;
+}
+.faq_container .ui-accordion-header-icon {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  margin-top: -11px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 2px solid #0A2A4F;
+}
+.faq_container .ui-accordion-header-icon::before, .faq_container .ui-accordion-header-icon::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  background-color: #0A2A4F;
+  top: 50%;
+  left: 50%;
+  margin: -1px 0 0 -5px;
+}
+.faq_container .ui-accordion-header-icon::before {
+  transform: rotate(90deg);
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.faq_container h2 {
+  margin-bottom: 10px;
+}
+.faq_container .group + h2 {
+  padding-top: 35px;
 }
 
 @media screen and (max-width: 1330px) {
@@ -5701,3 +5812,167 @@ footer #dev {
   }
 }
 /*End Press-Center*/
+/*start basket*/
+.basket_table {
+  overflow: auto;
+  margin-bottom: 30px;
+  background: #FFFFFF;
+  margin-bottom: 90px;
+  font-size: 15px;
+}
+.basket_table table {
+  min-width: 99%;
+}
+.basket_table tr:hover td {
+  background: #EEF5F9;
+}
+.basket_table th {
+  padding: 0px 10px 25px 40px;
+  border-bottom: 1px solid #CFDBE7;
+  text-align: left;
+  font-weight: 400;
+}
+.basket_table th:first-child {
+  border-left: 0;
+}
+.basket_table td {
+  padding: 35px 0px 35px 40px;
+  text-align: left;
+  border-bottom: 1px solid #CFDBE7;
+}
+.basket_table td:first-child {
+  border-left: 1px solid #CFDBE7;
+}
+.basket_table td:last-child {
+  border-right: 1px solid #CFDBE7;
+}
+.basket_table a {
+  color: #0A2A4F;
+}
+.basket_table p {
+  margin-bottom: 0px;
+}
+.basket_table .img {
+  background-color: #fff;
+}
+.basket_table .img a {
+  display: inline-block;
+  width: 120px;
+  height: 105px;
+  line-height: 145px;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-align: center;
+}
+.basket_table .img a img {
+  max-width: 99%;
+  max-height: 99%;
+  object-fit: contain;
+  vertical-align: middle;
+}
+.basket_table .name .h6 {
+  font-size: 15px;
+  line-height: 20px;
+  margin-bottom: 0px;
+  height: 80px;
+  overflow: hidden;
+}
+.basket_table .desc {
+  min-width: 290px;
+}
+.basket_table .desc p {
+  font-size: 12px;
+  line-height: 22px;
+}
+.basket_table .desc p .char {
+  display: inline-block;
+  width: 150px;
+}
+.basket_table .price {
+  color: #134983;
+  font-weight: 500;
+  font-size: 18px;
+}
+.basket_table .delete_all {
+  display: inline-block;
+  position: relative;
+  padding-left: 20px;
+  white-space: nowrap;
+}
+.basket_table .delete_all::before, .basket_table .delete_all::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  border: 1px solid #134983;
+  top: 50%;
+  left: 0;
+  margin-left: -6px;
+  margin-top: -1px;
+  transform: rotate(45deg);
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.basket_table .delete_all::after {
+  transform: rotate(135deg);
+}
+.basket_table .delete_all:hover {
+  background-color: #134983;
+}
+.basket_table .delete a {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url(images/icon_basket_delete.svg) no-repeat center;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  text-indent: -10000px;
+  overflow: hidden;
+  position: relative;
+}
+.basket_table .number .quantity {
+  display: inline-flex;
+}
+.basket_table .number input {
+  width: 129px;
+  height: 47px;
+  background: #FFFFFF;
+  border: 1px solid #134983;
+  box-sizing: border-box;
+  border-radius: 0px;
+  text-align: center;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 22px;
+  vertical-align: middle;
+}
+.basket_table .number .plus_number, .basket_table .number .minus_number {
+  width: 30px;
+  height: 47px;
+  background-color: #134983;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-size: 28px;
+  line-height: 0px;
+  font-weight: 300;
+  color: #fff;
+  padding: 0;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  padding-top: 2px;
+}
+.basket_table .number .minus_number {
+  font-size: 39px;
+  padding-top: 0px;
+}
+
+/*End basket*/
+
+/*# sourceMappingURL=template_styles.css.map */

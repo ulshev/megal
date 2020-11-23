@@ -155,6 +155,13 @@ $(document).ready(function() {
 
 	$("[data-fancybox]").fancybox();
 
+	$(".scroll_to").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top - 30;
+        $('body,html').animate({scrollTop: top}, 1000);
+    });
+
 	$('.features_slider').slick({
 	    slidesToShow: 4,
 	    slidesToScroll: 1,
