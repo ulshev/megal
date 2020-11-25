@@ -283,6 +283,16 @@ h5, .h5, h6, .h6 {
         }
 
     }
+
+    &.btn_light {
+        border-color: #EEF5F9;
+        background-color: #EEF5F9;
+        color: $color_text;
+        &:hover {
+            background-color: #fff;
+            color: $color_text;
+        }
+    }
 } 
 
 .buttons {

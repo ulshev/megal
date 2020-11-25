@@ -1,0 +1,282 @@
+.gUniFormModalWindow.form_block {
+    background: rgba(10, 42, 79, 0.3);
+    max-width: none;
+
+
+    .gUniFormModalWindowContainer {
+        border-radius: 0;
+        line-height: 28px;
+        padding: 0;
+        width: 82%;
+        max-width: 1044px;
+        overflow: hidden;
+        background: #fff;
+        border-radius: 0px;
+        box-shadow: 20px 20px 100px rgba(19, 44, 108, 0.6);
+    }
+
+    .gUniFormContainer {
+        //background: #fff;
+        //border-radius: 5px;
+        padding: 60px 30px 20px;
+        text-align: center;
+        font-size: 16px;
+        line-height: 22px;
+        box-sizing: border-box;
+        max-width: 790px;
+        margin: 0 auto;
+    }
+
+    .uFormHeading {
+        font-family: $font_family_os;
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 30px;
+        margin-bottom: 30px;
+        //text-transform: uppercase;
+    }
+
+    .uFormHeading + p {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
+    .gUniFormModalWindowExit {
+        width: 26px;
+        height: 26px;
+        top: 26px;
+        right: 25px;
+        border-radius: 50%;
+        transform: rotate(-45deg);
+
+        &::before, &::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            border-top: 2px solid #BECAD3;
+            top: 50%;
+            left: 50%;
+            margin: -1px 0 0 -13px;
+            @include transition(all);
+        }
+        &::after {
+            transform: rotate(90deg);
+        }
+
+        // &:hover {
+        //     &::before, &::after {
+        //         background-color: #262945;
+        //     }
+        // }
+    }
+
+
+    input[type="checkbox"]:not(checked) + label {
+		padding-left: 30px;
+		&:before {
+			width: 15px;
+			height: 15px;
+			background: #fff;
+            border: 1px solid #CFDBE7;
+            top: 0;
+		}
+		
+		&:after {
+			width: 11px;
+			height: 5px;
+            border-color: $color_a;
+            transform: rotate(-56deg);
+		}
+
+		&:hover {
+			opacity: 0.8;
+		}
+    }
+
+    input[type=file] + label {
+        border-color: #EEF5F9;
+        background-color: #EEF5F9;
+        &:hover {
+            background-color: #fff;
+            //border-color: #EEF5F9;
+            color: $color_text;
+        }
+    }
+    .small {
+        margin-bottom: 50px;
+    }
+
+    .basket_table {
+        border-top: 1px solid #CFDBE7;
+        margin-bottom: 60px;
+        padding-top: 30px;
+        td {
+            padding: 20px 0px;
+            text-align: left;
+            border-left: 0;
+            border-color: transparent;
+            font-weight: 500;
+            &:last-child {
+                text-align: center;
+                width: 20%;
+            }
+        }
+        .h6 {
+            margin-bottom: 0;
+            height: auto;
+            color: $color_text;
+        }
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        padding-bottom: 80px;
+        font-weight: 500;
+
+        .image {
+            width: 145px;
+            max-width: 145px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .text {
+            padding-left: 60px;
+            text-align: left;
+        }
+
+        .buttons {
+            //text-align: left;
+            padding-bottom: 0;
+            padding-top: 20px;
+        }
+
+        .button {
+            color: #fff;
+            text-decoration: none;
+            margin-top: 0px;
+            height: 40px;
+            line-height: 39px;
+
+
+            &.btn_light {
+                color: $color_text;
+            }
+
+            &::after{
+                display: none;
+            }
+        }
+    }
+}
+
+
+// @media screen and (max-width: 1600px) {
+
+// }
+
+@media screen and (max-width: 1300px) {
+    .gUniFormModalWindow.form_block .gUniFormContainer {
+        padding: 60px 70px 20px;
+    }
+}
+@media screen and (max-width: 1030px) {
+    .gUniFormModalWindow.form_block {
+        .gUniFormContainer {
+            padding: 50px 50px 20px;
+        }
+        .uFormHeading {
+            font-size: 28px;
+		    line-height: 38px;
+        }
+        p {
+            margin-bottom: 30px;
+            font-size: 14px;
+		    line-height: 20px;
+        }
+        .basket_table {
+            margin-bottom: 30px;
+        }
+        .container {
+            padding-bottom: 40px;
+            .buttons {
+                padding-top: 0;
+            }
+            .text {
+                padding-left: 30px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 900px) {
+    .gUniFormModalWindow.form_block {
+        .gUniFormContainer {
+            padding: 50px 30px 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .gUniFormModalWindow.form_block {
+        .gUniFormModalWindowContainer {
+            width: 90%;
+        }
+        .gUniFormContainer {
+            padding: 50px 20px 20px;
+        }
+        .uFormHeading {
+            font-size: 24px;
+		    line-height: 34px;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .gUniFormModalWindow.form_block {
+        .gUniFormContainer {
+            padding: 40px 20px 20px;
+        }
+        .uFormHeading {
+            font-size: 20px;
+            line-height: 26px;
+            margin-bottom: 20px;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+        .gUniFormModalWindowExit {
+            width: 30px;
+            height: 30px;
+            top: 15px;
+            right: 15px;
+        }
+        .small {
+            margin-bottom: 20px;
+        }
+        .basket_table {
+            margin-bottom: 0px;
+        }
+        .container {
+            padding-bottom: 10px;
+            flex-wrap: wrap;
+
+            .image {
+                text-align: center;
+                margin: 0 auto 20px;
+            }
+
+            .text {
+                padding-left: 0;
+                text-align: center;
+            }
+            
+        }
+    }
+
+}
+// @media screen and (max-width: 450px) {
+
+// }

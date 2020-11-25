@@ -320,7 +320,7 @@
                             <tr>
                                 <th colspan="2">
                                     <div class="basket_checkbox">
-                                        <input type="checkbox" class="checkbox" id="chec_all" value="">
+                                        <input type="checkbox" class="checkbox chec_all" id="chec_all" value="">
                                         <label for="chec_all">Выбрать все</label>
                                     </div>
                                 </th>
@@ -359,8 +359,8 @@
                             <tr>
                                 <td>
                                     <div class="basket_checkbox">
-                                        <input type="checkbox" class="checkbox" id="chec1" value="">
-                                        <label for="chec1"></label>
+                                        <input type="checkbox" class="checkbox" id="chec2" value="">
+                                        <label for="chec2"></label>
                                     </div>
                                 </td>
                                 <td class="img"><a href="#"><img src="images/product_image4.jpg" alt=""></a></td>
@@ -386,8 +386,8 @@
                             <tr>
                                 <td>
                                     <div class="basket_checkbox">
-                                        <input type="checkbox" class="checkbox" id="chec1" value="">
-                                        <label for="chec1"></label>
+                                        <input type="checkbox" class="checkbox" id="chec3" value="">
+                                        <label for="chec3"></label>
                                     </div>
                                 </td>
                                 <td class="img"><a href="#"><img src="images/product_image3.jpg" alt=""></a></td>
@@ -413,8 +413,8 @@
                             <tr>
                                 <td>
                                     <div class="basket_checkbox">
-                                        <input type="checkbox" class="checkbox" id="chec1" value="">
-                                        <label for="chec1"></label>
+                                        <input type="checkbox" class="checkbox" id="chec4" value="">
+                                        <label for="chec4"></label>
                                     </div>
                                 </td>
                                 <td class="img"><a href="#"><img src="images/product_image7.jpg" alt=""></a></td>
@@ -438,6 +438,10 @@
                                 <td class="delete"><a href="#">X</a></td>
                             </tr>
                         </table> 
+                    </div>
+
+                    <div class="buttons">
+                        <a href="#" class="button">Оформить заказ</a>
                     </div>
 
                 </div>
@@ -595,6 +599,132 @@
                 </div>
             </div>
         </footer>
-	<!-- end подвал -->
+    <!-- end подвал -->
+
+
+    <!-- Модальные окна -->
+    <div class="gUniFormModalWindow form_block form_write" style="display: none;">
+		<div class="gUniFormHideScrollBar">
+		<div class="gUniFormCn100">
+		<div class="gUniFormModalWindowContainer">
+		  <div class="gUniFormContainer">
+			<div class="uFormHeading">Напишите нам</div>
+			<p>Заполните форму и мы свяжемся с вами в ближайшее время</p>
+			<form enctype="multipart/form-data" action="" method="post" class="gUniForm">
+				<div class="uFormLine input_text">
+					<input id="name" class="rfield name" name="name" type="text" value="">
+					<label for="name">ФИО</label>
+					<div class="uError"></div>
+				</div>
+				<div class="uFormLine input_text">
+					<input id="email" class="rfield email" name="email" type="text" value=""> 
+					<label for="email">Email*</label>
+					<div class="uError"></div>
+				</div>
+				<div class="uFormLine input_text">
+					<input id="phone" class="rfield phone" name="phone" type="text" value="">
+					<label for="phone">Телефон*</label>
+					<div class="uError"></div>
+				</div>
+				<div class="uFormLine textarea">
+					<textarea id="message" class="rfield message" name="message"></textarea>
+					<label for="message">Сообщение</label>
+					<div class="uError"></div>
+				</div>
+				<div class="uFormLine input_personalInfo">
+					<input type="checkbox" id="personal_info_write" name="personalInfo" data-required="Y" value="Y">
+					<label for="personal_info_write">Даю согласие на обработку персональных данных, в соответствии с условиями <a href="/personal-info/" target="_blank" rel="nofollow noopener">политики конфиденциальности и пользовательского соглашения</a></label>
+				</div>
+				<div class="uFormGlobalErrors"></div>
+				<div class="uformTools">
+					<div class="uFormButton">
+						<button type="submit" name="web_form_submit" class="uFormSubmit button button-red" value="Отправить">Отправить</button>
+					</div>
+				</div>
+				 
+			</form>
+		</div>
+		<a href="#" class="gUniFormModalWindowExit form__btn-close"></a>
+		</div>
+		</div>
+	  </div>
+	</div>
+
+
+    <div class="gUniFormModalWindow form_block form_basket_order" style="display: block;"><!-- Модальное окно оформления заказа -->
+        <div class="gUniFormHideScrollBar">
+        <div class="gUniFormCn100">
+        <div class="gUniFormModalWindowContainer">
+          <div class="gUniFormContainer">
+            <div class="uFormHeading">Заполните свои данные для оформления заказа</div>
+            <form enctype="multipart/form-data" action="" method="post" class="gUniForm">
+				<div class="uFormLine input_text">
+					<input id="name" class="rfield name" name="name" type="text" value="">
+					<label for="name">ФИО</label>
+					<div class="uError"></div>
+				</div>
+				<div class="uFormLine input_text">
+					<input id="email" class="rfield email" name="email" type="text" value=""> 
+					<label for="email">Email*</label>
+					<div class="uError"></div>
+				</div>
+				<div class="uFormLine input_text">
+					<input id="phone" class="rfield phone" name="phone" type="text" value="">
+					<label for="phone">Телефон*</label>
+					<div class="uError"></div>
+				</div>
+				<div class="uFormLine textarea">
+					<textarea id="message" class="rfield message" name="message"></textarea>
+					<label for="message">Сообщение</label>
+					<div class="uError"></div>
+				</div>
+				<div class="uFormLine input_personalInfo">
+					<input type="checkbox" id="personal_info_basket" name="personalInfo" data-required="Y" value="Y">
+					<label for="personal_info_basket">Даю согласие на обработку персональных данных, в соответствии с условиями <a href="/personal-info/" target="_blank" rel="nofollow noopener">политики конфиденциальности и пользовательского соглашения</a></label>
+                </div>
+                <div class="input_file">
+					<input id="file_basket" type="file" value="">
+					<label class="button btn_invert file" for="file_basket">Прикрепить файл</label>
+					<div class="uError"></div>
+				</div>
+				<div class="uformTools">
+					<div class="uFormButton">
+						<button type="submit" name="web_form_submit" class="uFormSubmit button button-red" value="Отправить">Оформить заказ</button>
+					</div>
+				</div>
+				<div class="uFormGlobalErrors"></div>
+				 
+			</form>
+
+			<div class="basket_table">
+                <h4>В заказе:</h4>
+				<table>
+					<tr>
+						<td class="name">
+							<div class="h6">Лестница приставная бытовая ЛПБ 400 мм</div>
+						</td>
+						<td class="number">1 шт</td>
+					</tr>
+					<tr>
+						<td class="name">
+							<div class="h6">Лестница приставная с поручнями ЛПНА 3,0 (4,17)</div>
+						</td>
+						<td class="number">1 шт</td>
+                    </tr>
+                    <tr>
+						<td class="name">
+							<div class="h6">Лестница приставная бытовая ЛПБ 510 мм</div>
+						</td>
+						<td class="number">1 шт</td>
+					</tr>
+				</table> 
+			</div>
+        </div>
+        <a href="#" class="gUniFormModalWindowExit form__btn-close"></a>
+        </div>
+        </div>
+      </div>
+    </div>
+    </div>
 </body>
 </html>
