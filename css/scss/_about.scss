@@ -222,4 +222,220 @@
     }
 }
 
+
+.chronology {
+    padding-top: 80px;
+    padding-bottom: 70px;
+    h2 {
+        text-align: center;
+        margin-bottom: 70px;
+    }
+}
+
+.years_slider {
+    margin: 0 0 44px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        border-top: 1px solid #C8DAEB;
+        top: 46px;
+        left: 0;
+        width: 100%;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        background: #BECAD3;
+        top: 31px;
+        left: 50%;
+        width: 15px;
+        margin-left: -7px;
+        height: 64px;
+    }
+
+    .item {
+        height: 0;
+        text-align: center;
+        font-size: 24px;
+        line-height: 30px;
+        color: $color_a;
+        cursor: pointer;
+        margin-bottom: 50px;
+        @include transition(all);
+
+        span {
+            display: inline-block;
+            height: 51px;
+            position: relative;
+
+            &::after {
+                content: '';
+                position: absolute;
+                background: #BECAD3;
+                bottom: 0;
+                left: 50%;
+                width: 9px;
+                height: 9px;
+                margin-left: -5px;
+                border-radius: 50%;
+            }
+        }
+
+        &.slick-current {
+            opacity: 0;
+        }
+
+    }
+    
+    .slick-arrow {
+        width: 50px;
+        height: 50px;
+        top: 46px;
+        margin-top: -25px;
+        background-color: $color_a;
+        border-radius: 50%;
+
+        &::before {
+            top: 15px;
+            width: 20px;
+            height: 20px;
+            border-color: #fff;
+        }
+    }
+    .slick-prev::before {
+        left: 19px;
+    }
+    .slick-next:before {
+        right: 19px;
+    }
+}
+
+.chronology_info_slider {
+    max-width: 1230px;
+    margin: 0 auto 50px;
+    padding: 0 20px;
+    background-color: #fff;
+    box-shadow: -10px 10px 20px rgba(19, 73, 131, 0.3);
+
+    .item {
+        position: relative;
+        padding: 80px 20px;
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+        line-height: 25px;
+        
+        .text {
+            padding-left: 5%;
+            padding-right: 10%;
+            box-sizing: border-box;
+            width: 50%;
+        }
+
+        .h2 {
+            margin-bottom: 50px;
+        }
+
+        .image {
+            width: 50%;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .chronology_info_slider {
+        .item {
+            .text {
+                padding-right: 5%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1030px) {
+    .chronology {
+        padding-top: 50px;
+        padding-bottom: 40px;
+        h2 {
+            margin-bottom: 50px;
+        }
+    }
+    .chronology_info_slider {
+        .item {
+            padding: 50px 20px;
+            font-size: 16px;
+            line-height: 24px;
+            .text {
+                padding-right: 20px;
+                padding-left: 0;
+            }
+            .h2 {
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 800px) {
+    .chronology_info_slider {
+        .item {
+            padding: 40px 20px;
+            .h2 {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 800px) {
+    .chronology_info_slider {
+        .item {
+            padding: 30px 20px;
+            flex-wrap: wrap;
+            .text {
+                width: 100%;
+            }
+            .image {
+                width: 100%;
+            }
+            .h2 {
+               text-align: center;
+            }
+        }
+    }
+    .years_slider {
+        .slick-list {
+            margin: 0 -30px;
+        }   
+    }
+}
+@media screen and (max-width: 600px) {
+    .chronology {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        h2 {
+            margin-bottom: 30px;
+        }
+    }
+    .years_slider {
+        margin: 0 -20px 44px;
+        .slick-list {
+            margin: 0 -55px;
+        }
+        .item {
+            font-size: 20px;
+            line-height: 26px;
+        }   
+    }
+}
+// @media screen and (max-width: 500px) {
+//     .years_slider {
+//         .slick-list {
+//             margin: 0 -70px;
+//         }  
+//     }
+// }
+
 /* end about styles */

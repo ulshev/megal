@@ -57,7 +57,7 @@
                         <a href="#" class="lang_item active">ru</a>
                         <a href="#" class="lang_item">am</a>
                     </div>
-                    <a class="button btn_call" href="#">Напишите нам</a>
+                    <a class="button btn-write" href="#">Напишите нам</a>
                     <nav class="top_menu">
                         <ul class="menu">
                             <li>
@@ -409,7 +409,6 @@
                             </ul>
                         </div>
                     </div>
-                    
                     <div class="tab">
                         <h3 class="mob">Преимущества</h3>
                         <div class="text">
@@ -505,7 +504,7 @@
                             <td>56</td>
                             <td>3,1</td>
                             <td>56</td>
-                            <td><a herf="#">В корзину</a></td>
+                            <td><a class="btn-in_basket" herf="#">В корзину</a></td>
                         </tr>
                         <tr>
                             <td><a data-fancybox="available_options" href="images/catalog_section1.png" data-caption="ВМА 700/4">ВМА 700/4</a></td>
@@ -515,7 +514,7 @@
                             <td>56</td>
                             <td>3,1</td>
                             <td>56</td>
-                            <td><a herf="#">В корзину</a></td>
+                            <td><a class="btn-in_basket" herf="#">В корзину</a></td>
                         </tr>
                         <tr>
                             <td><a data-fancybox="available_options" href="images/catalog_section1.png" data-caption="ВМА 700/5">ВМА 700/5</a></td>
@@ -525,7 +524,7 @@
                             <td>56</td>
                             <td>3,1</td>
                             <td>56</td>
-                            <td><a herf="#">В корзину</a></td>
+                            <td><a class="btn-in_basket" herf="#">В корзину</a></td>
                         </tr>
                         <tr>
                             <td><a data-fancybox="available_options" href="images/catalog_section1.png" data-caption="ВМА 700/6">ВМА 700/6</a></td>
@@ -535,7 +534,7 @@
                             <td>56</td>
                             <td>3,1</td>
                             <td>56</td>
-                            <td><a herf="#">В корзину</a></td>
+                            <td><a class="btn-in_basket" herf="#">В корзину</a></td>
                         </tr>
                         <tr>
                             <td><a data-fancybox="available_options" href="images/catalog_section1.png" data-caption="ВМА 700/7">ВМА 700/7</a></td>
@@ -545,7 +544,7 @@
                             <td>56</td>
                             <td>3,1</td>
                             <td>56</td>
-                            <td><a herf="#">В корзину</a></td>
+                            <td><a class="btn-in_basket" herf="#">В корзину</a></td>
                         </tr>
                         <tr>
                             <td><a data-fancybox="available_options" href="images/catalog_section1.png" data-caption="ВМА 700/8">ВМА 700/8</a></td>
@@ -555,7 +554,7 @@
                             <td>56</td>
                             <td>3,1</td>
                             <td>56</td>
-                            <td><a herf="#">В корзину</a></td>
+                            <td><a class="btn-in_basket" herf="#">В корзину</a></td>
                         </tr>
                         <tr>
                             <td><a data-fancybox="available_options" href="images/catalog_section1.png" data-caption="ВМА 700/9">ВМА 700/9</a></td>
@@ -565,7 +564,7 @@
                             <td>56</td>
                             <td>3,1</td>
                             <td>56</td>
-                            <td><a herf="#">В корзину</a></td>
+                            <td><a class="btn-in_basket" herf="#">В корзину</a></td>
                         </tr>
                         <tr>
                             <td><a data-fancybox="available_options" href="images/catalog_section1.png" data-caption="ВМА 700/10">ВМА 700/10</a></td>
@@ -575,7 +574,7 @@
                             <td>56</td>
                             <td>3,1</td>
                             <td>56</td>
-                            <td><a herf="#">В корзину</a></td>
+                            <td><a class="btn-in_basket" herf="#">В корзину</a></td>
                         </tr>
                         <tr>
                             <td><a data-fancybox="available_options" href="images/catalog_section1.png" data-caption="ВМА 700/11">ВМА 700/11</a></td>
@@ -585,7 +584,7 @@
                             <td>56</td>
                             <td>3,1</td>
                             <td>56</td>
-                            <td><a herf="#">В корзину</a></td>
+                            <td><a class="btn-in_basket" herf="#">В корзину</a></td>
                         </tr>
                         <tr>
                             <td><a data-fancybox="available_options" href="images/catalog_section1.png" data-caption="ВМА 700/12">ВМА 700/12</a></td>
@@ -595,7 +594,7 @@
                             <td>56</td>
                             <td>3,1</td>
                             <td>56</td>
-                            <td><a herf="#">В корзину</a></td>
+                            <td><a class="btn-in_basket" herf="#">В корзину</a></td>
                         </tr>
                     </table>
                     </div>
@@ -1131,9 +1130,10 @@
         </footer>
     <!-- end подвал -->
     <!-- Модальные окна -->
-    <div class="gUniFormModalWindow form_block form_write" style="display: none;">
-		<div class="gUniFormHideScrollBar">
+    <div class="gUniFormModalWindow form--modal form_block form-write">
+        <div class="gUniFormHideScrollBar">
 		<div class="gUniFormCn100">
+        <div class="overlay"></div>
 		<div class="gUniFormModalWindowContainer">
 		  <div class="gUniFormContainer">
 			<div class="uFormHeading">Напишите нам</div>
@@ -1178,9 +1178,11 @@
 	  </div>
     </div>
 
-    <div class="gUniFormModalWindow form_block form_product" style="display: none;">
-		<div class="gUniFormHideScrollBar">
+    <div class="gUniFormModalWindow form--modal form_block form-in_basket">
+        <div class="overlay"></div>
+        <div class="gUniFormHideScrollBar">
 		<div class="gUniFormCn100">
+        <div class="overlay"></div>
 		<div class="gUniFormModalWindowContainer">
 		  <div class="gUniFormContainer">
 			<div class="uFormHeading">Товар добавлен в корзину</div>
@@ -1189,8 +1191,8 @@
                 <div class="text">
                     <p>Вышка модульная алюминиевая ВМА 700/9 9 м</p>
                     <div class="buttons">
-                        <a class="button btn_light" href="#">Продолжить покупки</a>
-                        <a class="button" href="#">Перейти в корзину</a>
+                        <a class="button btn_light form__btn-close" href="#">Продолжить покупки</a>
+                        <a class="button" href="basket.html">Перейти в корзину</a>
                     </div>
                 </div>
             </div>

@@ -854,12 +854,12 @@ header .search {
 	.menu_btn {
 		float: right;
 		width: 24px;
-		height: 0px;
-		margin: 25px 40px 20px;
+		height: 25px;
+		margin: 17px 40px 20px;
 		position: relative;
 		top: 7px;
 		display: block;
-		border-top: 1.3px solid #0A2A4F;
+		//border-top: 1.3px solid #0A2A4F;
 
 		&::before, &::after {
 			content: '';
@@ -870,20 +870,24 @@ header .search {
 			@include transition(all);
 		}
 		&::before{
-			top: -8px;
+			top: 0px;
+			height: 6px;
+			border-bottom: 1.3px solid #0A2A4F;
 		}
 		&::after {
-			bottom: -8px;
+			top: 16px;
 		}
 
 		&.active {
 			border-color: transparent;
 			&::before{
-				top: 1px;
+				top: 9px;
+				height: 0;
+				border-bottom: 0;
 				transform: rotate(45deg);
 			}
 			&::after {
-				bottom: -2px;
+				top: 10px;
 				transform: rotate(-45deg);
 			}
 		}
@@ -1175,7 +1179,7 @@ header .search {
 		}
 	}
 	.menu_btn {
-		margin: 28px 20px 20px;
+		margin: 20px 20px 20px;
 	}
 	.header_main .menu a {
 		padding: 11px 20px;
@@ -1262,7 +1266,7 @@ header .search {
 		}
 	}
 	.menu_btn {
-		margin: 25px 10px 20px;
+		margin: 17px 10px 20px;
 	}
 	.header_main {
 		max-height: calc(100vh - 95px);

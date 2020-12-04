@@ -89,48 +89,46 @@
     }
 }
 
-.secondary_menu + .content .page_width .text_and_image {
-    padding-top: 80px;
-}
+// .secondary_menu + .content .page_width .text_and_image {
+//     padding-top: 80px;
+// }
 .midway{
     text-align: center;
-    width: 70%;
+    max-width: 1000px;
     margin: 0 auto 20px;
 }
-@media screen and (max-width:1100px){
+@media screen and (max-width:1300px){
     .text_and_image{
+        .text{
+            width: calc(50% - 0px);
+        }
+    }
+}
+@media screen and (max-width:1030px){
+    .text_and_image{
+        margin-bottom: 30px;
         .image{
-            width: 50%;
+            width: 100%;
+            max-width: 700px;
+            margin: 0 auto 20px;
         }
         .contain{
             display: block;
             width: 100%;
         }
 
-        // .text_2_v{
-        //     width: 100%;
-        //     order: 2;
-        //     margin-top: 20px;
-        // }
+        .text{
+            width: 100%;
+            order: 2;
+            margin-top: 20px;
+        }
 
         .midway_button{
             margin: 30px auto 0;
         }
     }
 }
-@media screen and (max-width:950px){
-    .text_and_image{
-        margin-bottom: 30px;
-        .image{
-            width: 100%;
-        }
-        .text{
-            width: 100%;
-            order: 2;
-            margin-top: 20px;
-        }
-    }
-}
+
 /*@media screen and (max-width:760px){
     #small_form + .content{
         margin-top: 65px;
@@ -156,6 +154,7 @@
 @media screen and (max-width:600px){
     .title{
         padding-top: 20px;
+        margin-bottom: 20px;
         .breadcrumbs{
             margin-bottom: 10px;
         }
@@ -309,6 +308,21 @@
     }
 }
 
+@media screen and (max-width:1030px){
+    .video {
+        width: 154px;
+        height: 154px;
+    
+        .video_play {
+            &:before {
+                width: 90px;
+                height: 90px;
+                margin: -40px 0 0 -32px;
+            }
+        }
+    }
+}
+
 /*start Projects*/
 .text_bgImage{
     width: 100%;
@@ -348,7 +362,7 @@
     }
 
     .button{
-        margin-top: 50px;
+        //margin-top: 50px;
         &::after{
             content: none;
         }
@@ -482,14 +496,15 @@
         }
     }
 }
-@media screen and (max-width:1170px){
+@media screen and (max-width:1200px){
     .text_bgImage .text{
         padding: 50px ;
     }
 }
-@media screen and (max-width:1028px){
+@media screen and (max-width:1030px){
     .text_bgImage .text{
         width: 60%;
+        padding: 30px;
     }
     .content .projects{
         .item{
@@ -498,10 +513,23 @@
         }
     }
 }
-@media screen and (max-width:833px){
+@media screen and (max-width:800px){
     .text_bgImage .text{
         width: 100%;
         padding: 50px 40px;
+    }
+    .text_bgImage.text_left {
+        background-position: 55% center;
+        .video {
+            margin-right: 30px;
+        }
+        .text {
+            width: calc(100% - 185px);
+        }
+    }
+    .text_bgImage.mas .right_image {
+        width: 90%;
+        margin: 0 auto 20px;
     }
 }
 @media screen and (max-width:600px){
@@ -510,10 +538,21 @@
            width: calc(100% - 20px);
         }
     }
+    .text_bgImage.text_left {
+        background-position: left center;
+        .video {
+            margin-right: auto;
+            margin-bottom: 30px;
+            box-shadow: -10px 10px 20px rgba(19, 73, 131, 0.2), inset  -10px 10px 20px rgba(19, 73, 131, 0.2);
+        }
+        .text {
+            width: 100%;
+        }
+    }
 }
 @media screen and (max-width:478px){
     .text_bgImage .text{
-        padding: 50px 20px;
+        padding: 30px 20px 10px;
     }
     .pagination{
         ul li a{
@@ -533,7 +572,7 @@
 }
 @media screen and (max-width: 350px) {
     .text_bgImage .text{
-        padding: 50px 12px;
+        padding: 30px 12px 10px;
     }
     .content .projects{
         .item {
@@ -917,7 +956,7 @@
                 }
             }
 
-            &:nth-child(even){
+            &.active{
                 background-color: $color_bg;
             }
         }
@@ -1297,6 +1336,115 @@
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+}
+@media screen and (max-width: 1300px) {	
+	.mas .important_numbers {
+        justify-content: space-between;
+        padding: 0 20px 30px;
+    }
+}
+@media screen and (max-width: 1030px) {	
+    .mas .important_numbers {
+        .item {
+            .num {
+                font-size: 34px;
+                line-height: 42px;
+            }
+        }
+        .item_more {
+            padding-left: 20px;
+        }
+    }
+	.important_numbers {
+        &.about_page {
+            .item {
+                margin: 0 15px 20px;
+                padding-top: 20px;
+                height: auto;
+                .num {
+                    font-size: 34px;
+                    line-height: 42px;
+                    margin-bottom: 5px;
+                    &::before {
+                        margin-right: 10px;
+                    }
+                    &::after {
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {	
+	.important_numbers {
+        &.about_page {
+            .item {
+                margin: 0 10px 20px;
+                padding-top: 15px;
+                .num {
+                    font-size: 30px;
+                    line-height: 38px;
+                }
+                p {
+                    font-size: 11px;
+                    line-height: 176.4%;
+                }
+            }
+        }
+    }
+    .mas .important_numbers {
+        .item {
+            .num {
+                font-size: 30px;
+                line-height: 38px;
+            }
+            p {
+                font-size: 11px;
+                line-height: 176.4%;
+            }
+        }
+        .item_more {
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {	
+	.important_numbers {
+        &.about_page {
+            margin-top: -20px;
+            flex-wrap: wrap;
+            .item {
+                margin: 0 0px 20px;
+                width: 100%;
+            }
+        }
+    }
+    .mas .important_numbers {
+        flex-wrap: wrap;
+        .item {
+            margin: 0 0px 20px;
+            width: 100%;
+            text-align: left;
+            display: flex;
+            align-items: center;
+
+            .num {
+                min-width: 120px;
+                width: 120px;
+            }
+
+            p {
+                margin-bottom: 0;
+            }
+        }
+        .item_more {
+            padding-left: 0;
+        }
     }
 }
 

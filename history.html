@@ -290,165 +290,135 @@
         </header>
         <!-- end шапка -->
 
-         <!--название-->
-         <div class="title">
+        <!--название-->
+        <div class="title">
             <div class="page_width">
                 <div class="breadcrumbs">
                     <ul>
                         <li><a href="index.html">Главная</a></li>
-                        <li class="active">Корзина</li>
+                        <li><a href="about.html">О компании</a></li>
+                        <li class="active">История компании</li>
                     </ul>
                 </div>
 
-                <h1>Корзина</h1>
+                <h1>История компании</h1>
             </div>
         </div>
         <!--end название-->
 
+        <!--Второе Меню-->
+        <div class="secondary_menu">
+            <ul class="page_width">
+                <li class="to_back"><a href="about.html">Назад в “О компании”</a></li>
+                <li><a href="mission_and_strategy.html">Миссия и стратегия</a></li>
+                <li class="active"><a href="history.html">История компании</a></li>
+                <li><a href="quality_management_system.html">Система менеджмента качества</a></li>
+                <li><a href="certificates.html">Сертификаты</a></li>
+                <li><a href="for download.html">Материалы для скачивания</a></li>
+            </ul>
+        </div>
+        <!--end Второе Меню-->
+
         <!--Контент-->
-            <main class="content">
-                <div class="page_width">
+        <main class="content">
+            <div class="page_width">
 
-                    <div class="basket_empty" style="display: none;"> <!-- Этот блок показывается, если корзина пуста -->
-                        <p>Здесь пока ничего нет</p>
-        
-                        <a class="button" href="catalog.html">Перейти в каталог</a>
+                <div class="text_bgImage blue_bg" style="background-image: url(images/bg_history_main_img.jpg);">
+                    <div class="text">
+                        <h2>С чего все начиналось</h2>
+                        <p>История нашей компании началась в апреле 2002 года. С тех самых пор завод динамично развивался, используя выбранную стратегию, и сегодня мы по праву можем назвать себя одним из лидеров металлоконструкций на территории Российской Федерации, Ближнего и Дальнего Зарубежья.</p> 
+                        <a class="button" href="#">Задать вопрос</a>
                     </div>
-
-                    <div class="basket_table">
-                        <table>
-                            <tr>
-                                <th colspan="2">
-                                    <div class="basket_checkbox">
-                                        <input type="checkbox" class="checkbox chec_all" id="chec_all" value="">
-                                        <label for="chec_all">Выбрать все</label>
-                                    </div>
-                                </th>
-                                <th></th>
-                                <th></th>
-                                <th></th>
-                                <th><a class="delete_all" href="#">Удалить все</a></th>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="basket_checkbox">
-                                        <input type="checkbox" class="checkbox" id="chec1" value="">
-                                        <label for="chec1"></label>
-                                    </div>
-                                </td>
-                                <td class="img"><a href="#"><img src="images/product_image3.jpg" alt=""></a></td>
-                                <td class="name">
-                                    <div class="h6"><a href="#">Лестница приставная бытовая ЛПБ 400 мм</a></div>
-                                    <div class="price"> от 5 500 ₽</div>
-                                </td>
-                                <td class="desc">
-                                    <p><span class="char">Ширина ступеней, м</span> 0,34</p>
-                                    <p><span class="char">Габаритная высота, м</span> от 1,5 до 4,5</p>
-                                    <p><span class="char">Количество ступеней</span> от 4 до 13</p>
-                                    <p><span class="char">Масса, кг</span> от 5,1 до 15,5</p>
-                                </td>
-                                <td class="number">
-                                    <div class="quantity">
-                                        <input class="change_quantity minus_number" value="-" type="button" onclick="setQuantity(65, 1, 'down', false);">
-                                        <input id="QUANTITY_INPUT_65" name="QUANTITY_INPUT_65" value="4" onchange="updateQuantity('QUANTITY_INPUT_65', '65', 1, false)" class="input_number" type="text" placeholder="">
-                                        <input class="change_quantity plus_number" value="+" type="button" onclick="setQuantity(65, 1, 'up', false);">
-                                    </div>
-                                </td>
-                                <td class="delete"><a href="#">X</a></td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="basket_checkbox">
-                                        <input type="checkbox" class="checkbox" id="chec2" value="">
-                                        <label for="chec2"></label>
-                                    </div>
-                                </td>
-                                <td class="img"><a href="#"><img src="images/product_image4.jpg" alt=""></a></td>
-                                <td class="name">
-                                    <div class="h6"><a href="#">Лестница приставная бытовая ЛПБ 400 мм</a></div>
-                                    <div class="price"> от 5 500 ₽</div>
-                                </td>
-                                <td class="desc">
-                                    <p><span class="char">Ширина ступеней, м</span> 0,34</p>
-                                    <p><span class="char">Габаритная высота, м</span> от 1,5 до 4,5</p>
-                                    <p><span class="char">Количество ступеней</span> от 4 до 13</p>
-                                    <p><span class="char">Масса, кг</span> от 5,1 до 15,5</p>
-                                </td>
-                                <td class="number">
-                                    <div class="quantity">
-                                        <input class="change_quantity minus_number" value="-" type="button" onclick="setQuantity(65, 1, 'down', false);">
-                                        <input id="QUANTITY_INPUT_65" name="QUANTITY_INPUT_65" value="1" onchange="updateQuantity('QUANTITY_INPUT_65', '65', 1, false)" class="input_number" type="text" placeholder="">
-                                        <input class="change_quantity plus_number" value="+" type="button" onclick="setQuantity(65, 1, 'up', false);">
-                                    </div>
-                                </td>
-                                <td class="delete"><a href="#">X</a></td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="basket_checkbox">
-                                        <input type="checkbox" class="checkbox" id="chec3" value="">
-                                        <label for="chec3"></label>
-                                    </div>
-                                </td>
-                                <td class="img"><a href="#"><img src="images/product_image3.jpg" alt=""></a></td>
-                                <td class="name">
-                                    <div class="h6"><a href="#">Лестница приставная бытовая ЛПБ 400 мм</a></div>
-                                    <div class="price"> от 5 500 ₽</div>
-                                </td>
-                                <td class="desc">
-                                    <p><span class="char">Ширина ступеней, м</span> 0,34</p>
-                                    <p><span class="char">Габаритная высота, м</span> от 1,5 до 4,5</p>
-                                    <p><span class="char">Количество ступеней</span> от 4 до 13</p>
-                                    <p><span class="char">Масса, кг</span> от 5,1 до 15,5</p>
-                                </td>
-                                <td class="number">
-                                    <div class="quantity">
-                                        <input class="change_quantity minus_number" value="-" type="button" onclick="setQuantity(65, 1, 'down', false);">
-                                        <input id="QUANTITY_INPUT_65" name="QUANTITY_INPUT_65" value="1" onchange="updateQuantity('QUANTITY_INPUT_65', '65', 1, false)" class="input_number" type="text" placeholder="">
-                                        <input class="change_quantity plus_number" value="+" type="button" onclick="setQuantity(65, 1, 'up', false);">
-                                    </div>
-                                </td>
-                                <td class="delete"><a href="#">X</a></td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="basket_checkbox">
-                                        <input type="checkbox" class="checkbox" id="chec4" value="">
-                                        <label for="chec4"></label>
-                                    </div>
-                                </td>
-                                <td class="img"><a href="#"><img src="images/product_image7.jpg" alt=""></a></td>
-                                <td class="name">
-                                    <div class="h6"><a href="#">Лестница приставная бытовая ЛПБ 400 мм</a></div>
-                                    <div class="price"> от 5 500 ₽</div>
-                                </td>
-                                <td class="desc">
-                                    <p><span class="char">Ширина ступеней, м</span> 0,34</p>
-                                    <p><span class="char">Габаритная высота, м</span> от 1,5 до 4,5</p>
-                                    <p><span class="char">Количество ступеней</span> от 4 до 13</p>
-                                    <p><span class="char">Масса, кг</span> от 5,1 до 15,5</p>
-                                </td>
-                                <td class="number">
-                                    <div class="quantity">
-                                        <input class="change_quantity minus_number" value="-" type="button" onclick="setQuantity(65, 1, 'down', false);">
-                                        <input id="QUANTITY_INPUT_65" name="QUANTITY_INPUT_65" value="1" onchange="updateQuantity('QUANTITY_INPUT_65', '65', 1, false)" class="input_number" type="text" placeholder="">
-                                        <input class="change_quantity plus_number" value="+" type="button" onclick="setQuantity(65, 1, 'up', false);">
-                                    </div>
-                                </td>
-                                <td class="delete"><a href="#">X</a></td>
-                            </tr>
-                        </table> 
-                    </div>
-
-                    <div class="buttons">
-                        <a href="#" class="button btn-basket_order">Оформить заказ</a>
-                    </div>
-
                 </div>
-            </main>
-        <!--End Контент-->
 
-        <!-- Форма -->
+                <div class="chronology">
+                    <h2>Хронология событий</h2>
+
+                    <div class="chronology_slider">
+                        <div class="years_slider">
+                            <div class="item"><span class="year">2009</span></div>
+                            <div class="item"><span class="year">2010</span></div>
+                            <div class="item"><span class="year">2011</span></div>
+                            <div class="item"><span class="year">2012</span></div>
+                            <div class="item"><span class="year">2013</span></div>
+                            <div class="item"><span class="year">2014</span></div>
+                            <div class="item"><span class="year">2015</span></div>
+                            <div class="item"><span class="year">2016</span></div>
+                            <div class="item"><span class="year">2017</span></div>
+                        </div>
+
+                        <div class="chronology_info_slider">
+                            <div class="item">
+                                <div class="text">
+                                    <h3 class="h2">2009 год</h3>
+                                    <p>Поставка двухуровневых подвесных потолков для строительства Высшей Школы Менеджмента СПБГУ </p>
+                                </div>
+                                <div class="image"><img src="images/about_companu_8.png" alt=""></div>
+                            </div>
+                            <div class="item">
+                                <div class="text">
+                                    <h3 class="h2">2010 год</h3>
+                                    <p>Поставка двухуровневых подвесных потолков для строительства Высшей Школы Менеджмента СПБГУ </p>
+                                </div>
+                                <div class="image"><img src="images/about_companu_1.png" alt=""></div>
+                            </div>
+                            <div class="item">
+                                <div class="text">
+                                    <h3 class="h2">2011 год</h3>
+                                    <p>Поставка двухуровневых подвесных потолков для строительства Высшей Школы Менеджмента СПБГУ </p>
+                                </div>
+                                <div class="image"><img src="images/about_companu_2.png" alt=""></div>
+                            </div>
+                            <div class="item">
+                                <div class="text">
+                                    <h3 class="h2">2012 год</h3>
+                                    <p>Поставка двухуровневых подвесных потолков для строительства Высшей Школы Менеджмента СПБГУ </p>
+                                </div>
+                                <div class="image"><img src="images/about_companu_3.png" alt=""></div>
+                            </div>
+                            <div class="item">
+                                <div class="text">
+                                    <h3 class="h2">2013 год</h3>
+                                    <p>Поставка двухуровневых подвесных потолков для строительства Высшей Школы Менеджмента СПБГУ </p>
+                                </div>
+                                <div class="image"><img src="images/about_companu_4.png" alt=""></div>
+                            </div>
+                            <div class="item">
+                                <div class="text">
+                                    <h3 class="h2">2014 год</h3>
+                                    <p>Поставка двухуровневых подвесных потолков для строительства Высшей Школы Менеджмента СПБГУ </p>
+                                </div>
+                                <div class="image"><img src="images/about_companu_5.png" alt=""></div>
+                            </div>
+                            <div class="item">
+                                <div class="text">
+                                    <h3 class="h2">2015 год</h3>
+                                    <p>Поставка двухуровневых подвесных потолков для строительства Высшей Школы Менеджмента СПБГУ </p>
+                                </div>
+                                <div class="image"><img src="images/about_companu_6.png" alt=""></div>
+                            </div>
+                            <div class="item">
+                                <div class="text">
+                                    <h3 class="h2">2016 год</h3>
+                                    <p>Поставка двухуровневых подвесных потолков для строительства Высшей Школы Менеджмента СПБГУ </p>
+                                </div>
+                                <div class="image"><img src="images/about_companu_7.png" alt=""></div>
+                            </div>
+                            <div class="item">
+                                <div class="text">
+                                    <h3 class="h2">2017 год</h3>
+                                    <p>Поставка двухуровневых подвесных потолков для строительства Высшей Школы Менеджмента СПБГУ </p>
+                                </div>
+                                <div class="image"><img src="images/about_companu_9.png" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </main>
+
+         <!-- Форма -->
          <div class="main_section" id="small_form">
             <div class="page_width">
                 <div class="text">
@@ -599,10 +569,8 @@
                 </div>
             </div>
         </footer>
-    <!-- end подвал -->
-
-
-    <!-- Модальные окна -->
+        <!-- end подвал -->
+            <!-- Модальные окна -->
     <div class="gUniFormModalWindow form--modal form_block form-write">
         <div class="gUniFormHideScrollBar">
 		<div class="gUniFormCn100">
@@ -650,83 +618,6 @@
 		</div>
 	  </div>
 	</div>
-
-
-    <div class="gUniFormModalWindow form--modal form_block form-basket_order"><!-- Модальное окно оформления заказа -->
-        <div class="gUniFormHideScrollBar">
-        <div class="gUniFormCn100">
-        <div class="overlay"></div>
-        <div class="gUniFormModalWindowContainer">
-          <div class="gUniFormContainer">
-            <div class="uFormHeading">Заполните свои данные для оформления заказа</div>
-            <form enctype="multipart/form-data" action="" method="post" class="gUniForm">
-				<div class="uFormLine input_text">
-					<input id="name" class="rfield name" name="name" type="text" value="">
-					<label for="name">ФИО</label>
-					<div class="uError"></div>
-				</div>
-				<div class="uFormLine input_text">
-					<input id="email" class="rfield email" name="email" type="text" value=""> 
-					<label for="email">Email*</label>
-					<div class="uError"></div>
-				</div>
-				<div class="uFormLine input_text">
-					<input id="phone" class="rfield phone" name="phone" type="text" value="">
-					<label for="phone">Телефон*</label>
-					<div class="uError"></div>
-				</div>
-				<div class="uFormLine textarea">
-					<textarea id="message" class="rfield message" name="message"></textarea>
-					<label for="message">Сообщение</label>
-					<div class="uError"></div>
-				</div>
-				<div class="uFormLine input_personalInfo">
-					<input type="checkbox" id="personal_info_basket" name="personalInfo" data-required="Y" value="Y">
-					<label for="personal_info_basket">Даю согласие на обработку персональных данных, в соответствии с условиями <a href="/personal-info/" target="_blank" rel="nofollow noopener">политики конфиденциальности и пользовательского соглашения</a></label>
-                </div>
-                <div class="input_file">
-					<input id="file_basket" type="file" value="">
-					<label class="button btn_invert file" for="file_basket">Прикрепить файл</label>
-					<div class="uError"></div>
-				</div>
-				<div class="uformTools">
-					<div class="uFormButton">
-						<button type="submit" name="web_form_submit" class="uFormSubmit button button-red" value="Отправить">Оформить заказ</button>
-					</div>
-				</div>
-				<div class="uFormGlobalErrors"></div>
-				 
-			</form>
-
-			<div class="basket_table">
-                <h4>В заказе:</h4>
-				<table>
-					<tr>
-						<td class="name">
-							<div class="h6">Лестница приставная бытовая ЛПБ 400 мм</div>
-						</td>
-						<td class="number">1 шт</td>
-					</tr>
-					<tr>
-						<td class="name">
-							<div class="h6">Лестница приставная с поручнями ЛПНА 3,0 (4,17)</div>
-						</td>
-						<td class="number">1 шт</td>
-                    </tr>
-                    <tr>
-						<td class="name">
-							<div class="h6">Лестница приставная бытовая ЛПБ 510 мм</div>
-						</td>
-						<td class="number">1 шт</td>
-					</tr>
-				</table> 
-			</div>
-        </div>
-        <a href="#" class="gUniFormModalWindowExit form__btn-close"></a>
-        </div>
-        </div>
-      </div>
-    </div>
     </div>
 </body>
 </html>

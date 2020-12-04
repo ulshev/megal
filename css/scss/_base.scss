@@ -204,10 +204,10 @@ h5, .h5, h6, .h6 {
         font-size: 24px;
         line-height: 29px;
     }
-    // h2, .h2 {
-    //     font-size: 22px;
-    //     line-height: 28px;
-    // }
+    h2, .h2 {
+        font-size: 22px;
+        line-height: 28px;
+    }
 }
 
 .clear {
@@ -659,6 +659,30 @@ ul.slick-dots {
     }
 }
 
+@media screen and (max-width:1030px){
+    .text {
+        .button {
+            margin-top: 30px;
+        }
+    }
+}
+@media screen and (max-width:600px){
+    .text {
+        font-size: 14px;
+        line-height: 20px;
+        .button {
+            margin-top: 10px;
+        }
+    }
+}
+@media screen and (max-width:450px){
+    .text {
+        .button {
+            margin-top: 0px;
+        }
+    }
+}
+
 .secondary_menu {
     position: relative;
     border-bottom: 1px solid #C8DAEB;
@@ -734,7 +758,95 @@ ul.slick-dots {
 }
 
 
+@media screen and (max-width: 1300px) {	
+    .secondary_menu {
+        ul {
+            li {
+                margin: 0 10px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1100px) {	
+    .secondary_menu {
+        .to_back {
+            display: none;
+        }
+    }
+}
+@media screen and (max-width: 1000px) {	
+    .secondary_menu {
+        ul {
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+}
+@media screen and (max-width: 900px) {	
+    .secondary_menu {
+        ul {
+            li {
+                margin: 0 5px;
+            }
+        }
+    }
+}
 
+@media screen and (max-width: 600px) {	
+    .secondary_menu {
+        min-height: 40px;
+        margin-top: -20px;
+        background-color: $color_a_hover;
+        position: relative;
+        color: #fff;
+
+        &::before, &::after {
+            content: '';
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            width: 25px;
+        }
+
+        &::before {
+            height: 15px;
+            margin-top: -8px;
+            border-top: 1px solid #fff;
+            border-bottom: 1px solid #fff;
+        }
+        &::after {
+            border-top: 1px solid #fff;
+        }
+
+
+        ul {
+            display: none;
+            padding: 10px 20px 20px;
+            li {
+                margin: 0 0px;
+                text-align: left;
+
+                &.active {
+                    a {
+                        font-weight: 600; 
+                    }
+                }
+            }
+            a {
+                color: #fff;
+                display: inline-block;
+                width: auto;
+                //font-weight: 600;
+
+                &::after {
+                    height: 3px;
+                    bottom: 1px;
+                    display: none;
+                }
+            }
+        }
+    }
+}
 
 .tabs_container {
 	position: relative;
