@@ -478,8 +478,8 @@
 
                 </div>
 
-                <div class="product_price">от <span class="big">100 000</span> до <span class="big">170 000 ₽</span></div>
-                <div class="buttons"><a class="button" href="#">Узнать точную цену</a></div>
+                <div class="product_price">от <span class="big">100 000</span> до <span class="big">170 000 &#8381;</span></div>
+                <div class="buttons"><a class="button btn-price" href="#">Узнать точную цену</a></div>
 
 
                 <div class="available_options">
@@ -1138,7 +1138,7 @@
 		  <div class="gUniFormContainer">
 			<div class="uFormHeading">Напишите нам</div>
 			<p>Заполните форму и мы свяжемся с вами в ближайшее время</p>
-			<form enctype="multipart/form-data" action="" method="post" class="gUniForm">
+			<form enctype="multipart/form-data" action="" method="post"class="gUniForm rf">
 				<div class="uFormLine input_text">
 					<input id="name" class="rfield name" name="name" type="text" value="">
 					<label for="name">ФИО</label>
@@ -1203,7 +1203,50 @@
 		</div>
 	  </div>
     </div>
-    
+
+    <div class="gUniFormModalWindow form--modal form_block form-price">
+        <div class="gUniFormHideScrollBar">
+		<div class="gUniFormCn100">
+        <div class="overlay"></div>
+		<div class="gUniFormModalWindowContainer">
+		  <div class="gUniFormContainer">
+			<div class="uFormHeading">Узнать точную цену</div>
+			<p>Заполните форму и мы свяжемся с вами в ближайшее время</p>
+			<form enctype="multipart/form-data" action="" method="post"class="gUniForm rf">
+				<div class="uFormLine input_text">
+					<input id="name" class="rfield name" name="name" type="text" value="">
+					<label for="name">ФИО</label>
+					<div class="uError"></div>
+				</div>
+				<div class="uFormLine input_text">
+					<input id="phone" class="rfield phone" name="phone" type="text" value="">
+					<label for="phone">Телефон*</label>
+					<div class="uError"></div>
+				</div>
+				<div class="uFormLine textarea">
+					<textarea id="message" class="rfield message" name="message"></textarea>
+					<label for="message">Вопрос</label>
+					<div class="uError"></div>
+				</div>
+				<div class="uFormLine input_personalInfo">
+					<input type="checkbox" id="personal_info_write" name="personalInfo" data-required="Y" value="Y">
+					<label for="personal_info_write">Даю согласие на обработку персональных данных, в соответствии с условиями <a href="/personal-info/" target="_blank" rel="nofollow noopener">политики конфиденциальности и пользовательского соглашения</a></label>
+				</div>
+				<div class="uFormGlobalErrors"></div>
+				<div class="uformTools">
+					<div class="uFormButton">
+						<button type="submit" name="web_form_submit" class="uFormSubmit button button-red" value="Отправить">Отправить</button>
+					</div>
+				</div>
+				 
+			</form>
+		</div>
+		<a href="#" class="gUniFormModalWindowExit form__btn-close"></a>
+		</div>
+		</div>
+	  </div>
     </div>
+    
+</div>
 </body>
 </html>

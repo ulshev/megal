@@ -611,7 +611,7 @@
 		  <div class="gUniFormContainer">
 			<div class="uFormHeading">Напишите нам</div>
 			<p>Заполните форму и мы свяжемся с вами в ближайшее время</p>
-			<form enctype="multipart/form-data" action="" method="post" class="gUniForm">
+			<form enctype="multipart/form-data" action="" method="post"class="gUniForm rf">
 				<div class="uFormLine input_text">
 					<input id="name" class="rfield name" name="name" type="text" value="">
 					<label for="name">ФИО</label>
@@ -659,7 +659,7 @@
         <div class="gUniFormModalWindowContainer">
           <div class="gUniFormContainer">
             <div class="uFormHeading">Заполните свои данные для оформления заказа</div>
-            <form enctype="multipart/form-data" action="" method="post" class="gUniForm">
+            <form enctype="multipart/form-data" action="" method="post"class="gUniForm rf">
 				<div class="uFormLine input_text">
 					<input id="name" class="rfield name" name="name" type="text" value="">
 					<label for="name">ФИО</label>
@@ -685,8 +685,9 @@
 					<label for="personal_info_basket">Даю согласие на обработку персональных данных, в соответствии с условиями <a href="/personal-info/" target="_blank" rel="nofollow noopener">политики конфиденциальности и пользовательского соглашения</a></label>
                 </div>
                 <div class="input_file">
-					<input id="file_basket" type="file" value="">
-					<label class="button btn_invert file" for="file_basket">Прикрепить файл</label>
+					<input id="file" type="file" value="">
+					<label class="button btn_invert file" for="file">Прикрепить файл</label>
+					<div id="file_name">Файл не выбран</div>
 					<div class="uError"></div>
 				</div>
 				<div class="uformTools">

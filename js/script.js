@@ -569,8 +569,8 @@ $(document).ready(function() {
 	});
 
 	modalOpen($('.btn-write'), $('.form-write'));
-	//modalOpen($('.btn-question'), $('.form-question'));
-	//modalOpen($('.btn-partner'), $('.form-partner'));
+	modalOpen($('.btn-question'), $('.form-question'));
+	modalOpen($('.btn-price'), $('.form-price'));
 	modalOpen($('.btn-in_basket'), $('.form-in_basket'));
     modalOpen($('.btn-basket_order'), $('.form-basket_order'));
     //modalOpen($('.btn-order_service'), $('.form-order_service'));
@@ -584,10 +584,10 @@ $(document).ready(function() {
 
     function modalClose() {
 		$('.form--modal').hide();
-		if ($('.form-basket_order').hasClass('success')) {
-			window.location.reload();
+		if ($('.form-basket_order').find('p.form-note').length > 0) {
+		  window.location.reload();
 		}
-    };
+	};
 	
 	$(document).ajaxSuccess(function(e) {
 		$('.form__btn-close').click(function (e) {
@@ -603,6 +603,12 @@ $(document).ready(function() {
 		});			
 		modalOpen($('.btn-basket_order'), $('.form-basket_order'));			
 	});
-    // // end Modal Window
+	// end Modal Window
+	
+
+	$("#file").change(function(){
+		var filename = $(this).val().replace(/.*\\/, "");
+		$("#file_name").html(filename);
+   });
 });
 

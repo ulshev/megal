@@ -602,7 +602,6 @@ ul.slick-dots {
 
 .text {
     ul {
-        //counter-reset: ol_ounter;
 		margin-bottom: 40px;
 		padding-top: 4px;
 		margin-left: -5px;
@@ -628,7 +627,7 @@ ul.slick-dots {
 	}
 	
 	ol {
-        counter-reset: ol_ounter;
+        counter-reset: ol_counter;
 		list-style-type: none;
 		//margin: 0 0 0 20px;
         //padding: 0 0 35px;
@@ -641,8 +640,8 @@ ul.slick-dots {
             position: relative;
 			
 			&:before {
-                counter-increment: ol_ounter;
-                content: counter(ol_ounter);
+                counter-increment: ol_counter;
+                content: counter(ol_counter);
 				font-weight: 600;
                 font-size: 40px;
                 color: $color_h;

@@ -611,6 +611,7 @@ header .search {
 					font-size: 18px;
 					padding: 0;
 					display: inline-block;
+					background-color: transparent;
 					&::before {
 						display: none;	
 					}
@@ -643,14 +644,15 @@ header .search {
 					white-space: normal;
 					padding: 0;
 					display: inline-block;
+					background-color: transparent !important;
 					
 					&::before {
 						display: none;	
 					}
 
-					&::after {
-						margin-right: -30px;
-					}
+					// &::after {
+					// 	-webkit-margin-right: -30px;
+					// }
 
 					&:hover {
 						background: none;

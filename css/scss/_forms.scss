@@ -140,7 +140,7 @@
 }
 
 .form_block {
-	min-height: 100%;
+	//min-height: 100%;
 	max-width: 478px;
 	margin: 0 auto;
 	overflow: hidden;
@@ -228,11 +228,12 @@
     
     .input_file {
 		display: inline-block;
-		vertical-align: middle;
+		vertical-align: top;
 		position: relative;
 		margin-right: 16px;
-		margin-left: 0px;
+		//margin-left: 0px;
 		margin-bottom: 30px;
+		margin-left: 10px;
     }
     
     input[type="file"] {
@@ -247,6 +248,7 @@
 		font-weight: 500;
 		height: 40px;
 		line-height: 38px;
+		margin-bottom: 10px;
 		
 		&::before {
 			content: '+';
@@ -263,7 +265,14 @@
 		&::after {
 			display: none;
 		}
-    }
+	}
+	
+	#file_name {
+		color: #134983;
+		width: 100%;
+		//overflow: hidden;
+		margin-right: -1000px;
+	}
     
     .check {
 		position: relative;
@@ -605,9 +614,6 @@
 		margin-bottom: 20px;
 	}
 	.form_block .input_file {
-		display: inline-block;
-		vertical-align: middle;
-		position: relative;
 		margin-right: 20px;
 		margin-left: 10px;
 		margin-bottom: 30px;
