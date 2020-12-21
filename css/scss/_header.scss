@@ -108,7 +108,8 @@ header .search {
 		position: relative;
 		@include transition(all);
 	}
-    
+}
+.search {
     input[type=text] {
 		background: none;
 		border: 1px solid transparent;
@@ -147,6 +148,31 @@ header .search {
 		margin-left: 10px;
 		margin-right: -2px;
 		cursor: pointer;
+	}
+}
+
+.content {
+	.search {
+		max-width: 500px;
+		margin-bottom: 30px;
+		position: relative;
+		input[type=text] {
+			border: 1px solid #CFDBE7;
+			font-size: 16px;
+			line-height: 18px;
+			height: 40px;
+	
+			&::placeholder {
+				color: $color_text_alt;
+			}
+		}
+		
+		input[type=image] {
+			height: 25px;
+			width: 25px;
+			right: 10px;
+			top: 7px;
+		}
 	}
 }
 
@@ -611,7 +637,7 @@ header .search {
 					font-size: 18px;
 					padding: 0;
 					display: inline-block;
-					background-color: transparent;
+					background-color: transparent !important;
 					&::before {
 						display: none;	
 					}
@@ -674,7 +700,6 @@ header .search {
 				}
 			}
 		}
-
 	}
 	
 }

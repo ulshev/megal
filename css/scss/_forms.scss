@@ -566,6 +566,11 @@
 			}
 		}
 	}
+
+	.mini_email_block {
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
 }
 
 @media screen and (max-width: 900px) {
@@ -616,6 +621,11 @@
 	.form_block .input_file {
 		margin-right: 20px;
 		margin-left: 10px;
+		margin-bottom: 30px;
+	}
+
+	.mini_email_block {
+		margin-top: 0px;
 		margin-bottom: 30px;
 	}
 }

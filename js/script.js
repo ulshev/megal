@@ -428,32 +428,38 @@ $(document).ready(function() {
 		nextArrow: '<span class="slick-next">&nbsp;</span>',
 	});
 
-	$('.project_page .main_slider').slick({
+	$('.galery .main_slider').slick({
 	    slidesToShow: 1,
 	    slidesToScroll: 1,
 	    arrows: false,
 	    fade: true,
 	    //variableWidth: true,
 	    adaptiveHeight: true,
-	    asNavFor: '.project_page .preview_slider',
+	    asNavFor: '.galery .preview_slider',
 	  });
-	$('.project_page .preview_slider').slick({
+	$('.galery .preview_slider').slick({
 	    slidesToShow: 4,
 	    slidesToScroll: 1,
 	    arrows: true,
 	    prevArrow: '<span class="slick-prev">&nbsp;</span>',
 	    nextArrow: '<span class="slick-next">&nbsp;</span>',
-	    asNavFor: '.project_page .main_slider',
+	    asNavFor: '.galery .main_slider',
 	    dots: false,
 	    //centerMode: true,
 	    //vertical: true,
 	    focusOnSelect: true,
 	    responsive: [
-		  {
-		    breakpoint: 600,
-		    settings: {
-		      slidesToShow: 4,
-		    }
+			{
+				breakpoint: 1200,
+				settings: {
+					slidesToShow: 3,
+				}
+			},
+			{
+				breakpoint: 600,
+				settings: {
+				slidesToShow: 2,
+				}
 		  },
 		]
 	});
@@ -606,9 +612,9 @@ $(document).ready(function() {
 	// end Modal Window
 	
 
-	$("#file").change(function(){
-		var filename = $(this).val().replace(/.*\\/, "");
-		$("#file_name").html(filename);
-   });
+// 	$("#file").change(function(){
+// 		var filename = $(this).val().replace(/.*\\/, "");
+// 		$("#file_name").html(filename);
+//    });
 });
 

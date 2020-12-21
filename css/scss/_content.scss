@@ -39,6 +39,7 @@
         }
     }
 }
+
 #small_form + .content{
     margin-top: 105px;
     margin-bottom: 120px;
@@ -128,7 +129,15 @@
         }
     }
 }
-
+@media screen and (max-width: 1300px) {
+    .title {
+        min-height: auto;
+        padding-bottom: 10px;
+        .breadcrumbs {
+            margin-bottom: 10px;
+        }
+    }
+}
 /*@media screen and (max-width:760px){
     #small_form + .content{
         margin-top: 65px;
@@ -155,9 +164,9 @@
     .title{
         padding-top: 20px;
         margin-bottom: 20px;
-        .breadcrumbs{
-            margin-bottom: 10px;
-        }
+        // .breadcrumbs{
+        //     margin-bottom: 10px;
+        // }
         ul li {
             font-weight: 400;
             font-size: 11px;
@@ -342,7 +351,7 @@
         width: 50%;
         min-height: 390px;
         //background-color: #0a2a4fcc;
-        margin-right: -1px;
+        //margin-right: -1px;
         padding: 50px 75px;
     }
 
@@ -412,8 +421,7 @@
         margin-left: 0;
     }
     .video {
-        margin-right: auto;
-        margin-left: 15.5%;
+        margin: 20px auto 20px 15.5%;
     }
 
     &.text_left .video {
@@ -499,6 +507,7 @@
 @media screen and (max-width:1200px){
     .text_bgImage .text{
         padding: 50px ;
+        min-height: auto;
     }
 }
 @media screen and (max-width:1030px){
@@ -1107,27 +1116,24 @@
 /* End Contacts*/
 
 
-
-
-
 /*Start Vacancies*/
 
 .vacansis_block{
     display: flex;
     flex-wrap: wrap;
+    margin: 0 -12px;
+    padding-bottom: 75px;
+    padding-top: 10px;
 
     .item{
         box-sizing: border-box;
         width: calc(50% - 24px);
-        margin: 0 12px;
+        margin: 0 12px 20px;
         padding: 30px 47px 10px 60px;
         box-shadow: -10px 10px 20px rgba(19, 73, 131, 0.2);
-
         overflow: hidden;
-
         position: relative;
-
-        @include transition(all);
+        @include transition(background-color box-shadow );
 
         &::before{
             content: "";
@@ -1152,10 +1158,8 @@
             display: flex;
             align-items: center;
             justify-content: center;
-
             position: absolute;
-
-            @include transition(all);
+            @include transition(background-color);
 
             img{
                 max-width: 80%;
@@ -1173,20 +1177,15 @@
                 font-weight: 500;
                 font-size: 18px;
                 line-height: 176.4%;
-    
                 text-transform: uppercase;
             }
 
             .button{
                 background-color: transparent;
                 margin-top: 0px;
-
                 padding: 0px 20px 0 0;
-
                 display: inline;
-
                 opacity: 0;
-                
 
                 &:hover{
                     text-decoration: underline;
@@ -1198,7 +1197,6 @@
         &:hover{
             background-color: $color_h;
             color: #fff;
-
             box-shadow: none;
 
             &::before{
@@ -1215,6 +1213,67 @@
             .text .button{
                 opacity: 100;
             }
+
+            a {
+                color: #fff;
+                @include transition(all);
+            }
+        }
+    }
+}
+
+.open_vacancies + .text_and_image {
+    position: relative;
+    margin-bottom: 0;
+    &::before {
+        content: '';
+        position: absolute;
+        width: 100vw;
+        left: calc(-100vw/2 + 1480px/2 - 9px);
+        height: 100%;
+        top: 0;
+        background-color: #EEF5F9;
+    }
+
+    .text, .image {
+        position: relative;
+    }
+    .image {
+        margin-top: -21px;
+
+        img {
+            width: auto;
+            max-width: 100%;
+            margin-bottom: 35px;
+        }
+    }
+}
+
+@media screen and (max-width: 1686px) {
+    .open_vacancies + .text_and_image {
+        &::before {
+            left: -107px;
+        }
+    }
+}
+@media screen and (max-width: 1412px) {
+    .open_vacancies + .text_and_image {
+        &::before {
+            left: -67px;
+        }
+    }
+}
+@media screen and (max-width: 1212px) {
+    .open_vacancies + .text_and_image {
+        &::before {
+            left: -47px;
+        }
+    }
+}
+@media screen and (max-width: 812px) {
+    .open_vacancies + .text_and_image {
+        &::before {
+            left: -37px;
         }
     }
 }
@@ -1448,3 +1507,32 @@
     }
 }
 
+
+.bx-404-container {
+    //max-width: 500px;
+    margin: 10% auto;
+    text-align: center;
+
+    .bx-404-block {
+        margin-bottom: 30px;
+    }
+
+    .bx-404-text-block {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 30px;
+    }
+
+    .button {
+        margin-left: 20px;
+        margin-right: 20px;
+        height: 40px;
+        line-height: 40px;
+        vertical-align: middle;
+        margin-bottom: 5px;
+
+        // &::after {
+        //     display: none;
+        // }
+    }
+}

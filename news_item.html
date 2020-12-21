@@ -9,14 +9,13 @@
         <link rel="stylesheet" type="text/css" href="css/slick.css">
         <link rel="stylesheet" type="text/css"  media="all" href="css/jquery.fancybox.css">
         <link rel="stylesheet" type="text/css"  media="all" href="css/font.css">
-        <link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+        
         <link rel="stylesheet" type="text/css"  media="all" href="css/ModalWindow.css"><!-- !!! стили не подключать -->
         
         <link rel="stylesheet" type="text/css"  media="all" href="template_styles.css">
         
         <script type="text/Javascript" src="js/jquery-3.4.1.min.js"></script>
         <script type="text/Javascript" src="js/jquery-ui-1.12.1.js"></script>
-        <script type="text/javascript" src="js/jquery.ui.touch-punch.min.js"></script>
         <script type="text/javascript" src="js/slick.min.js"></script>
         <script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
     
@@ -112,7 +111,7 @@
                                 <span class="back">&larr;</span>
                                 <a href="catalog.html">Продукция</a>
                                 <ul>
-                                    <li class="active">
+                                    <li>
                                         <a href="catalog.html">Продукция Мегал</a>
                                         <ul>
                                             <li>
@@ -291,428 +290,136 @@
         </header>
         <!-- end шапка -->
 
-
-        <!--название-->
-            <div class="title">
-                <div class="page_width">
-                    <div class="breadcrumbs">
-                        <ul>
-                            <li><a href="index.html">Главная</a></li>
-                            <li><a href="catalog.html">Продукция</a></li>
-                            <li><a href="#">Алюминиевые лестницы</a></li>
-                            <li class="active">Лестницы приставные</li>
-                        </ul>
-                    </div>
-
-                    <h1>Продукция</h1>
-                </div>
-            </div>
-        <!--end название-->
-
-
-        <!-- Баннеры -->
-        <div class="main_section" id="campaigns">
+         <!--название-->
+         <div class="title">
             <div class="page_width">
-                <div class="campaigns_slider">
-                    <div class="item" style="background-image: url(images/bg_campaigns.jpg);">
-                        <div class="text">
-                            <h2>Распродажа складских позиций <time>до 31.07.2020</time></h2>
-                            <p>Скидки до -30% на Телескопическую лестницу-платформу</p>
-                        </div>
-                        <div class="discount">-30%</div>
-                        <a class="button btn_invert" href="#">Заказать</a>
-                    </div>
-                    <div class="item" style="background-image: url(images/bg_campaigns.jpg);">
-                        <div class="text">
-                            <h2>Распродажа складских позиций <time>до 31.07.2020</time></h2>
-                            <p>Скидки до -30% на Телескопическую лестницу-платформу</p>
-                        </div>
-                        <div class="discount">-30%</div>
-                        <a class="button btn_invert" href="#">Заказать</a>
-                    </div>
-                    <div class="item" style="background-image: url(images/bg_campaigns.jpg);">
-                        <div class="text">
-                            <h2>Распродажа складских позиций <time>до 31.07.2020</time></h2>
-                            <p>Скидки до -30% на Телескопическую лестницу-платформу</p>
-                        </div>
-                        <div class="discount">-30%</div>
-                        <a class="button btn_invert" href="#">Заказать</a>
-                    </div>
+                <div class="breadcrumbs">
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="press_center.html">Пресс-центр</a></li>
+                        <li><a href="news.html">Новости</a></li>
+                        <li class="active">Завершились испытания забортных трапов MEGAL для АО «Адмиралтейские верфи»</li>
+                    </ul>
                 </div>
+
+                <h1>Завершились испытания забортных трапов MEGAL для АО «Адмиралтейские верфи» </h1>
             </div>
         </div>
-        <!-- end баннеры -->
+        <!--end название-->
 
-        <!-- Продукция -->
+        <!--контент-->
         <main class="content">
             <div class="page_width">
-                <div class="catalog_filter">
-                    <div class="filter_fieldset">
-                        <div class="heading">Габаритная высота<span class="value">: от 1 до 9 м</span><span class="delete">+</span></div>
-                        <div class="filter_block">
-                            <div class="h5">Габаритная высота, м</div>
-                            <form>
-                                <div class="range_slide">
-                                    <div class="range_values">
-                                        <div class="range_values_item"><label for="amount-min-height">От</label>
-                                        <input type="text" id="amount-min-height" readonly></div>
-                                        <div class="minus">-</div>
-                                        <div class="range_values_item"><label for="amount-max-height">До</label>
-                                        <input type="text" id="amount-max-height" readonly></div>
-                                    </div>
-                                       
-                                    <div class="range_block">
-                                        <div id="slider-range-height"></div>
-                                    </div>
-                                    <script type="text/javascript">
-                                        $(function(){
-                                            $( "#slider-range-height" ).slider({
-                                                range: true,
-                                                min: 1.5,
-                                                max: 12,
-                                                step: 0.5,
-                                                values: [ 1.5, 10 ],
-                                                slide: function( event, ui ) {
-                                                $( "#amount-min-height" ).val( ui.values[ 0 ] );
-                                                $( "#amount-max-height" ).val( ui.values[ 1 ] );
-                                                }
-                                            });
-                                            $( "#amount-min-height" ).val( $( "#slider-range-height" ).slider( "values", 0 ) );
-                                            $( "#amount-max-height" ).val( $( "#slider-range-height" ).slider( "values", 1 ) );
-                                        });
-                                    </script>
-                                </div>
-                                <div class="buttons">
-                                    <input class="button" type="submit" value="Применить">
-                                    <input class="button" type="reset" value="Сбросить">
-                                </div>
-                            </form>
+                <div class="events_baner">
+                    <div class="baner_title">
+                        <h3>Новость</h3>
+                        <time>02.12.2018</time>
+                        <div class="icon">
+                            <img src="images/icon_letter.svg" alt="">
                         </div>
                     </div>
-
-                    <div class="filter_fieldset">
-                        <div class="heading">Масса<span class="value">: от 0 до 15 кг</span><span class="delete">+</span></div>
-                        <div class="filter_block">
-                            <div class="h5">Масса, кг</div>
-                            <form>
-                                <div class="range_slide">
-                                    <div class="range_values">
-                                        <div class="range_values_item"><label for="amount-min-weight">От</label>
-                                        <input type="text" id="amount-min-weight" readonly></div>
-                                        <div class="minus">-</div>
-                                        <div class="range_values_item"><label for="amount-max-weight">До</label>
-                                        <input type="text" id="amount-max-weight" readonly></div>
-                                    </div>
-                                       
-                                    <div class="range_block">
-                                        <div id="slider-range-weight"></div>
-                                    </div>
-                                    <script type="text/javascript">
-                                        $(function(){
-                                            $( "#slider-range-weight" ).slider({
-                                                range: true,
-                                                min: 5,
-                                                max: 15,
-                                                step: 1,
-                                                values: [ 5, 10 ],
-                                                slide: function( event, ui ) {
-                                                $( "#amount-min-weight" ).val( ui.values[ 0 ] );
-                                                $( "#amount-max-weight" ).val( ui.values[ 1 ] );
-                                                }
-                                            });
-                                            $( "#amount-min-weight" ).val( $( "#slider-range-weight" ).slider( "values", 0 ) );
-                                            $( "#amount-max-weight" ).val( $( "#slider-range-weight" ).slider( "values", 1 ) );
-                                        });
-                                    </script>
-                                </div>
-                                <div class="buttons">
-                                    <input class="button" type="submit" value="Применить">
-                                    <input class="button" type="reset" value="Сбросить">
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-
-                    <div class="filter_fieldset selected"><!-- по умолчанию .value и .delete скрыты, а при добавлении класса .selected к родителю, .value и .delete появляются -->
-                        <div class="heading">Цена<span class="value">: от 5 000 до 50 000 ₽ </span><span class="delete">+</span></div>
-                        <div class="filter_block">
-                            <div class="h5">Цена, ₽</div>
-                            <form>
-                                <div class="range_slide">
-                                    <div class="range_values">
-                                        <div class="range_values_item"><label for="amount-min-price">От</label>
-                                        <input type="text" id="amount-min-price" readonly></div>
-                                        <div class="minus">-</div>
-                                        <div class="range_values_item"><label for="amount-max-price">До</label>
-                                        <input type="text" id="amount-max-price" readonly></div>
-                                    </div>
-                                       
-                                    <div class="range_block">
-                                        <div id="slider-range-price"></div>
-                                    </div>
-                                    <script type="text/javascript">
-                                        $(function(){
-                                            $( "#slider-range-price" ).slider({
-                                                range: true,
-                                                min: 5000,
-                                                max: 130000,
-                                                step: 1000,
-                                                values: [ 5000, 100000 ],
-                                                slide: function( event, ui ) {
-                                                $( "#amount-min-price" ).val( ui.values[ 0 ] );
-                                                $( "#amount-max-price" ).val( ui.values[ 1 ] );
-                                                }
-                                            });
-                                            $( "#amount-min-price" ).val( $( "#slider-range-price" ).slider( "values", 0 ) );
-                                            $( "#amount-max-price" ).val( $( "#slider-range-price" ).slider( "values", 1 ) );
-                                        });
-                                    </script>
-                                </div>
-                                <div class="buttons">
-                                    <input class="button" type="submit" value="Применить">
-                                    <input class="button" type="reset" value="Сбросить">
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-
-                    <div class="clear"><span class="delete">+</span> Очистить фильтр</div>
-                </div>
-                <div class="products">
-                    <div class="item">
-                        <div class="novelty">new</div>
-                        <div class="img"><a href="product_item.html"><img src="images/product_image1.jpg"></a></div>
-                        <div class="info">
-                            <h6><a href="product_item.html">Лестница приставная с широкими ступенями ЛПШ-тип 1</a></h6>
-                            <div class="char">
-                                <p>
-                                    <span class="name">Ширина, м</span>
-                                    <span class="val">0,34</span>
-                                </p>
-                                <p>
-                                    <span class="name">Габаритная высота, м</span>
-                                    <span class="val">от 1,5 до 4,5</span>
-                                </p>
-                                <p>
-                                    <span class="name">Масса, кг</span>
-                                    <span class="val">от 4,1 до 6,5</span>
-                                </p>
-                            </div>
-                            <span class="button">В корзину</span>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <!-- <div class="novelty">new</div> -->
-                        <div class="img"><a href="product_item.html"><img src="images/product_image2.jpg"></a></div>
-                        <div class="info">
-                            <h6><a href="product_item.html">Лестница приставная с широкими ступенями ЛПШ-тип 2</a></h6>
-                            <div class="char">
-                                <p>
-                                    <span class="name">Ширина, м</span>
-                                    <span class="val">0,34</span>
-                                </p>
-                                <p>
-                                    <span class="name">Габаритная высота, м</span>
-                                    <span class="val">от 1,5 до 4,5</span>
-                                </p>
-                                <p>
-                                    <span class="name">Масса, кг</span>
-                                    <span class="val">от 4,1 до 6,5</span>
-                                </p>
-                            </div>
-                            <span class="button">В корзину</span>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <!-- <div class="novelty">new</div> -->
-                        <div class="img"><a href="product_item.html"><img src="images/product_image3.jpg"></a></div>
-                        <div class="info">
-                            <h6><a href="product_item.html">Лестница приставная бытовая ЛПБ 400 мм</a></h6>
-                            <div class="char">
-                                <p>
-                                    <span class="name">Ширина, м</span>
-                                    <span class="val">0,34</span>
-                                </p>
-                                <p>
-                                    <span class="name">Габаритная высота, м</span>
-                                    <span class="val">от 1,5 до 4,5</span>
-                                </p>
-                                <p>
-                                    <span class="name">Масса, кг</span>
-                                    <span class="val">от 4,1 до 6,5</span>
-                                </p>
-                            </div>
-                            <span class="button">В корзину</span>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <!-- <div class="novelty">new</div> -->
-                        <div class="img"><a href="product_item.html"><img src="images/product_image3.jpg"></a></div>
-                        <div class="info">
-                            <h6><a href="product_item.html">Лестница приставная бытовая ЛПБ 510 мм</a></h6>
-                            <div class="char">
-                                <p>
-                                    <span class="name">Ширина, м</span>
-                                    <span class="val">0,34</span>
-                                </p>
-                                <p>
-                                    <span class="name">Габаритная высота, м</span>
-                                    <span class="val">от 1,5 до 4,5</span>
-                                </p>
-                                <p>
-                                    <span class="name">Масса, кг</span>
-                                    <span class="val">от 4,1 до 6,5</span>
-                                </p>
-                            </div>
-                            <span class="button">В корзину</span>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <!-- <div class="novelty">new</div> -->
-                        <div class="img"><a href="product_item.html"><img src="images/product_image4.jpg"></a></div>
-                        <div class="info">
-                            <h6><a href="product_item.html">Лестница приставная с поручнями ЛПНА 3,0 (4,17)</a></h6>
-                            <div class="char">
-                                <p>
-                                    <span class="name">Ширина, м</span>
-                                    <span class="val">0,34</span>
-                                </p>
-                                <p>
-                                    <span class="name">Габаритная высота, м</span>
-                                    <span class="val">от 1,5 до 4,5</span>
-                                </p>
-                                <p>
-                                    <span class="name">Масса, кг</span>
-                                    <span class="val">от 4,1 до 6,5</span>
-                                </p>
-                            </div>
-                            <span class="button">В корзину</span>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <!-- <div class="novelty">new</div> -->
-                        <div class="img"><a href="product_item.html"><img src="images/product_image5.jpg"></a></div>
-                        <div class="info">
-                            <h6><a href="product_item.html">Лестница приставная наклонная ЛПНА 3,0 (3,0)</a></h6>
-                            <div class="char">
-                                <p>
-                                    <span class="name">Ширина, м</span>
-                                    <span class="val">0,34</span>
-                                </p>
-                                <p>
-                                    <span class="name">Габаритная высота, м</span>
-                                    <span class="val">от 1,5 до 4,5</span>
-                                </p>
-                                <p>
-                                    <span class="name">Масса, кг</span>
-                                    <span class="val">от 4,1 до 6,5</span>
-                                </p>
-                            </div>
-                            <span class="button">В корзину</span>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <!-- <div class="novelty">new</div> -->
-                        <div class="img"><a href="product_item.html"><img src="images/product_image6.jpg"></a></div>
-                        <div class="info">
-                            <h6><a href="product_item.html">Лестница односекционная приставная</a></h6>
-                            <div class="char">
-                                <p>
-                                    <span class="name">Ширина, м</span>
-                                    <span class="val">0,34</span>
-                                </p>
-                                <p>
-                                    <span class="name">Габаритная высота, м</span>
-                                    <span class="val">от 1,5 до 4,5</span>
-                                </p>
-                                <p>
-                                    <span class="name">Масса, кг</span>
-                                    <span class="val">от 4,1 до 6,5</span>
-                                </p>
-                            </div>
-                            <span class="button">В корзину</span>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <!-- <div class="novelty">new</div> -->
-                        <div class="img"><a href="product_item.html"><img src="images/product_image7.jpg"></a></div>
-                        <div class="info">
-                            <h6><a href="product_item.html">Лестница приставная наклонная с поручнями ЛПНА-8,2 (4,2)</a></h6>
-                            <div class="char">
-                                <p>
-                                    <span class="name">Ширина, м</span>
-                                    <span class="val">0,34</span>
-                                </p>
-                                <p>
-                                    <span class="name">Габаритная высота, м</span>
-                                    <span class="val">от 1,5 до 4,5</span>
-                                </p>
-                                <p>
-                                    <span class="name">Масса, кг</span>
-                                    <span class="val">от 4,1 до 6,5</span>
-                                </p>
-                            </div>
-                            <span class="button">В корзину</span>
-                        </div>
+                    <div class="image">
+                        <img src="images/news_item_main_img.jpg" alt="">
                     </div>
                 </div>
-
-
-                <div class="text_and_image">
-                    <div class="image left_image">
-                        <img src="images/catalog_section_1.png" alt="">
+                <div class="news_item_page">
+                    <div class="galery">
+                        <div class="main_slider">
+                            <div class="item"><img src="images/photo1.jpg" alt=""></div>
+                            <div class="item"><img src="images/project_image5.png" alt=""></div>
+                            <div class="item"><img src="images/project_image7.png" alt=""></div>
+                            <div class="item"><img src="images/photo1.jpg" alt=""></div>
+                            <div class="item"><img src="images/project_image5.png" alt=""></div>
+                            <div class="item"><img src="images/project_image7.png" alt=""></div>
+                        </div>
+                        <div class="preview_slider">
+                            <div class="item"><img src="images/photo1.jpg" alt=""></div>
+                            <div class="item"><img src="images/project_image5.png" alt=""></div>
+                            <div class="item"><img src="images/project_image7.png" alt=""></div>
+                            <div class="item"><img src="images/photo1.jpg" alt=""></div>
+                            <div class="item"><img src="images/project_image5.png" alt=""></div>
+                            <div class="item"><img src="images/project_image7.png" alt=""></div>
+                        </div>
                     </div>
+    
                     <div class="text">
-                        <h2>Лестницы завода MEGAL</h2>
-                        <p>Компания «Мегал» изготавливает и реализует различные алюминиевые конструкции, в том числе популярные сегодня вышки-туры и леса строительные на колесах. Отменные эксплуатационные свойства, предлагаемых потенциальным покупателям изделий, которые дополняются разумной ценой, а также работой предприятия и в Санкт-Петербурге, и в Москве, объясняют востребованность подобных изделий на рынке.</p>
+                        <p>Для выполнения перечисленных работ подойдут и строительные леса, и вышки, изготовленные из чёрной стали. Но такие конструкции, чтобы они были прочными и долговечными, необходимо защищать от коррозии. На них приходится наносить антикоррозийное покрытие, которое страдает от механического воздействия.</p> 
+                        <p>Вышка состоит из вертикальных рам, высотой 1 и 2 метра, которые соединяются между собой крепежными скобами. Из модулей удобно прямо на объекте собрать конструкцию необходимой высоты с несколькими рабочими площадками, которые оснащены переходными люками. Благодаря наличию поворотных роликов алюминиевая вышка быстро и легко перемещается по опорной поверхности, а винтовые опоры позволяют регулировать высоту вышки.</p>
+                        <p>Для обеспечения безопасности предусмотрены перила и бортовые ограждения.</p>
+                        <p>Если реставрационные или клининговые работы проводят с лестничного марша здания, используют вышки с разновысокими опорами, тогда рабочая площадка остается горизонтальной. Вышки с проходными рамами позволяют проводить работы, не перекрывая сквозной проход по лестничному маршу.</p>
+                        <p>Всегда можно купить алюминиевую вышку-туру из стандартного модельного ряда на нашем складе. Если ни одна модель не подходит, можно заказать ее по собственному проекту. Наши конструкторы рассмотрят эскизы и обсудят с заказчиком детали. В процессе будет найдено рациональное решение. </p>
+    
+                        <div class="social">
+                            Поделиться: 
+                            <noindex><a rel="nofollow" title="ВКонтакте" href="#"><img src="images/icon_vk.svg" alt="VK"></a></noindex>
+                                <noindex><a rel="nofollow" title="Facebook" href="#"><img src="images/icon_fb.svg" alt="FB"></a></noindex>
+                                
+                        </div>
                     </div>
+    
                 </div>
-                <div class="text_and_image">
-                    <div class="image right_image">
-                        <img src="images/catalog_section_2.png" alt="">
-                    </div>
-                    <div class="text">
-                        <p>ПРЕИМУЩЕСТВА ПЕРЕДВИЖНЫХ АЛЮМИНИЕВЫХ ВЫШЕК-ТУР</p>
-                        <p>Строительная передвижная вышка-тура – это модульная конструкция, которая используется в процессе осуществления различных строительных и ремонтных работ. Она собирается непосредственно на объекте и включает в себя такие детали, части и элементы:</p>
-                        <ul>
-                            <li>изготовленная из алюминия рама, которая нередко оснащается вертикальными опорами, регулирующими высоту расположения рабочей площадки;</li>
-                            <li>непосредственно площадка, которая используется для размещения инструмента, материалов и собственно рабочих;</li>
-                            <li>ограждение, необходимое для безопасной эксплуатации вышки-туры;</li>
-                            <li>колеса, используемые для быстрого и удобного перемещения изделия по строительной площадке или другому месту использования.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="text_and_image">
-                    <div class="image left_image">
-                        <img src="images/catalog_section_3.png" alt="">
-                    </div>
-                    <div class="text">
-                        <p>ОБЛАСТЬ ПРИМЕНЕНИЯ СТРОИТЕЛЬНЫХ ЛЕСОВ</p>
-                        <p>По большому счету, вышка-тура выступает как мобильные подмости для работы на высоте. Они выступают разновидностью такого необходимого и широко распространенного инвентаря как алюминиевые строительные леса. Область их применения чрезвычайно разнообразна и включает в себя такие виды работ, производимых на высоте:</p>
-                        <ul>
-                            <li>ремонт и строительство зданий, конструкция которых предусматривает два этажа или более;</li>
-                            <li>ремонт и отделка фасадов различных построек;</li>
-                            <li>наружная отделка и оформление сооружений;</li>
-                            <li>обслуживание ЛЭП и осветительных приборов, размещенных на столбах;</li>
-                            <li>устройство и ремонт водосточной системы;</li>
-                            <li>устройство и пошив карнизов и карнизных свесов и т.д.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="text_and_image">
-                    <div class="image right_image">
-                        <img src="images/catalog_section_4.png" alt="">
-                    </div>
-                    <div class="text">
-                        <p>Алюминиевые вышки-туры, изготовленные компанией «Мегал» - это качественная продукция, реализуемая производителем по доступной для потенциальных покупателей цене. Она соответствует действующим ГОСТам и обеспечивает комфортное и безопасное выполнение различных высотных работ. Купить строительную вышку-туру в Санкт-Петербурге и Москве Вы можете на нашем сайте, достаточно просто заполнить форму, и наши сотрудники свяжутся с Вами. В качестве приятного бонуса – долговечность конструкции и низкий уровень цены, который достигается работой напрямую с производителем.</p>
-                    </div>
-                </div>
+                
             </div>
         </main>
-        <!-- end Продукция -->
-        
+        <!--end контент-->
+
+                
+        <div class="content content_page_bottom">
+            <div class="page_width">
+                <div class="news_container">
+                    <h2>Похожие публикации</h2>
+                    <div class="news_block">
+                        <article class="news">
+                            <h5>Именинники июля</h5>
+                            <div class="news_foo">
+                                <time>02.12.2018</time>
+                                <a href="news_item.html" class="button">Подробнее</a>
+                            </div>
+                        </article>
+                        <article class="news">
+                            <h5>«День Торта» в MEGAL</h5>
+                            <div class="news_foo">
+                                <time>02.12.2018</time>
+                                <a href="news_item.html" class="button">Подробнее</a>
+                            </div>
+                        </article>
+                        <article class="news">
+                            <h5>Завершились испытания забортных трапов MEGAL для АО «Адмиралтейские верфи»</h5>
+                            <div class="news_foo">
+                                <time>02.12.2018</time>
+                                <a href="news_item.html" class="button">Подробнее</a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="buttons">
+                        <a href="#" class="button">Все публикации</a>
+                    </div>
+                    
+                    <div class="form_block mini_email_blue">
+                        <p>Вы можете подписаться на наши новости и быть в курсе самой свежей информации</p>
+                        <form enctype="multipart/form-data" action="" method="post" class="rf">
+                            <div class="input_text">
+                                <input id="email" class="rfield email" name="email" type="text" value=""> 
+                                <label for="email">Email</label>
+                                <div class="uError"></div>
+                            </div>
+                            <button type="submit" class="button">Подписаться</button>
+                            <div class="input_personal_info">
+                                <input type="checkbox" id="personal_info_small" name="personalInfo" data-required="Y" value="Y">
+                                <label for="personal_info_small">Нажимая кнопку подписаться, вы соглашаетесь с  <a href="/personal-info/" target="_blank" rel="nofollow noopener">политикой конфидециальности</a></label>
+                            </div>
+                        </form>
+                    </div>
+                    
+                </div>
+
+            </div>
+        </div>
+
+
+
          <!-- Форма -->
-        <div class="main_section" id="small_form">
+         <div class="main_section" id="small_form">
             <div class="page_width">
                 <div class="text">
                     <h2>Нужна помощь с выбором?</h2>
@@ -740,7 +447,7 @@
             </div>	
         </div>
         <!--End Форма-->
-    
+
         <!-- подвал -->
         <div id="pre_foo"></div>
         <footer id="footer">
@@ -816,6 +523,11 @@
                             <li><a href="#">Пресс-Центр</a></li>
                             <li><a href="#">Работа в компании</a></li>
                         </ul>
+                        <div class="social">
+                            <noindex><a rel="nofollow" title="ВКонтакте" href="#"><img src="images/icon_vk.svg" alt="VK"></a></noindex>
+                            <noindex><a rel="nofollow" title="Facebook" href="#"><img src="images/icon_fb.svg" alt="FB"></a></noindex>
+                            <noindex><a rel="nofollow" title="YouTube" href="#"><img src="images/icon_yt.svg" alt="YT"></a></noindex>
+                        </div>
                     </div>
                     <div class="container">
                         <div class="h4">Ответственность</div>
@@ -863,6 +575,7 @@
             </div>
         </footer>
     <!-- end подвал -->
+
         <!-- Модальные окна -->
         <div class="gUniFormModalWindow form--modal form_block form-write">
             <div class="gUniFormHideScrollBar">
