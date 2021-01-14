@@ -98,10 +98,18 @@
 }
     
 .products {
-    display: flex;
-    flex-wrap: wrap;
     padding-bottom: 100px;
     clear: both;
+
+    &:not(.products_slider) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .slick-track {
+        margin-left: 0;
+    }
+
     .item {
         position: relative;
         box-sizing: border-box;
@@ -115,6 +123,7 @@
         //opacity: 0;
         overflow: hidden;
         text-align: center;
+        //display: inline-block;
         //box-shadow: -10px 10px 20px rgba(19, 73, 131, 0.2);
         @include transition(all);
 
@@ -393,7 +402,7 @@
         margin-bottom: 0;
         padding-bottom: 0;
     }
-    .buttons input[type="submit"], .buttons input[type="reset"] {
+    .buttons input[type="submit"], .buttons input[type="reset"], .reset {
 	    margin-right: 0;
 	    height: 30px;
 	    line-height: 30px;
@@ -403,10 +412,10 @@
         padding-left: 30px;
         padding-right: 30px;
     }
-    .buttons input[type="submit"]{
+    .buttons input[type="submit"] {
 	    float: right;
     }
-    .buttons input[type="reset"]{
+    .buttons input[type="reset"], .reset{
         color: $color_text;
         background-color: #CFDBE7;
         
@@ -706,6 +715,7 @@
         align-items: center;
         overflow: hidden;
         height: 110px;
+        margin: 0 1px;
 
         img {
             display: inline-block;

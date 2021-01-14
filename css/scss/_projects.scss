@@ -252,7 +252,7 @@
 }
 
 .galery {
-    padding-bottom: 95px;
+    //padding-bottom: 95px;
     .main_slider {
         height: 409px;
         margin: 0 0 12px;
@@ -275,6 +275,7 @@
 
     .preview_slider {
         height: 93px;
+        margin-bottom: 95px;
         .slick-list {
             margin: 0 -10px;
         }
@@ -354,6 +355,7 @@
         max-width: 586px;
         font-size: 15px;
         line-height: 29px;
+        margin-left: 10%;
 
         .button {
             margin-top: 25px;
@@ -420,6 +422,7 @@
 @media screen and (max-width: 1030px) {
     .galery {
         .preview_slider {
+            margin-bottom: 50px;
             .slick-list {
                 margin: 0 -20px;
             }
@@ -444,6 +447,7 @@
         }
         .text {
             line-height: 22px;
+            margin-left: 30px;
             .button {
                 margin-top: 0px;
             }
@@ -465,6 +469,9 @@
         .galery {
             width: 90%;
         }
+    }
+    .gratitude .text {
+        margin-left: 0px;
     }
 }
 @media screen and (max-width: 600px) {

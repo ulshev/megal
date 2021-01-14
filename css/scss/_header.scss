@@ -13,6 +13,7 @@ header {
 	//padding-bottom: 1px;
 	background-color: #fff;
 	@include transition(all);
+	//opacity: 0.5;
 
     .page_width {
 		z-index: 1;
@@ -363,7 +364,7 @@ header .search {
 
 
 .header_main {
-	display: flex;
+	display: flex !important;
 	justify-content: space-between;
 	flex-wrap: wrap;
 
@@ -391,6 +392,14 @@ header .search {
 		}
 	}
 
+	li ul {
+		display: none;
+
+		ul {
+			display: block;
+		}
+	}
+
 	ul ul {
 		opacity: 0;
 		
@@ -404,7 +413,7 @@ header .search {
 		position: absolute;
 		//background-color: #fff;
 		box-sizing: border-box;
-		display: block;
+		//display: none;
 		min-width: 100%;
 		z-index: 1;
 		left: 0;//right: -50%;
@@ -458,6 +467,7 @@ header .search {
 				height: 11px;
 				background: url(images/arrow_blue.svg) no-repeat right center;
 				@include transition(all);
+				margin-right: -26px;
 			}
 		}
 
@@ -534,6 +544,7 @@ header .search {
 		top: 150%;
 		left: auto;
 		right: -50%;
+		display: block;
 
 		&::before {
 			display: block;
@@ -576,6 +587,7 @@ header .search {
 		padding-top: 37px;
 		padding-bottom: 37px;
 		//opacity: 1;
+		display: block;
 		li {
 			text-align: left;
 		}
@@ -602,7 +614,7 @@ header .search {
 
 		> ul {
 			opacity: 0;
-			height: calc(100vh - 220px);
+			//height: calc(100vh - 220px);
 			overflow-y: auto;
 			overflow-x: hidden;
 			//background: none;
@@ -664,6 +676,7 @@ header .search {
 					background-color: #fff;
 					position: relative;
 					z-index: 1;
+					max-height: 51px;
 				}
 
 				a {
@@ -691,7 +704,7 @@ header .search {
 				ul {
 					column-count: auto;
 					column-gap: 0;
-					padding-top: 7px;
+					padding-top: 14px;
 					padding-bottom: 20px;
 					li {
 						margin-bottom: 20px;

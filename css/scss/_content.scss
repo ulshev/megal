@@ -55,11 +55,12 @@
         overflow: hidden;
         width: 45%;
         height: auto;
+        text-align: center;
 
         img{
             object-fit: cover;
             //height: 100%;
-            width: 100%;
+            max-width: 100%;
         }
     }
 
@@ -343,16 +344,18 @@
     //padding-bottom: 30px;
     margin-bottom: 50px;
     align-items: center;
+    height: 440px;
 
     .text{
         margin-left: auto;
         justify-self: right;
         box-sizing: border-box;
         width: 50%;
-        min-height: 390px;
+        //min-height: 390px;
         //background-color: #0a2a4fcc;
         //margin-right: -1px;
-        padding: 50px 75px;
+        padding: 70px 75px 50px;
+        min-height: 100%;
     }
 
     &.mas {
@@ -363,6 +366,7 @@
 
         .right_image {
             width: calc(60% - 75px);
+            text-align: center;
 
             img {
                 max-width: 100%;
@@ -378,7 +382,7 @@
     }
 
     &.blue_bg .text{
-        background-color: #0a2a4fcc;
+        background-color: rgba(19, 73, 131, 0.85);;
 
         h2, p{
             color: #ffffff;
@@ -433,6 +437,7 @@
 
 }
 .content{
+
     .projects{
         display: flex;
         flex-wrap: wrap;
@@ -507,13 +512,16 @@
 @media screen and (max-width:1200px){
     .text_bgImage .text{
         padding: 50px ;
-        min-height: auto;
+        //min-height: auto;
     }
 }
 @media screen and (max-width:1030px){
-    .text_bgImage .text{
-        width: 60%;
-        padding: 30px;
+    .text_bgImage {
+        height: auto;
+        .text{
+            width: 60%;
+            padding: 30px;
+        }
     }
     .content .projects{
         .item{
@@ -523,9 +531,14 @@
     }
 }
 @media screen and (max-width:800px){
-    .text_bgImage .text{
-        width: 100%;
-        padding: 50px 40px;
+    .text_bgImage {
+        .text{
+            width: 100%;
+            padding: 30px 30px;
+        }
+        .video {
+            margin: 20px auto 20px auto;
+        }
     }
     .text_bgImage.text_left {
         background-position: 55% center;
@@ -561,7 +574,7 @@
 }
 @media screen and (max-width:478px){
     .text_bgImage .text{
-        padding: 30px 20px 10px;
+        padding: 30px 20px 30px;
     }
     .pagination{
         ul li a{
@@ -580,9 +593,6 @@
     }
 }
 @media screen and (max-width: 350px) {
-    .text_bgImage .text{
-        padding: 30px 12px 10px;
-    }
     .content .projects{
         .item {
             height: 453px;
@@ -811,13 +821,28 @@
         }
         .contact_titles{
             color: $color_text_alt;
+            p {
+                margin-bottom: 10px;
+            }
         }
     }
-    iframe{
-        width: 65%;
 
-        border: none;
+    .map {
+        width: 64%;
+        height: 400px;
+
+        iframe{
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
     }
+    
+}
+
+.bx-yandex-view-layout, .bx-yandex-view-map {
+    width: 100%;
+    height: 100%;
 }
 
 .table_block{
@@ -827,15 +852,21 @@
 
     border-bottom: #BECAD3 1px solid;
 
-    overflow: auto;
+    //overflow: auto;
+
+    h2 {
+        margin-bottom: 40px;
+    }
 
     table{
-        width: 100%;
-        min-width: 760px;
+        width: calc(100% + 100px);
+        //min-width: 760px;
+        margin-left: -50px;
+        margin-right: -50px;
     
         tr{
-            height: 77px;
-            padding-left: 20px;
+            //height: 77px;
+            //padding-left: 20px;
     
             &:first-child{
                 border-bottom: 1px solid #BECAD3;
@@ -845,12 +876,20 @@
             }
     
             td{
-                padding: 0 50px;
+                padding: 27px 50px;
+
+                &:first-child {
+                    font-weight: 500;
+                }
+
+                a {
+                    font-weight: 500;
+                }
             }
     
             th{
                 text-align: left;
-                padding: 0 50px;
+                padding: 0 50px 7px;
     
                 font-weight: 500;
                 font-size: 14px;
@@ -935,34 +974,55 @@
 .map_and_contacts_SecondV{
     display: flex;
     margin-bottom: 100px;
+    align-items: stretch;
+    height: 740px;
 
     .text-contacts{
-        height: 740px;
-        width: 604px;
+        //height: 740px;
+        width: 600px;
+        max-width: calc(50% - 1px);
         overflow: auto;
+        overflow-x: hidden;
+        border: 1px solid #CFDBE7;
 
         .item{
-            padding: 30px 60px 30px 30px;
-            border: 1px solid #CFDBE7;
+            padding: 30px 60px 10px 35px;
+            border-top: 1px solid #CFDBE7;
+            //border-right: 1px solid #CFDBE7;
+            box-sizing: border-box;
+            min-height: 245px;
+            //width: calc(100% + 18px);
+
+            &:first-child {
+                border-top: none;
+            }
 
             h3{
                 text-transform: none;
                 color: $color_text;
+                font-size: 26px;
+                margin-bottom: 25px;
             }
             ul,
             a{
                 display: inline-block;
                 vertical-align: top;
+                font-weight: 500;
             }
             ul{
                 margin-right: 50px;
+                margin-bottom: 20px;
+                min-height: 40px;
+            }
+            ul + a{
+                margin-bottom: 20px;
             }
             p{
-                margin-top: 20px;
+                margin-top: 0px;
+            }
 
-                &:last-child{
-                    color: $color_text_alt;
-                }
+            p + p {
+                color: $color_text_alt;
             }
 
             &.active{
@@ -972,9 +1032,10 @@
     }
     .text-contacts::-webkit-scrollbar{
         width: 18px;
+        background-color: transparent;
     }
     .text-contacts::-webkit-scrollbar-track{
-        background-color: #ffffff;
+        background-color: transparent;
     }
     .text-contacts::-webkit-scrollbar-thumb{
         background-color: #B0C5D8;
@@ -984,7 +1045,10 @@
 
     .map_or_image{
         position: relative;
-        height: auto;
+        height: 100%;
+        width: calc(100% - 600px);
+        min-width: 50%;
+
         img,
         iframe{
             object-fit: cover;
@@ -1014,43 +1078,67 @@
         }
     }
 }
-@media screen and (max-width:1100px){
-    .table_block table tr{
-        height: 110px;
-    }
-}
-@media screen and (max-width:1024px){
+// @media screen and (max-width:1100px){
+//     .table_block table tr{
+//         height: 110px;
+//     }
+// }
+@media screen and (max-width:1030px){
     .map_and_contacts_SecondV{
-        flex-wrap: wrap;
+        //flex-wrap: wrap;
+        //height: auto;
+        margin-bottom: 50px;
 
         .text-contacts{
-            order: 2;
-            height: 550px;
-            width: 100%;
+            //order: 2;
+            //height: 550px;
+            //width: 100%;
 
             .item{
+                min-height: auto;
                 ul{
                     margin-bottom: 20px;
                 }
+
+                h3 {
+                    font-size: 20px;
+                }
             }
         }
-        .map_or_image{
-            order: 1;
-            width: 100%;
-            height: 300px;
+        //.map_or_image{
+            //order: 1;
+            //width: 100%;
+            //height: 300px;
+        //}
+    }
+    .table_block {
+        padding-bottom: 40px;
+        margin-top: 50px;
+        h2 {
+            margin-bottom: 30px;
         }
     }
-}
-@media screen and (max-width:990px){
-    .table_block table tr{
-        height: 130px;
-
-        td{
-            padding: 0 20px;
+    .table_block table {
+        margin-left: -20px;
+        margin-right: -20px;
+        width: calc(100% + 40px);
+        tr{
+            //height: 130px;
+    
+            td{
+                padding: 20px 5px 20px 20px;
+            }
+            th {
+                padding: 0 20px 7px 20px;
+            }
         }
+    } 
+    .road_and_time {
+        margin-bottom: 50px;
+        margin-top: 50px;
     }
 }
-@media screen and (max-width:792px){
+@media screen and (max-width:800px){
     .map_and_contacts{
         .text_contacts{
             width: 60%;
@@ -1058,6 +1146,22 @@
 
         iframe{
             width: 40%;
+        }
+    }
+
+    .map_and_contacts_SecondV{
+        flex-wrap: wrap;
+        height: auto;
+        margin-bottom: 50px;
+
+        .text-contacts{
+            height: 300px;
+            width: 100%;
+            max-width: none;
+        }
+        .map_or_image{
+            width: 100%;
+            height: 300px;
         }
     }
 
@@ -1076,6 +1180,23 @@
             margin-top: 60px;
         }
     }
+
+    .table_block table {
+        tr{
+            display: flex;
+            flex-wrap: wrap;
+            padding-bottom: 20px;
+
+            &:first-child {
+                display: none;
+            }
+    
+            td{
+                width: 45%;
+                padding-bottom: 0;
+            }
+        }
+    } 
 }
 @media screen and (max-width:618px){
     .road_and_time{
@@ -1086,29 +1207,67 @@
             width: 100%;
         }
     }
-}
-@media screen and (max-width:542px){
+    
     .map_and_contacts{
         flex-wrap: wrap;
         .text_contacts{
             width: 100%;
-            order: 2;
+            //order: 2;
             padding-right: 0px;
         }
 
-        iframe{
+        .map {
             width: 100%;
-            order: 1;
+            height: 300px;
+            //order: 2;
             margin-bottom: 20px;
         }
+
+        // iframe{
+        //     width: 100%;
+        //     order: 1;
+        //     margin-bottom: 20px;
+        // }
     }
-}
-@media screen and (max-width:375px){
     .map_and_contacts_SecondV{
 
         .text-contacts{
             .item{
-                padding: 30px 30px 30px 20px;
+                padding: 30px 30px 10px 30px;
+            }
+        }
+    }
+    .table_block {
+        padding-bottom: 30px;
+        margin-top: 30px;
+
+        h2 {
+            margin-bottom: 10px;
+        }
+    }
+    .table_block table {
+        tr{
+            td{
+                width: 100%;
+                padding-top: 10px;
+            }
+        }
+    } 
+    .road_and_time {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .map_and_contacts_SecondV .map_or_image {
+        height: 200px;
+    }
+}
+@media screen and (max-width:400px){
+    .map_and_contacts_SecondV{
+
+        .text-contacts{
+            .item{
+                padding: 20px 20px 1px 20px;
             }
         }
     }

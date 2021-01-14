@@ -38,24 +38,24 @@ $(document).ready(function() {
 	});
 
 
-	if ( /*window.innerWidth > 600 &*/ window.innerWidth < 1030 ) {
-		$('.search .search_button').on('click', function(e){
-			if( !$(this).parent().hasClass('active') ) {
-				$(this).parent().addClass('active');
-			}else{
-				$(this).parent().removeClass('active'); 
-			}
-		});
+	$('.search .search_button').on('click', function(e){
+		if( !$(this).parent().hasClass('active') ) {
+			$(this).parent().addClass('active');
+		}else{
+			$(this).parent().removeClass('active'); 
+		}
+	});
 
-		$('.menu_btn').on('click', function(e){
-			if( !$(this).hasClass('active') ) {
-				$(this).addClass('active');
-				$(".header_main").slideDown(500);
-			}else{
-				$(this).removeClass('active');
-				$(".header_main").slideUp(500); 
-			}
-		});
+	$('.menu_btn').on('click', function(e){
+		if( !$(this).hasClass('active') ) {
+			$(this).addClass('active');
+			$(".header_main").slideDown(500);
+		}else{
+			$(this).removeClass('active');
+			$(".header_main").slideUp(500); 
+		}
+	});
+	if ( /*window.innerWidth > 600 &*/ window.innerWidth < 1030 ) {
 
 	    $('.menu .submenu > a').on('click', function(e){
 		    if( !$(this).parent().hasClass('show') ) {
@@ -152,7 +152,6 @@ $(document).ready(function() {
 		$('.tab:eq(' + id + ')', tabs).addClass('active').siblings().removeClass('active');
 	    
 	});
-
 	if ( window.innerWidth < 601 ) {
 		$(".description .tab").removeClass('active');
 		$('.description .tab h3').on('click', function(){
@@ -535,19 +534,7 @@ $(document).ready(function() {
       .accordion({
 		heightStyle: "content",
         header: "> div > h3"
-      })
-      .sortable({
-        axis: "y",
-        handle: "h3",
-        stop: function( event, ui ) {
-          // IE doesn't register the blur when sorting
-          // so trigger focusout handlers to remove .ui-state-focus
-          ui.item.children( "h3" ).triggerHandler( "focusout" );
- 
-          // Refresh accordion to handle new order
-          $( this ).accordion( "refresh" );
-        }
-	});
+      });
 	
 	// Modal Window
     $('.form__btn-close').click(function (e) {
@@ -616,5 +603,11 @@ $(document).ready(function() {
 // 		var filename = $(this).val().replace(/.*\\/, "");
 // 		$("#file_name").html(filename);
 //    });
+
+	const player = document.querySelector('#background_video video');
+    if (player !== null) {
+        player.oncanplay = function() { player.play() };
+        player.src = player.dataset.src;
+    }
 });
 

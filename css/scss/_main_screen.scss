@@ -5,7 +5,9 @@
     background: #162637 url(images/bg_main_screen.jpg) no-repeat left top / cover;
 	height: calc(100vh - 258px);
 	min-height: 677px; //430px;
-    //@include transition(all);
+	//@include transition(all);
+	clear: both;
+	//opacity: 0.6;
     
     .page_width {
 		height: 100%;
@@ -49,11 +51,13 @@
 		margin-bottom: 25px;
 		text-align: left;
 		color: #fff;
+		text-shadow: 0px 4px 20px rgba(0, 0, 0, 0.85);
     }
     
     .button {
 		// min-width: 173px;
 		margin-bottom: 72px;
+		margin-top: 0;
 		// height: 50px;
 		// line-height: 48px;
     }
@@ -67,6 +71,39 @@
 		letter-spacing: 0.01em;
     }
     
+}
+
+#background_video {
+	position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+            background: url(images/bg_grid.png) no-repeat left center / auto 114%;
+        }
+        
+        video {
+            background-color: transparent;
+            pointer-events: none;
+            height: 100%; 
+            width: 100%; 
+            position: absolute;
+            z-index: 0;
+            left: 0;
+            top: 0;
+            object-fit: cover;  
+        }
 }
 
 
@@ -102,6 +139,7 @@
 @media screen and (max-width: 800px) {
     #main_screen {
 		min-height: 450px;
+		width: 100%;
 		h1 {
 			font-size: 30px;
 			line-height: 42px; 
