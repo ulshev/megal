@@ -309,13 +309,38 @@
             margin: 10px 10px 20px;
             border: 1px solid #BECAD3;
             box-sizing: border-box;
-            box-shadow: -3px 5px 10px rgba(19, 73, 131, 0.3);
+            box-shadow: 0px 0px 0px rgba(19, 73, 131, 0);
+            cursor: pointer;
             @include transition(all);
+            
+            &::before {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                opacity: 0;
+                @include transition(all);
+                background: linear-gradient(0deg, rgba(19, 73, 131, 0.3), rgba(19, 73, 131, 0.3));
+            }
             &:hover {
-                box-shadow: 0px 0px 0px rgba(19, 73, 131, 0);
+                &::before {
+                opacity: 1;
+                }
+            }
+            &.slick-current {
+                box-shadow: -3px 5px 10px rgba(19, 73, 131, 0.3);
+                &::before {
+                    display: none;
+                }
             }
         }
     }
+}
+
+.news_item_page .galery .preview_slider .slick-track {
+    transform: none !important;
 }
 
 .gratitude {

@@ -187,13 +187,14 @@ $(document).ready(function() {
 	$('.features_slider').slick({
 	    slidesToShow: 4,
 	    slidesToScroll: 1,
-	    infinite: false,
+	    //infinite: false,
 	    dots: false,
 	    //focusOnSelect: true,
 		arrows: true,
 		adaptiveHeight: true,
 		prevArrow: '<span class="slick-prev">&nbsp;</span>',
 		nextArrow: '<span class="slick-next">&nbsp;</span>',
+		autoplay: true,
 		responsive: [
 			{
 				breakpoint: 1351,

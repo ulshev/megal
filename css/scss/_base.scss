@@ -640,6 +640,8 @@ ul.slick-dots {
 			margin-left: 4px;
             position: relative;
             min-height: 40px;
+            display: flex;
+            align-items: center;
 			
 			&:before {
                 counter-increment: ol_counter;
@@ -652,7 +654,13 @@ ul.slick-dots {
                 position: absolute;
                 left: 0;
 			}
-		}
+        }
+        
+        &.noflex {
+            li {
+                display: list-item;
+            }
+        }
     }
 
     .button{
