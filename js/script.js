@@ -1,4 +1,3 @@
-
 $(document).ready(function() {
 	// Убираем placeholder при клике в поле
 	$('input,textarea').focus(function(){
@@ -56,7 +55,6 @@ $(document).ready(function() {
 		}
 	});
 	if ( /*window.innerWidth > 600 &*/ window.innerWidth < 1030 ) {
-
 	    $('.menu .submenu > a').on('click', function(e){
 		    if( !$(this).parent().hasClass('show') ) {
 				$(".menu .submenu").removeClass('show'); 
@@ -198,7 +196,7 @@ $(document).ready(function() {
 		nextArrow: '<span class="slick-next">&nbsp;</span>',
 		responsive: [
 			{
-				breakpoint: 1301,
+				breakpoint: 1351,
 				settings: {
 				  slidesToShow: 3,
 				}
@@ -211,7 +209,7 @@ $(document).ready(function() {
 			},
 			
 			{
-				breakpoint: 601,
+				breakpoint: 701,
 				settings: {
 				  slidesToShow: 1,
 				  dots: true,
@@ -430,7 +428,9 @@ $(document).ready(function() {
 	$('.galery .main_slider').slick({
 	    slidesToShow: 1,
 	    slidesToScroll: 1,
-	    arrows: false,
+		//arrows: false,
+	    prevArrow: '<span class="slick-prev">&nbsp;</span>',
+	    nextArrow: '<span class="slick-next">&nbsp;</span>',
 	    fade: true,
 	    //variableWidth: true,
 	    adaptiveHeight: true,
@@ -439,10 +439,9 @@ $(document).ready(function() {
 	$('.galery .preview_slider').slick({
 	    slidesToShow: 4,
 	    slidesToScroll: 1,
-	    arrows: true,
-	    prevArrow: '<span class="slick-prev">&nbsp;</span>',
-	    nextArrow: '<span class="slick-next">&nbsp;</span>',
-	    asNavFor: '.galery .main_slider',
+	    arrows: false,
+		asNavFor: '.galery .main_slider',
+		loop: true,
 	    dots: false,
 	    //centerMode: true,
 	    //vertical: true,

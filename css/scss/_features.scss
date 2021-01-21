@@ -19,12 +19,13 @@
         box-sizing: border-box;
         background-color: rgba(255, 255, 255, 1);
         height: 340px;
-        padding: 23px 40px 40px;
+        padding: 20px 25px 40px;
         margin: 0 10px;
         box-shadow: -10px 10px 20px rgba(19, 73, 131, 0.2);
-        font-size: 14px;
-        line-height: 20px;
+        font-size: 12px;
+        line-height: 18px;
         opacity: 0;
+        overflow: hidden;
         @include transition(all);
 
         &::before {
@@ -59,21 +60,24 @@
             }
         }
         .text {
-            overflow: hidden;
-            max-height: 169px;
-            max-width: 320px;
+            //overflow: hidden;
+            //max-height: 169px;
+            max-width: 450px;
         }
         .h4 {
             color: $color_text;
-            min-height: 50px;
+            min-height: 46px;
             //overflow: hidden;
-            margin-bottom: 14px;
-            line-height: 25px;
+            margin-bottom: 5px;
+            line-height: 23px;
             font-size: 18px;
+            letter-spacing: -0.5px;
             @include transition(all);
         }
         p {
             margin-bottom: 0;
+            max-height: 150px;
+            overflow: hidden;
         }
 
         &.slick-active {
@@ -211,6 +215,17 @@
     #features {
         margin-top: 23px;
     }
+    .features_slider .item{
+        height: auto;
+        .text {
+            font-size: 12px;
+            line-height: 18px;
+
+            p {
+                max-height: none;
+            }
+        }
+    } 
 }
 
 /* end features styles */

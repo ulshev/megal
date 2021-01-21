@@ -595,6 +595,11 @@ header .search {
 		a {
 			color: $color_text;
 		}
+
+		&.career {
+			padding-top: 13px;
+			padding-bottom: 13px;
+		}
 	} 
 
 	.catalog {
